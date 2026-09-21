@@ -10,7 +10,7 @@ Griptape Nodes는 전문 아티스트와 크리에이터를 위해 설계된 강
 
 이 저장소에는 로컬 머신에서 안전하게 실행되며 워크플로 실행을 위한 고성능 기반을 제공하는 로컬 구성 요소인 Griptape Nodes Engine이 포함되어 있습니다. 이 엔진은 PyPI에 `griptape-nodes-engine` 라이브러리로 게시되어 있으며 `griptape-nodes` 애플리케이션에 의해 실행됩니다. 로컬 체크아웃을 통해 엔진을 개발하려면 [CONTRIBUTING.md](https://www.google.com/search?q=CONTRIBUTING.md&utm_source=gemini)를 참조하세요.
 
-[](https://www.google.com/search?q=%5Bhttps%3A%2F%2Fvimeo.com%2F1064451891%5D%28https%3A%2F%2Fvimeo.com%2F1064451891%29)
+[https://github.com/griptape-ai/griptape-nodes-engine/raw/main/docs/assets/img/video-thumbnail.jpg](https://www.google.com/search?q=%5Bhttps%3A%2F%2Fvimeo.com%2F1064451891%5D%28https%3A%2F%2Fvimeo.com%2F1064451891%29)
 *(이미지를 클릭하면 Vimeo에서 영상을 시청할 수 있습니다)*
 
 **✨ 주요 기능:**
