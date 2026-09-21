@@ -1,10 +1,9 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/griptape-ai/griptape-nodes-engine/raw/main/docs/assets/img/griptape_nodes_from_foundry_white.svg">
-  <img alt="Griptape Nodes" src="
-https://github.com/griptape-ai/griptape-nodes-engine/raw/main/docs/assets/img/griptape_nodes_from_foundry_black.svg" width="600">
+  <img alt="Griptape Nodes" src="https://github.com/griptape-ai/griptape-nodes-engine/raw/main/docs/assets/img/griptape_nodes_from_foundry_black.svg" width="600">
 </picture>
 
-griptape_nodes_from_foundry_black.svg
+
 Griptape Nodes의 한국어 가이드 문서입니다.
 
 Griptape Nodes는 전문 아티스트와 크리에이터를 위해 설계된 강력한 시각적 노드 기반 워크플로 빌더입니다. 직관적인 드래그 앤 드롭 인터페이스인 클라우드 기반 [Griptape Nodes IDE](https://app.nodes.griptape.ai/?utm_source=gemini)를 통해 복잡한 AI 워크플로를 구축하고 실행하세요.
