@@ -20,13 +20,13 @@ InfoRetriever는 워크플로에 검색 증강 생성(Retrieval Augmented Genera
 1. 워크플로에 InfoRetriever를 추가합니다.
 1. 출력을 RAG 기능이 필요한 노드(예: Agent)에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **description**: 이 도구가 제공하는 정보에 대한 설명 (기본값: "Contains information")
 - **off_prompt**: 메인 프롬프트 외부에서 RAG 연산을 실행할지 여부 (기본값: true)
 - **rag_engine**: 정보를 검색하는 데 사용되는 엔진 (필수 항목)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **tool**: 다른 노드에서 사용할 수 있도록 구성된 RAG 도구
 - **rules**: RAG 도구에서 사용되는 규칙 세트(Ruleset)

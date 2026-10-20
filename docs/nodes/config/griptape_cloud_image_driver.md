@@ -18,14 +18,14 @@ GriptapeCloudImage 노드는 Griptape Cloud의 이미지 생성 서비스에 대
 1. 워크플로에 GriptapeCloudImage 노드를 추가합니다.
 1. driver 출력을 이미지를 생성해야 하는 노드(예: GenerateImage)에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **model**: 사용할 모델 (기본값: "gpt-image-1-mini")
 - **image_size**: 생성할 이미지 크기 (기본값: "1024x1024")
 - **style**: natural 또는 vivid. Natural은 자연스러운 조명과 텍스처를 가진 실사 같은 이미지를 생성하며, vivid는 강화된 색상, 대비 및 더욱 극적인 구도의 이미지를 생성합니다.
 - **quality**: 이미지 생성 품질을 선택합니다 (Standard 또는 HD).
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **image_model_config**: 다른 노드에서 사용할 수 있도록 구성된 Griptape Cloud 이미지 모델 설정
 

@@ -24,7 +24,7 @@ ConcatenateVideos 노드는 설정 가능한 포맷 및 코덱 옵션을 사용�
 1. 필요에 따라 출력 포맷 및 코덱 설정을 구성합니다.
 1. **output**을 비디오 입력이 필요한 다른 노드에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **video_inputs**: 이어 붙일 비디오 리스트입니다. (VideoArtifact, VideoUrlArtifact 및 두 타입의 리스트 지원)
 - **output_format**: 출력 비디오 포맷입니다. - mp4, avi, mov, mkv, webm (기본값: mp4)
@@ -33,7 +33,7 @@ ConcatenateVideos 노드는 설정 가능한 포맷 및 코덱 옵션을 사용�
 - **output_frame_rate**: 프레임 레이트 제어 옵션입니다. (BaseVideoProcessor에서 상속)
 - **processing_speed**: 품질과 속도 간의 절충 옵션입니다. (BaseVideoProcessor에서 상속)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 하나의 비디오로 합쳐진 VideoUrlArtifact 형식의 비디오 파일입니다.
 - **logs**: 다운로드, 해상도 확인, 리사이징 작업 등에 관한 자세한 정보가 담긴 처리 로그입니다.

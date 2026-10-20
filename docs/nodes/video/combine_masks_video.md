@@ -21,11 +21,11 @@ CombineMasksVideo 노드는 모든 입력 마스크에 대해 픽셀별 최댓�
 1. "mask_videos" 입력에 마스크 비디오 소스들을 연결합니다 (리스트 형태로 여러 비디오 수용 가능).
 1. 워크플로우를 실행하여 마스크를 병합합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **mask_videos**: 병합할 마스크 비디오들의 리스트입니다. (VideoArtifact 및 VideoUrlArtifact 지원)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **combined_mask**: 병합된 마스크 비디오이며, 다른 노드에 연결할 수 있는 출력으로 제공됩니다.
 

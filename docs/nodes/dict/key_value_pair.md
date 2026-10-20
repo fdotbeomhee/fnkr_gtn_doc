@@ -23,12 +23,12 @@
 1. "value" 파라미터에 해당 키와 연결할 값을 설정합니다.
 1. 딕셔너리 입력을 필요로 하는 다른 노드에 "dictionary" 출력을 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **key**: 딕셔너리 키로 사용될 문자열 (string)
 - **value**: 키와 연결될 문자열 (string, 여러 줄 텍스트 지원)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **dictionary**: 단일 키-값 쌍을 포함하는 딕셔너리
 

@@ -26,14 +26,14 @@ VideoColorMatch 노드는 고급 색상 매칭 알고리즘을 사용하여 참�
 1. 강도(strength) 파라미터를 조정하여 효과 세기를 제어합니다.
 1. 워크플로우를 실행하여 색상 전송을 적용합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
-#### 입력 (Inputs)
+#### 입력 (Inputs) {: #inputs }
 
 - **reference_image**: 전송할 색상 팔레트를 제공하는 참조 이미지 (ImageArtifact 및 ImageUrlArtifact 지원)
 - **target_video**: 색상 전송을 적용할 대상 비디오 (VideoArtifact 및 VideoUrlArtifact 지원)
 
-#### 색상 매칭 설정 (Color Match Settings)
+#### 색상 매칭 설정 (Color Match Settings) {: #color-match-settings }
 
 - **transfer_method**: 사용할 처리 방식
 
@@ -55,7 +55,7 @@ VideoColorMatch 노드는 고급 색상 매칭 알고리즘을 사용하여 참�
     - 1.0 = 전체 색상 전송 (기본값)
     - 1.0 초과 = 효과 과장 및 강조
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 색상 특성이 전송된 색상 일치 비디오 (VideoUrlArtifact 형태)
 

@@ -25,7 +25,7 @@ Math 노드는 숫자에 대해 다양한 산술 및 수학 함수를 수행할 
 1. 입력값을 파라미터 A와 B에 연결합니다 (B는 이항 연산에만 필요합니다).
 1. 결과는 "result" 출력에서 확인할 수 있습니다.
 
-### 사용 가능한 연산 (Available Operations)
+### 사용 가능한 연산 (Available Operations) {: #available-operations }
 
 #### 이항 연산 (A와 B 입력 모두 필요)
 
@@ -48,7 +48,7 @@ Math 노드는 숫자에 대해 다양한 산술 및 수학 함수를 수행할 
 - 절댓값 (|A|)
 - 사인 (sin(A))
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **result**: 수학 연산의 계산 결과
 
@@ -61,7 +61,7 @@ Math 노드는 숫자에 대해 다양한 산술 및 수학 함수를 수행할 
 1. 두 개의 숫자 입력을 파라미터 A와 B에 연결합니다.
 1. 계산된 평균값이 "result" 출력으로 제공됩니다.
 
-## 구현 세부사항 (Implementation Details)
+## 구현 세부사항 (Implementation Details) {: #implementation-details }
 
 Math 노드는 다음 사항을 자동으로 처리합니다:
 

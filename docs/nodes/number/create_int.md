@@ -20,11 +20,11 @@ IntegerInput 노드는 정수(정수형) 숫자 값을 간편하게 입력할 �
 1. 워크플로우에 IntegerInput 노드를 추가합니다.
 1. 원하는 정수(integer) 값을 설정합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **integer**: 정수 값 (기본값은 0)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **integer**: 다른 노드에서 사용할 수 있는 정수 값
 

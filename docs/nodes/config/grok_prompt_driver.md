@@ -23,7 +23,7 @@ GrokPrompt 노드는 xAI의 Grok 모델에 대한 연결을 설정합니다.
 1. 워크플로에 GrokPrompt 노드를 추가합니다.
 1. 출력을 Grok 프롬프트 모델을 사용할 수 있는 노드(예: Agent)에 연결합니다!
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **model**: 사용할 모델. 기본값은 "grok-3-beta"이며, 선택 옵션으로 "grok-3-beta", "grok-3-fast-beta", "grok-3-mini-beta", "grok-3-mini-fast-beta", "grok-2-vision-1212"를 지원합니다.
 - **top_p**: 출력의 다양성을 제어 (기본값: 0.9)
@@ -33,7 +33,7 @@ GrokPrompt 노드는 xAI의 Grok 모델에 대한 연결을 설정합니다.
 - **use_native_tools**: 모델의 내장 도구를 사용할지 여부
 - **max_tokens**: 응답의 최대 토큰 길이
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **prompt_model_config**: 다른 노드에서 사용할 수 있도록 구성된 Grok 드라이버
 

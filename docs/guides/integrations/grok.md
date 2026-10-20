@@ -2,7 +2,7 @@
 
 Grok은 xAI에서 개발한 대형 언어 모델(LLM) 제품군입니다. GrokPrompt 구성 노드를 통해 이러한 모델에 접근할 수 있습니다. 하지만 이를 사용하려면 xAI 계정이 있어야 하고 API 키를 생성해야 합니다. xAI는 유료 서비스이며 이를 이용하려면 웹사이트에서 결제 정보를 설정해야 한다는 점에 유의하세요.
 
-## 계정 및 API 키 생성 (Account and API Key Creation)
+## 계정 및 API 키 생성 (Account and API Key Creation) {: #account-and-api-key-creation }
 
 xAI 계정용 API 키를 받으려면 먼저 xAI 계정이 *필요*합니다. 시작하려면 [https://x.ai](https://x.ai) 로 이동하세요.
 
@@ -12,7 +12,7 @@ xAI 계정용 API 키를 받으려면 먼저 xAI 계정이 *필요*합니다. �
 
 !!! info
 
-    이미 계정이 있는 경우 [2단계](#2-결제-정보-설정-set-up-billing)로 바로 이동하세요.
+    이미 계정이 있는 경우 [2단계](#set-up-billing)로 바로 이동하세요.
 
 ### 1. xAI 계정 생성
 
@@ -28,7 +28,7 @@ xAI 계정용 API 키를 받으려면 먼저 xAI 계정이 *필요*합니다. �
     <img src="../assets/grok_02_signup.png" alt="Signup" width="500"/>
     </p>
 
-### 2. 결제 정보 설정 (Set Up Billing)
+### 2. 결제 정보 설정 (Set Up Billing) {: #set-up-billing }
 
 !!! warning "결제 정보 등록 필수"
 
@@ -40,7 +40,7 @@ xAI 계정용 API 키를 받으려면 먼저 xAI 계정이 *필요*합니다. �
     <img src="../assets/grok_03_billing.png" alt="Billing" width="600"/>
 </p>
 
-### 3. API 키 생성 (Generate an API Key)
+### 3. API 키 생성 (Generate an API Key) {: #generate-an-api-key }
 
 1. API 키 섹션으로 이동합니다. 이동할 수 있는 여러 링크가 있습니다.
 
@@ -72,7 +72,7 @@ xAI 계정용 API 키를 받으려면 먼저 xAI 계정이 *필요*합니다. �
 
         신용카드 번호처럼 안전하게 취급하세요.
 
-## Griptape Nodes 설정에 API 키 추가 (Add Your API Key to Griptape Nodes Settings)
+## Griptape Nodes 설정에 API 키 추가 (Add Your API Key to Griptape Nodes Settings) {: #add-your-api-key-to-griptape-nodes-settings }
 
 !!! info "개요"
 

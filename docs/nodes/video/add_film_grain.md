@@ -23,7 +23,7 @@ AddFilmGrain 노드는 정교한 노이즈 생성 및 휘도(Luminance) 마스�
 1. 그레인 강도(grain_intensity), 휘도 임계값(luminance_threshold), 그레인 스케일(grain_scale) 파라미터를 조절합니다.
 1. 워크플로우를 실행하여 비디오에 필름 그레인을 추가합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **video**: 필름 그레인을 추가할 비디오 콘텐츠입니다. (VideoArtifact 및 VideoUrlArtifact 지원)
 
@@ -52,7 +52,7 @@ AddFilmGrain 노드는 정교한 노이즈 생성 및 휘도(Luminance) 마스�
     - **balanced**: 속도와 품질의 균형 잡힌 설정 (medium 프리셋, CRF 23)
     - **quality**: 최고 품질, 느린 처리 속도 (slow 프리셋, CRF 18)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **video**: 필름 그레인이 추가된 비디오이며, 다른 노드에 연결할 수 있는 출력으로 제공됩니다.
 

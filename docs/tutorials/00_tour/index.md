@@ -1,4 +1,4 @@
-# Lesson 1: 시작하기 (Getting Started)
+# Lesson 1: 시작하기 (Getting Started) {: #getting-started }
 
 Griptape Nodes에 오신 것을 환영합니다! 이 튜토리얼에서는 강력한 시각적 워크플로우 도구인 Griptape Nodes의 기본 사항을 안내합니다. 애플리케이션을 실행하고, 인터페이스를 탐색하고, 노드를 추가 및 연결하며, 첫 번째 AI 에이전트를 실행하는 방법을 배웁니다. 이 가이드를 마치면 이후 튜토리얼을 진행하는 데 필요한 기초 지식을 갖추게 됩니다.
 
@@ -75,7 +75,7 @@ Workflow Editor에 들어왔다면 잠시 인터페이스를 둘러보세요:
 
 ## 워크스페이스에 노드 추가하기
 
-노드를 생성하는 데는 세 가지 대화형 방식이 있습니다([Retained Mode](../../development/retained_mode.md)에서는 더 많은 방식 지원):
+노드를 생성하는 가장 빠른 방법은 다음과 같습니다. 에디터의 모든 방법은 [워크스페이스에서 노드 작업하기(Working with Nodes)](../../guides/editor/working_with_nodes.md#adding-nodes)를 참조하세요. 스크립트로 노드를 생성하려면 [Retained Mode](../../development/retained_mode.md)를 참조하세요:
 
 <div style="display: flex; justify-content: space-between; gap: 20px; margin-bottom: 30px;">
   <div style="flex: 1;">
@@ -87,19 +87,11 @@ Workflow Editor에 들어왔다면 잠시 인터페이스를 둘러보세요:
   </div>
 
 <div style="flex: 1;">
-    <p><strong>더블 클릭 (Double-Click)</strong>: 왼쪽 패널의 아무 노드나 더블 클릭하면 작업 공간 중앙에 자동으로 배치됩니다.</p>
+    <p><strong>Tab 또는 Shift+A</strong>: 커서를 플로우 에디터 위에 둔 상태에서 Tab 또는 Shift+A를 누르면 검색창이 나타납니다. 원하는 노드 이름을 입력하고 Enter를 누르면 생성됩니다.</p>
     <p align="center">
-      <img src="assets/create_node_dblClick.gif" alt="Double Click">
+      <img src="assets/create_node_spacebar.gif" alt="Tab or Shift+A Search">
     </p>
-    <h4 align="center">더블 클릭</h4>
-  </div>
-
-<div style="flex: 1;">
-    <p><strong>Shift+A 또는 더블 클릭 검색</strong>: 플로우 에디터에서 Shift+A를 누르거나 더블 클릭하면 검색창이 나타납니다. 원하는 노드 이름을 입력하고 Enter를 누르면 생성됩니다.</p>
-    <p align="center">
-      <img src="assets/create_node_spacebar.gif" alt="Shift+A or Double-Click">
-    </p>
-    <h4 align="center">Shift+A 또는 더블 클릭 검색</h4>
+    <h4 align="center">Tab 또는 Shift+A 검색</h4>
   </div>
 </div>
 

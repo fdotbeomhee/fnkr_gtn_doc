@@ -18,11 +18,11 @@ ExtractLastFrame 노드는 비디오의 마지막 프레임을 이미지로 추�
 1. `video` 파라미터에 입력을 연결하거나 비디오를 수동으로 선택합니다.
 1. `last_frame_image` 출력을 이미지 입력이 필요한 다른 노드에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **video**: 마지막 프레임을 추출할 비디오 콘텐츠 (VideoArtifact 및 VideoUrlArtifact 지원)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **last_frame_image**: 비디오에서 추출된 마지막 프레임 (ImageUrlArtifact 형태)
 

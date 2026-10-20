@@ -1,6 +1,6 @@
-# 엄격 모드 레퍼런스 (Strict Mode Reference)
+# 엄격 모드 레퍼런스 (Strict Mode Reference) {: #strict-mode-reference }
 
-엄격 모드(Strict Mode)는 노드가 워커 서브프로세스 격리 환경에서 문제없이 실행될 수 있는지를 사전 검증하는 진단 도구입니다.
+엄격 모드(Strict Mode)는 노드가 워커 서브프로세스 격리 환경에서 문제없이 실행될 수 있는지를 노드 실행 중에 검사하는 진단 도구입니다. 엄격 모드는 로드 시점에는 검사하지 않습니다.
 
 ## 엄격 모드 검사 항목
 

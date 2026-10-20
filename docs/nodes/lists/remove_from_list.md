@@ -24,7 +24,7 @@ RemoveFromList 노드는 다양한 기준에 따라 기존 리스트에서 항�
 1. 제거 방식에 따라 인덱스 또는 항목 값을 제공합니다.
 1. 출력은 지정된 항목이 제거된 리스트가 됩니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **items**: 항목을 제거할 대상 리스트 (리스트 입력)
 - **remove_item_by**: 항목 제거 방식 (선택 옵션: "first", "last", "index", "item")
@@ -32,7 +32,7 @@ RemoveFromList 노드는 다양한 기준에 따라 기존 리스트에서 항�
 - **index**: 제거할 위치 (remove_item_by가 "index"일 때만 표시됨)
 - **output**: 항목이 제거되어 수정된 리스트
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 원래 항목들에서 지정된 항목이 제외된 리스트
 

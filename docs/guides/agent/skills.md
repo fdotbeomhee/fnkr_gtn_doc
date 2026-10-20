@@ -1,4 +1,4 @@
-# 스킬 (Skills)
+# 스킬 (Skills) {: #skills }
 
 스킬은 에이전트에게 추가 지침이나 도메인 지식을 제공하는 마크다운 파일입니다. 시작 시 자동으로 로드되고 실행할 때마다 다시 로드되므로, 엔진을 재시작하지 않고도 수정한 내용이 즉시 적용됩니다.
 
@@ -55,7 +55,7 @@ description: Apply our house style when drafting or editing text.
 - Maximum sentence length: 25 words.
 ```
 
-## 핫 리로드 (Hot reload)
+## 핫 리로드 (Hot reload) {: #hot-reload }
 
 !!! tip "팁"
 

@@ -2,12 +2,12 @@
 
 Combine Lists 노드는 두 개의 리스트를 입력받아 하나의 평탄화된(flattened) 단일 리스트로 결합합니다.
 
-## 입력 (Inputs)
+## 입력 (Inputs) {: #inputs }
 
 - **List A** (list): 결합할 첫 번째 리스트
 - **List B** (list): 결합할 두 번째 리스트
 
-## 출력 (Outputs)
+## 출력 (Outputs) {: #outputs }
 
 - **Output** (list): 두 입력 리스트의 모든 항목이 순서대로 포함된 결합된 리스트
 
@@ -27,7 +27,7 @@ Combine Lists 노드는 두 개의 리스트를 입력받아 하나의 평탄화
 # Output: [1, 2]
 ```
 
-## 참고 사항 (Notes)
+## 참고 사항 (Notes) {: #notes }
 
 - 출력 리스트에서 항목의 순서가 그대로 유지됩니다.
 - 둘 중 하나라도 리스트가 아닌 경우 빈 리스트로 처리됩니다.

@@ -25,13 +25,13 @@ MergeImages 노드를 사용하면 다양한 레이아웃 옵션을 사용하여
 1. 레이아웃 스타일과 배치를 선택합니다.
 1. 병합된 이미지는 "output" 파라미터에서 확인할 수 있습니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
-#### 이미지 입력 (Image Input)
+#### 이미지 입력 (Image Input) {: #image-input }
 
 - **input_images**: 병합할 이미지 목록 (여러 이미지 소스에서 연결 가능)
 
-#### 레이아웃 설정 (Layout Settings)
+#### 레이아웃 설정 (Layout Settings) {: #layout-settings }
 
 - **layout_style**: 이미지 배열 스타일
 
@@ -44,13 +44,13 @@ MergeImages 노드를 사용하면 다양한 레이아웃 옵션을 사용하여
 
 - **spacing** (0-50, 기본값: 10): 이미지 간의 간격(픽셀)
 
-#### 스타일 옵션 (Styling Options)
+#### 스타일 옵션 (Styling Options) {: #styling-options }
 
 - **background_color** (16진수 색상 코드, 기본값: #ffffff): 병합된 이미지의 배경 색상
 - **border_radius** (0-20, 기본값: 0): 이미지 모서리의 둥근 반경
 - **padding** (0-100, 기본값: 20): 전체 구도 주변의 안쪽 여백(패딩)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 모든 입력 이미지가 결합된 병합 이미지
 

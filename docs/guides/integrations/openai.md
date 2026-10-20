@@ -2,7 +2,7 @@
 
 Griptape Nodes는 기본적으로 Griptape Cloud 계정과 해당 키를 통해 OpenAI 모델에 쉽게 접근할 수 있도록 제공하지만(설치 중에 자동으로 처리됨), 자체 OpenAI 계정에 직접 연결할 수도 있습니다. 이를 통해 사용량, 설정 및 권한을 완전히 직접 제어할 수 있습니다. 이를 원하는 경우 OpenAI API 키를 발급받는 것이 첫 번째 단계입니다.
 
-## 계정 및 API 키 생성 (Account and API Key Creation)
+## 계정 및 API 키 생성 (Account and API Key Creation) {: #account-and-api-key-creation }
 
 OpenAI 계정용 API 키를 받으려면 먼저 OpenAI 계정이 필요합니다. 시작하려면 [https://openai.com](https://openai.com) 으로 이동하세요.
 
@@ -12,7 +12,7 @@ OpenAI 계정용 API 키를 받으려면 먼저 OpenAI 계정이 필요합니다
 
 !!! info
 
-    이미 계정이 있는 경우 [2단계](#2-api-키-생성-create-an-api-key)로 바로 이동하세요.
+    이미 계정이 있는 경우 [2단계](#create-an-api-key)로 바로 이동하세요.
 
 ### 1. OpenAI 계정 생성
 
@@ -24,7 +24,7 @@ OpenAI 계정용 API 키를 받으려면 먼저 OpenAI 계정이 필요합니다
     <img src="../assets/openai_01_login_api_platform.png" alt="Login>Platform" width="300"/>
 </p>
 
-### 2. API 키 생성 (Create an API Key)
+### 2. API 키 생성 (Create an API Key) {: #create-an-api-key }
 
 1. 아직 접속하지 않은 경우 [https://openai.com/](https://openai.com/) 으로 돌아가 우측 상단의 **Log In** 버튼에서 **API Platform** 옵션을 선택합니다.
 
@@ -72,7 +72,7 @@ OpenAI 계정용 API 키를 받으려면 먼저 OpenAI 계정이 필요합니다
 
 1. **Done**을 클릭하여 키 창을 닫습니다.
 
-## Griptape Nodes 설정에 비밀 키 추가 (Add Your Secret Key to Griptape Nodes Settings)
+## Griptape Nodes 설정에 비밀 키 추가 (Add Your Secret Key to Griptape Nodes Settings) {: #add-your-secret-key-to-griptape-nodes-settings }
 
 !!! info "개요"
 

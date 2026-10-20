@@ -30,14 +30,14 @@ Pipeline Builder ──┐
 
 <img src="../assets/nodes/load-lora.png" alt="Load LoRA" width="480">
 
-### 입력 (Inputs)
+### 입력 (Inputs) {: #inputs }
 
 | 이름 | 유형 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
 | `file_path` | path | 예 | LoRA 파일의 절대 경로입니다. |
 | `weight` | float (0.0–1.0) | 아니오 | 이 LoRA의 영향력(가중치)이며, 기본값은 `1.0`입니다. |
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |

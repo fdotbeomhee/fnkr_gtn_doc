@@ -20,13 +20,13 @@ Search Web 도구는 웹을 검색하고 검색 결과에서 텍스트 콘텐츠
 1. 워크플로우에 Search Web 도구를 추가합니다.
 1. 출력을 웹 검색 결과가 필요한 노드에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **prompt**: 사용할 검색 쿼리
 - **summarize**: LLM이 텍스트를 요약하도록 할지 여부
 - **search_engine**: 사용할 검색 엔진. 참고: 일부 검색 엔진은 API 키가 필요합니다.
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 검색 결과에서 가져온 텍스트 콘텐츠
 

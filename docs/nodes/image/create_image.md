@@ -20,14 +20,14 @@ GenerateImage 노드는 Griptape Cloud 서비스를 활용하여 텍스트 프�
 1. 생성하고자 하는 이미지를 설명하는 텍스트 프롬프트를 입력합니다.
 1. 워크플로우를 실행합니다!
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **agent**: 프롬프트 및 이미지 생성 작업을 처리하는 에이전트 (Agent 또는 dict)
 - **image_generation_driver**: 이미지 생성에 사용할 드라이버 (기본값: None)
 - **prompt**: 생성할 이미지에 대한 텍스트 설명 (string)
 - **enhance_prompt**: 이미지 품질 향상을 위해 프롬프트를 자동 보강할지 여부 (boolean, 기본값: True)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: ImageUrlArtifact 형식의 생성된 이미지
 

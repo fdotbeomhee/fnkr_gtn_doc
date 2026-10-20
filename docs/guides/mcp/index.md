@@ -1,8 +1,8 @@
-# 에이전트를 세상과 연결하기
+# 에이전트를 세상과 연결하기 {: #connect-your-agent-to-the-world }
 
 MCP(Model Context Protocol)는 에이전트가 다양한 앱 및 서비스와 대화할 수 있도록 해주는 범용 번역기와 같습니다. 에이전트가 자신만의 작은 세계에 갇혀 있는 대신, MCP를 사용하면 실제 도구를 활용하고, 실제 데이터에 접근하며, 실제 애플리케이션과 함께 작업할 수 있습니다.
 
-## 에이전트가 MCP로 무엇을 할 수 있나요?
+## 에이전트가 MCP로 무엇을 할 수 있나요? {: #what-can-your-agent-do-with-mcp }
 
 MCP를 사용하면 에이전트가 다음과 같은 작업을 수행할 수 있습니다:
 
@@ -13,7 +13,7 @@ MCP를 사용하면 에이전트가 다음과 같은 작업을 수행할 수 있
 - **데이터베이스 관리** - 데이터베이스에서 정보를 저장하고 검색합니다
 - **기억 유지** - 대화 간에 중요한 정보를 추적하고 기억합니다
 
-## 이것이 중요한 이유
+## 이것이 중요한 이유 {: #why-this-matters }
 
 MCP 이전의 에이전트는 창문이 없는 방에 갇힌 똑똑한 비서와 같았습니다. 이제는 그 비서에게 건물 전체의 열쇠를 주는 것과 같습니다. 어디든 갈 수 있고, 어떤 도구든 사용할 수 있으며, 실제 작업을 도와줄 수 있습니다.
 
@@ -24,7 +24,7 @@ MCP 이전의 에이전트는 창문이 없는 방에 갇힌 똑똑한 비서와
 - "팀에 프로젝트 업데이트를 보내줘"라고 하면 Slack 채널에 게시합니다
 - "내 문서를 정리해 줘"라고 요청하면 실제로 파일을 이동하고 정렬합니다
 
-## 연결 유형
+## 연결 유형 {: #connection-types }
 
 에이전트가 다른 애플리케이션에 연결할 수 있는 공식적인 방법은 두 가지가 있습니다:
 
@@ -40,12 +40,12 @@ MCP 이전의 에이전트는 창문이 없는 방에 갇힌 똑똑한 비서와
 
     **적합한 용도**: 웹 기반 애플리케이션, 원격 서비스 및 실시간 통신
 
-### 추가 옵션
+### 추가 옵션 {: #additional-options }
 
 - **[Server-Sent Events (SSE)](./connection_types/sse.md)** - ⚠️ 지원 중단됨 (이제 Streamable HTTP의 일부임)
 - **[WebSocket](./connection_types/websocket.md)** - 커스텀 전송 방식 (클라이언트/서버에 따라 구현될 수 있음)
 
-## 시작할 준비가 되셨나요?
+## 시작할 준비가 되셨나요? {: #ready-to-get-started }
 
 1. **[시작하기 튜토리얼](./getting_started.md)** - Fetch MCP 서버를 사용하는 단계별 튜토리얼
 1. **[에이전트와 함께 MCPTask 사용하기](./mcp_task_agents.md)** - AI 에이전트가 이러한 도구를 사용하도록 만드는 방법
@@ -53,12 +53,12 @@ MCP 이전의 에이전트는 창문이 없는 방에 갇힌 똑똑한 비서와
 1. **[에이전트와 함께 로컬 모델 사용하기](./advanced_local_models.md)** - 민감한 데이터 처리를 위해 로컬 AI 모델 사용하기
 1. **[예제 MCP 서버](./servers/index.md)** - 몇 가지 예제 서버 설정 가이드
 
-## 더 많은 정보가 필요하신가요?
+## 더 많은 정보가 필요하신가요? {: #need-more-information }
 
 - [공식 MCP 문서](https://modelcontextprotocol.io/docs/getting-started/intro) - MCP의 기반 기술에 대해 자세히 알아보기
 - [MCP 서버 저장소](https://github.com/modelcontextprotocol/servers) - 연결 가능한 더 많은 앱 찾기
 - [MCP 사양](https://modelcontextprotocol.io/specification/2025-06-18) - 개발자를 위한 기술 세부 사양
 
-## 첫 번째 앱을 연결할 준비가 되셨나요?
+## 첫 번째 앱을 연결할 준비가 되셨나요? {: #ready-to-connect-your-first-app }
 
 [시작하기 가이드](./getting_started.md)부터 시작해 보세요 - 단 몇 분 만에 첫 번째 앱을 연결하는 방법을 안내해 드립니다!

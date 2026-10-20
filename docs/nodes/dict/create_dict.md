@@ -22,12 +22,12 @@ Dictionary 노드는 별도의 키(Key) 목록과 값(Value) 목록을 제공하
 1. 키와 값 목록을 설정합니다.
 1. 구조화된 데이터가 필요한 다른 노드에 dictionary 출력을 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **keys**: 딕셔너리 키로 사용될 문자열 목록
 - **values**: 각 키에 해당하는 값 목록 (문자열, 숫자, 불리언 등)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **dict**: 모든 키-값 쌍이 포함된 생성된 딕셔너리
 

@@ -1,4 +1,4 @@
-# 파일 확장자 디렉터리 (File Extension Directories)
+# 파일 확장자 디렉터리 (File Extension Directories) {: #file-extension-directories }
 
 `file_extension_directories`는 파일 확장자를 파일 유형별 라우팅에 사용되는 폴더 조각으로 매핑하는 프로젝트 템플릿 설정입니다. 상황 매크로가 파생 변수 `{file_extension_directory}`를 참조할 때 프로젝트 시스템은 이 테이블에서 파일의 확장자를 조회하고 연결된 값으로 치환합니다.
 

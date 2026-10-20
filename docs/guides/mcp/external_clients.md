@@ -18,7 +18,7 @@ http://localhost:8125/mcp/
 INFO MCP server listening at http://127.0.0.1:8125/mcp/
 ```
 
-## 환경 변수 재정의 (Overrides)
+## 환경 변수 재정의 (Overrides) {: #overrides }
 
 호스트와 포트는 다음 환경 변수를 통해 제어할 수 있습니다:
 
@@ -117,6 +117,23 @@ npx -y @modelcontextprotocol/inspector
 ```
 
 URL 필드에 `http://localhost:8125/mcp/`를 붙여넣고 전송 방식으로 **Streamable HTTP**를 선택합니다. 연결이 `TypeError: NetworkError when attempting to fetch resource` 오류로 실패하는 경우 대부분 CORS 문제입니다. 엔진의 MCP 서버는 현재 `Access-Control-Allow-Origin` 헤더를 내보내지 않으므로 브라우저의 교차 출처(cross-origin) 요청이 차단됩니다. 브라우저 대신 위의 CLI 명령을 사용하거나 브라우저 보안 설정을 완화한 상태로 inspector를 실행하세요.
+
+## 파라미터 값 (Parameter values) {: #parameter-values }
+
+파라미터 값과 플로우 변수 값은 일반 JSON으로 전달됩니다. JSON에 없는 형식의 값은 가장 가까운 JSON 형태로 전달됩니다. 튜플과 집합은 리스트로, 열거형(enum)은 해당 값으로, 경로는 텍스트로, 아티팩트 및 기타 객체는 필드로 전달됩니다:
+
+```json
+{"type": "ImageUrlArtifact", "value": "https://example.com/cat.png"}
+```
+
+값을 다시 보낼 때도 일반 JSON으로 보냅니다. 두 종류의 딕셔너리는 감싸진 형태로 전달되며, 받은 형태 그대로 되돌려 보내야 합니다. 자체 `"$type"` 키를 가진 딕셔너리는 그 키가 타입으로 읽히지 않도록 감싸집니다. 키를 텍스트로 변환하면 충돌하는 딕셔너리(예: `1`과 `"1"`)는 항목이 하나도 손실되지 않도록 키-값 쌍으로 전달됩니다:
+
+```json
+{"$type": "builtins:dict", "$value": {"$type": "app.bsky.feed.post", "text": "hi"}}
+{"$type": "builtins:dict", "$value": [[1, "a"], ["1", "b"]]}
+```
+
+열린 파일처럼 JSON으로 작성할 수 없는 값은 표시용 필드에 한해 Python `str()` 결과로 전달됩니다. 예: `"<_io.TextIOWrapper name='notes.txt' mode='r' encoding='UTF-8'>"`. 그 외의 위치에서 결과를 보낼 수 없으면 요청은 해당 값의 이름을 밝히는 실패 메시지와 함께 실패합니다.
 
 ## 워크플로우 구축 스킬 (Skill) 설치하기
 

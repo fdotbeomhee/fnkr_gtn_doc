@@ -1,4 +1,4 @@
-# 모범 사례 및 오류 처리 (Best Practices and Error Handling)
+# 모범 사례 및 오류 처리 (Best Practices and Error Handling) {: #best-practices-and-error-handling }
 
 커스텀 노드를 개발할 때 예외를 안전하게 처리하고 사용자 친화적인 피드백을 제공하는 모범 사례입니다.
 
@@ -36,3 +36,5 @@ class SafeApiNode(ControlNode):
 ## 비밀 정보 (Secrets) 다루기
 
 API 키나 토큰 같은 민감한 정보는 워크플로우 파일에 평문으로 저장되지 않도록 `.env` 환경 변수 또는 시크릿 매니저를 통해 관리합니다.
+
+시크릿 값은 `GriptapeNodes.SecretsManager()`를 직접 호출하지 않고 `GetSecretValueRequest`로 읽습니다. 이 요청은 `GriptapeNodes.handle_request(GetSecretValueRequest(key=...))` 형태로 전달하며, 워커에서 노드가 실행되는 동안에는 매니저 접근자가 거부되므로 이 방식을 사용해야 합니다.

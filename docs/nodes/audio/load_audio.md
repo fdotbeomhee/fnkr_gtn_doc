@@ -19,11 +19,11 @@ LoadAudio 노드는 오디오 파일을 워크플로로 가져올 수 있게 해
 1. 워크플로에 LoadAudio 노드를 추가합니다.
 1. 오디오 소스(예: Transcribe Audio 노드 등)에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **audio**: 로드할 오디오 (다른 노드의 출력에 연결할 수 있음)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **audio**: 워크플로의 다른 노드에서 사용할 수 있는 로드된 오디오
 

@@ -1,4 +1,4 @@
-# AI 제공자 (AI Providers)
+# AI 제공자 (AI Providers) {: #ai-providers }
 
 Griptape Nodes는 [에이전트](../index.md) 및 워크플로우의 **Agent 노드**를 위해 여러 AI 제공자를 지원합니다. 기본적으로 Griptape Cloud가 제공되며, 로컬 제공자나 OpenAI 호환 엔드포인트를 추가 옵션으로 구성할 수 있습니다.
 

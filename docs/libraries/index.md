@@ -1,8 +1,8 @@
-# 노드 라이브러리 (Node Libraries)
+# 노드 라이브러리 (Node Libraries) {: #node-libraries }
 
 이 섹션에서는 Griptape Nodes를 확장하는 설치 가능한 노드 번들인 **노드 라이브러리(node libraries)**를 다룹니다. [표준 라이브러리(Standard Library)](../nodes/overview.md)는 기본적으로 설치되어 제공되며, 다른 모든 라이브러리는 자체 Git 리포지토리에 호스팅되어 에디터의 **Libraries** 패널 또는 `gtn` CLI를 통해 설치할 수 있습니다.
 
-설치, 업데이트, 종속성 격리 및 공유/격리 모드(Shared/Isolated modes)의 작동 방식에 대한 자세한 내용은 [라이브러리 가이드](../guides/libraries.md)를 참조하세요.
+설치, 업데이트, 종속성 격리 및 프로세스 격리(process isolation)의 작동 방식에 대한 자세한 내용은 [라이브러리 가이드](../guides/libraries.md)를 참조하세요.
 
 ## 문서화된 라이브러리 목록
 
@@ -31,7 +31,7 @@
 gtn libraries download <git_url>
 ```
 
-각 라이브러리의 종속성은 엔진 및 다른 모든 라이브러리와 격리되므로 여러 라이브러리를 안전하게 조합하여 설치할 수 있습니다. 자세한 내용은 [공존 보장(Coexistence guarantees)](../guides/libraries.md#공존-보장-coexistence-guarantees)을 참조하세요.
+각 라이브러리의 종속성은 엔진 및 다른 모든 라이브러리와 격리되므로 여러 라이브러리를 안전하게 조합하여 설치할 수 있습니다. 자세한 내용은 [공존 보장(Coexistence guarantees)](../guides/libraries.md#coexistence-guarantees)을 참조하세요.
 
 ## 문서 구성 방식
 

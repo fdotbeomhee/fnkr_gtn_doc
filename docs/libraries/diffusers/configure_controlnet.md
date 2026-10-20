@@ -20,7 +20,7 @@ Load Image → [Configure ControlNet] → ControlNet Pipeline → Generate Media
 
 <img src="../assets/nodes/configure-controlnet.png" alt="Configure ControlNet" width="480">
 
-### 입력 (Inputs)
+### 입력 (Inputs) {: #inputs }
 
 | 이름 | 유형 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
@@ -28,7 +28,7 @@ Load Image → [Configure ControlNet] → ControlNet Pipeline → Generate Media
 | `controlnet_conditioning_scale` | float (0.0–1.0) | 아니요 | 이 ControlNet의 영향력 강도 (기본값: `1.0`). |
 | `controlnet_model` | HF repo picker | 예 | 사용할 ControlNet 모델. 제공업체에 따라 선택 항목이 업데이트됩니다. |
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |

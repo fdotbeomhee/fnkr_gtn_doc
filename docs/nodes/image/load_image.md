@@ -19,11 +19,11 @@ LoadImage는 이미지를 워크플로우로 가져올 수 있게 해주는 기�
 1. 워크플로우에 LoadImage 노드를 추가합니다.
 1. 이미지 소스(예: CreateImage)에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **image**: 로드할 이미지 (다른 노드의 출력에 연결 가능)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **image**: 워크플로우의 다른 노드에서 사용할 수 있도록 로드된 이미지
 

@@ -19,7 +19,7 @@ AnthropicPrompt 노드는 Anthropic의 AI 모델(예: Claude)에 대한 연결�
 1. 워크플로에 AnthropicPrompt 노드를 추가합니다.
 1. 이 노드의 출력을 Claude와 같은 Anthropic 프롬프트 모델을 사용할 수 있는 노드(예: Agent)에 연결합니다!
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **model**: 사용할 모델 (기본값: "claude-3-7-sonnet-latest")
 - **stream**: 응답을 생성되는 즉시 실시간으로 수신할지(true), 한 번에 모두 수신할지(false) 여부
@@ -30,7 +30,7 @@ AnthropicPrompt 노드는 Anthropic의 AI 모델(예: Claude)에 대한 연결�
 - **top_p**: 출력의 다양성을 제어 (temperature와 유사)
 - **top_k**: 가능성이 가장 높은 토큰에 대한 집중도를 제어
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **prompt_model_config**: 다른 노드에서 사용할 수 있도록 구성된 Anthropic 드라이버
 

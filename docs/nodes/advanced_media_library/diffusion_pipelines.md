@@ -13,7 +13,7 @@ Diffusion Pipeline 시스템은 효율적인 이미지 생성을 위해 서로 �
 
 이러한 모듈식 접근 방식을 통해 파이프라인을 한 번만 구성하고 여러 번 재사용할 수 있어 성능과 리소스 효율성을 향상시킬 수 있습니다. 이 시스템은 동적 파라미터를 통해 다양한 제공업체(Provider)와 모델을 지원합니다.
 
-## 지원되는 제공업체 (Supported Providers)
+## 지원되는 제공업체 (Supported Providers) {: #supported-providers }
 
 Diffusion Pipeline Builder는 여러 AI 모델 제공업체를 지원합니다:
 
@@ -57,7 +57,7 @@ Diffusion Pipeline 시스템은 두 개의 노드로 구성된 워크플로를 �
     - 생성 파라미터(프롬프트, 크기, 스텝 수 등)를 구성합니다.
     - 런타임 노드를 실행하여 이미지를 생성합니다.
 
-### Pipeline Builder 파라미터 (Pipeline Builder Parameters)
+### Pipeline Builder 파라미터 (Pipeline Builder Parameters) {: #pipeline-builder-parameters }
 
 Builder 노드는 선택된 제공업체에 따라 동적으로 변경되는 파라미터를 제공합니다:
 
@@ -65,7 +65,7 @@ Builder 노드는 선택된 제공업체에 따라 동적으로 변경되는 파
 - **제공업체별 파라미터**: 모델 선택, LoRA 구성, 최적화 설정
 - **pipeline**: 캐시된 파이프라인 구성이 포함된 출력 연결
 
-### 런타임 파라미터 (Runtime Parameters)
+### 런타임 파라미터 (Runtime Parameters) {: #runtime-parameters }
 
 런타임 노드의 파라미터는 연결된 파이프라인을 기반으로 동적으로 생성됩니다:
 
@@ -87,7 +87,7 @@ Builder 노드는 선택된 제공업체에 따라 동적으로 변경되는 파
 - **실시간 미리보기 (Real-time Previews)**: 생성 중 중간 이미지 미리보기를 제공합니다(추론 속도가 다소 느려질 수 있음).
 - **연결 유지 (Connection Preservation)**: 런타임 노드는 파이프라인이 변경되어도 파라미터 연결을 유지합니다.
 
-## 수동 메모리 설정 (Manual Memory Settings)
+## 수동 메모리 설정 (Manual Memory Settings) {: #manual-memory-settings }
 
 Diffusion Pipeline Builder는 기본적으로 `memory_optimization_strategy`가 **Manual**로 설정되어 제공됩니다. Manual 모드가 기본값인 이유는 Automatic 전략이 다소 보수적이기 때문입니다. Automatic 모드는 모델을 적재하는 데 필요한 모든 최적화를 활성화하므로 고성능 GPU에서 병목을 유발하고 생성 속도를 늦출 수 있습니다. 반면 수동 모드는 [🤗 Diffusers 메모리 최적화 개념](https://huggingface.co/docs/diffusers/main/en/optimization/memory)에 대한 이해가 필요한 일련의 토글 옵션을 제공합니다.
 
@@ -139,7 +139,7 @@ Automatic 모드는 감지된 디바이스에 모델을 맞추는 데 필요한 
 
 기본 개념에 대한 자세한 내용은 [🤗 Diffusers 메모리 최적화 가이드](https://huggingface.co/docs/diffusers/main/en/optimization/memory)를 참조하세요.
 
-## 성능 최적화 (Performance Optimization)
+## 성능 최적화 (Performance Optimization) {: #performance-optimization }
 
 - **파이프라인 재사용**: 하나의 Builder에 여러 런타임 노드를 연결하여 한 번 빌드하고 여러 번 생성하세요.
 - **캐시 관리**: 파이프라인은 자동으로 캐시되어 워크플로 실행 간에 재사용됩니다.

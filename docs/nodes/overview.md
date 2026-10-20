@@ -1,4 +1,4 @@
-# 표준 라이브러리 (Standard Library)
+# 표준 라이브러리 (Standard Library) {: #standard-library }
 
 이 문서는 Griptape Nodes와 함께 기본 제공되는 **표준 라이브러리**(`Griptape Nodes Library`)의 노드 레퍼런스입니다. 각 노드의 개별적인 기능, 고유한 특징, 그리고 노드 간의 상호작용 방식에 초점을 맞추어 다음 내용을 설명합니다:
 

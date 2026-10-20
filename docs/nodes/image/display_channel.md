@@ -25,12 +25,12 @@ DisplayChannel 노드는 입력 이미지에서 특정 색상 채널(빨간색, 
 1. "channel" 드롭다운에서 원하는 채널을 선택합니다 (기본값: "red").
 1. 생성된 채널 이미지가 "output" 파라미터를 통해 출력됩니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **input_image**: 마스크를 추출할 원본 이미지 (다른 이미지 노드에서 연결 가능)
 - **channel**: 마스크로 추출할 채널 (red, green, blue, alpha) - 기본값: "red"
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 입력 이미지의 선택된 채널로부터 생성된 그레이스케일 마스크 이미지
 

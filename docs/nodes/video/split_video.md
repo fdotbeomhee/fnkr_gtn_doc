@@ -24,7 +24,7 @@ SplitVideo 노드는 타임코드(timecode)를 사용하여 비디오를 여러 
 1. "timecodes" 파라미터에 타임코드를 입력합니다.
 1. 워크플로우를 실행하여 비디오를 여러 세그먼트로 분할합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **video**: 분할할 비디오 (VideoArtifact 및 VideoUrlArtifact 지원)
 
@@ -55,7 +55,7 @@ SplitVideo 노드는 타임코드(timecode)를 사용하여 비디오를 여러 
     ]
     ```
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **split_videos**: 분할된 비디오 세그먼트 목록 (VideoUrlArtifact 배열)
 - **logs**: 처리 로그 및 상세 이벤트

@@ -22,7 +22,7 @@ AdjustMaskSize 노드는 마스크의 경계를 팽창(Dilation, 확장)하거�
 1. "adjustment" 슬라이더를 조절하여 원하는 확장 또는 축소 값을 설정합니다.
 1. 워크플로우를 실행하여 마스크 비디오를 처리합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **mask_video**: 크기를 조절할 마스크 비디오입니다. (VideoArtifact 및 VideoUrlArtifact 지원)
 
@@ -32,7 +32,7 @@ AdjustMaskSize 노드는 마스크의 경계를 팽창(Dilation, 확장)하거�
     - 음수 값 (-25 ~ -1): 마스크를 축소합니다 (침식).
     - 0: 변경 없이 원본 그대로 통과시킵니다 (처리 건너뜀).
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output_mask**: 크기가 조절된 마스크 비디오이며, 다른 노드에 연결할 수 있는 출력으로 제공됩니다.
 

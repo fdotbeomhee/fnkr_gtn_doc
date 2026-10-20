@@ -1,4 +1,4 @@
-# 온프레미스 빠른 시작 가이드 (On-Premises Quick Start)
+# 온프레미스 빠른 시작 가이드 (On-Premises Quick Start) {: #on-premises-quick-start }
 
 이 가이드는 완전한 온프레미스 배포 환경을 구축하는 가장 빠른 경로를 제공합니다. 사내 네트워크 내의 단일 [Admin Server](admin_server.md), [Admin Dashboard](admin_dashboard.md)에서 발급된 라이선스 좌석, 그리고 해당 서버를 통해서만 Griptape Cloud에 접근하는 데스크톱 애플리케이션으로 구성됩니다. 각 인스턴스는 `cloud.griptape.ai` 대신 Admin Server를 가리키므로 관리할 아웃바운드 송신 규칙 하나와 아웃바운드 트래픽 감사 지점 하나만 유지하면 됩니다.
 
@@ -54,7 +54,7 @@ export GT_CLOUD_API_KEY="gt-..."
 
 !!! note "기본값을 신뢰하기 전에 버전을 확인하세요"
 
-    `./server -version`을 실행하세요. 기본 설정만으로 안전하게 구동되는 것은 Admin Server 0.3.0 이상입니다. 이전 버전에서는 `read_timeout` 및 `write_timeout`이 `30s`로 기본 설정되어 스트리밍 응답이 중간에 끊길 수 있습니다. 자세한 설정은 [Admin Server: 구성](admin_server.md#구성-configuration)을 참조하세요.
+    `./server -version`을 실행하세요. 기본 설정만으로 안전하게 구동되는 것은 Admin Server 0.3.0 이상입니다. 이전 버전에서는 `read_timeout` 및 `write_timeout`이 `30s`로 기본 설정되어 스트리밍 응답이 중간에 끊길 수 있습니다. 자세한 설정은 [Admin Server: 구성](admin_server.md#configuration)을 참조하세요.
 
 설정을 변경하려면 템플릿을 복사하여 수정하세요:
 
@@ -64,7 +64,7 @@ cp config.example.yaml config.yaml
 
 설정은 기본값 → 설정 파일 → 환경 변수 순으로 우선순위가 결정되며 환경 변수가 항상 최우선 적용됩니다.
 
-파일에는 `server`, `upstream`, `logging`, `forwarding` 4개 블록이 있습니다. 키별 레퍼런스와 환경 변수 대응표는 [Admin Server: 구성](admin_server.md#구성-configuration)을 참조하세요.
+파일에는 `server`, `upstream`, `logging`, `forwarding` 4개 블록이 있습니다. 키별 레퍼런스와 환경 변수 대응표는 [Admin Server: 구성](admin_server.md#configuration)을 참조하세요.
 
 ## 4. 시작 및 검증
 
@@ -95,7 +95,7 @@ API 키가 누락되었거나 유효하지 않거나 업스트림에 접근할 �
 
 각 토큰은 **단 한 번** 표시됩니다. 복사하여 사용자에게 전달하세요. 토큰을 분실한 경우 해당 라이선스에서 **Reissue**를 사용하여 새 토큰을 생성합니다.
 
-라이선스 좌석이 사용할 수 있는 기능(라이브러리, 노드, 프로젝트, 모델)을 제한하려는 경우 사이드바의 해당 메뉴에서 **권한 템플릿(permission templates)**과 **액세스 그룹(access groups)**을 먼저 생성하세요. 키 생성 시 둘 다 바로 할당할 수 있어 사후 설정보다 편리합니다. Griptape에서 제공하는 읽기 전용 관리형 템플릿을 그대로 연결할 수도 있습니다. [Admin Dashboard: 권한 에디터](admin_dashboard.md#권한-에디터-permission-editor)를 참조하세요.
+라이선스 좌석이 사용할 수 있는 기능(라이브러리, 노드, 프로젝트, 모델)을 제한하려는 경우 사이드바의 해당 메뉴에서 **권한 템플릿(permission templates)**과 **액세스 그룹(access groups)**을 먼저 생성하세요. 키 생성 시 둘 다 바로 할당할 수 있어 사후 설정보다 편리합니다. Griptape에서 제공하는 읽기 전용 관리형 템플릿을 그대로 연결할 수도 있습니다. [Admin Dashboard: 권한 에디터](admin_dashboard.md#permission-editor)를 참조하세요.
 
 ## 6. 워크스테이션에 Griptape Nodes 배포
 
@@ -128,8 +128,8 @@ API 키가 누락되었거나 유효하지 않거나 업스트림에 접근할 �
 
 기타 문제(`502` 응답, `403 {"error":"path not permitted"}`, 시작 실패, 업로드 오류, 활성화 문제 등)는 다음 문서를 참조하세요:
 
-- [Admin Server: 문제 해결](admin_server.md#문제-해결-troubleshooting) (운영자 측)
-- [Admin Server 사용하기: 문제 해결](using_the_admin_server.md#문제-해결-troubleshooting) (사용자 활성화 측)
+- [Admin Server: 문제 해결](admin_server.md#troubleshooting) (운영자 측)
+- [Admin Server 사용하기: 문제 해결](using_the_admin_server.md#troubleshooting) (사용자 활성화 측)
 
 ## 관련 문서
 
@@ -137,4 +137,4 @@ API 키가 누락되었거나 유효하지 않거나 업스트림에 접근할 �
 - [Admin Server](admin_server.md): 구성, 환경 변수 및 문제 해결
 - [Admin Dashboard](admin_dashboard.md): 라이선스 키, 액세스 그룹, 권한 템플릿
 - [Admin Server 사용하기](using_the_admin_server.md): 최종 사용자 활성화 과정
-- [아키텍처: 온프레미스 구성](../architecture.md#온프레미스-구성): Admin Server의 네트워크 위치
+- [아키텍처: 온프레미스 구성](../architecture.md#on-premises-configuration): Admin Server의 네트워크 위치

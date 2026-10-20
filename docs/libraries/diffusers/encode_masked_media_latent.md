@@ -22,7 +22,7 @@ Paint Mask ──┘
 
 <img src="../assets/nodes/encode-masked-media.png" alt="Encode Masked Media Latent" width="480">
 
-### 입력 (Inputs)
+### 입력 (Inputs) {: #inputs }
 
 | 이름 | 유형 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
@@ -31,7 +31,7 @@ Paint Mask ──┘
 | `mask` | `ImageArtifact` / `ImageUrlArtifact` | 예 | 바이너리 마스크 — **흰색 픽셀 = 인페인트 영역**, 검은색 = 원본 유지. |
 | `strength` | float (0.0–1.0) | 아니요 | 인페인트 디노이징 강도 (기본값: `1.0`). 값이 낮을수록 원본을 더 많이 보존합니다. |
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |

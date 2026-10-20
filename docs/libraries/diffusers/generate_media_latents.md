@@ -21,7 +21,7 @@ Pipeline Builder → Create Noise Latents → [Generate Media Latents] → Decod
 
 <img src="../assets/nodes/generate-media-latents.png" alt="Generate Media Latents" width="480">
 
-### 입력 (Inputs)
+### 입력 (Inputs) {: #inputs }
 
 | 이름 | 유형 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
@@ -30,7 +30,7 @@ Pipeline Builder → Create Noise Latents → [Generate Media Latents] → Decod
 | `controlnet_parameters` | `control_parameters` | `pipeline`이 ControlNet 파이프라인인 경우에만 필수 | ControlNet Pipeline 노드의 `control_parameters` 출력에서 연결합니다. |
 | `additional_parameters` | list[dict] | 아니오 | 파이프라인 호출에 전달되는 일반적인 제공업체별 kwargs입니다. |
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |
@@ -39,7 +39,7 @@ Pipeline Builder → Create Noise Latents → [Generate Media Latents] → Decod
 | `progress` | progress bar | 스텝 카운터(진행률 표시줄)입니다. |
 | `logs` | str | 스텝별 타이밍 로그입니다. |
 
-## 파라미터 (Parameters)
+## 파라미터 (Parameters) {: #parameters }
 
 ### Generation *(동적 — 제공업체별)*
 
@@ -53,7 +53,7 @@ Pipeline Builder → Create Noise Latents → [Generate Media Latents] → Decod
 | `num_inference_steps` | int (기본값 `20`) | 노이즈 제거 스케줄의 길이(스텝 수)입니다. |
 | `seed` | int | 재현성을 위한 시드값입니다. |
 
-### 다단계 / 부분 노이즈 제거 (Multi-stage / partial denoise)
+### 다단계 / 부분 노이즈 제거 (Multi-stage / partial denoise) {: #multi-stage-partial-denoise }
 
 | 이름 | 유형 | 기본값 | 설명 |
 | --- | --- | --- | --- |

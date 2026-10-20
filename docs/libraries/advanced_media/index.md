@@ -1,4 +1,4 @@
-# Advanced Media 라이브러리 (Advanced Media Library)
+# Advanced Media 라이브러리 (Advanced Media Library) {: #advanced-media-library }
 
 모델을 **로컬**에서 실행하는 고급 미디어 생성 및 조작 노드 모음입니다. 디퓨전 파이프라인, 이미지 및 비디오 전처리(깊이, 윤곽선, 포즈, 세그멘테이션), LoRA 툴링, 얼굴 감지 기능 등을 제공합니다.
 
@@ -8,7 +8,7 @@
 
 ## 설치 방법
 
-Advanced Media 라이브러리는 `gtn init` 실행 시 설치 여부를 묻습니다. 이때 등록하거나 나중에 `gtn init`을 다시 실행하여 `y`를 입력할 수 있습니다. 자세한 방법은 [자주 묻는 질문(FAQ)](../../faq.md#초기-설정-후-advanced-media-library를-설치하려면-어떻게-해야-하나요)을 참조하세요.
+Advanced Media 라이브러리는 `gtn init` 실행 시 설치 여부를 묻습니다. 이때 등록하거나 나중에 `gtn init`을 다시 실행하여 `y`를 입력할 수 있습니다. 자세한 방법은 [자주 묻는 질문(FAQ)](../../faq.md#how-do-i-install-the-advanced-media-library-after-initial-setup)을 참조하세요.
 
 또는 다른 라이브러리와 마찬가지로 에디터에서 **Manage → Library Management**를 열고 **Add Library**를 클릭한 후 다음 URL을 붙여넣어 설치할 수 있습니다:
 

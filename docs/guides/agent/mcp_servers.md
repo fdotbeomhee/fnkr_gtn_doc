@@ -1,4 +1,4 @@
-# MCP 서버 (MCP Servers)
+# MCP 서버 (MCP Servers) {: #mcp-servers }
 
 **MCP servers** 드롭다운을 사용하면 대화를 위해 하나 이상의 MCP 서버를 에이전트에 연결할 수 있습니다. 이를 통해 구성된 서버에 따라 파일, 웹 검색, Blender, Maya 등 다양한 외부 도구에 에이전트가 접근할 수 있습니다.
 

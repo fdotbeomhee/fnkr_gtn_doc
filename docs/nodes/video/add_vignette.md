@@ -25,7 +25,7 @@ AddVignette 노드는 비디오에 비네트(Vignette) 효과를 추가하여 �
 1. 가장자리를 어둡게 하는 "forward" 모드와 밝게 하는 "backward" 모드 중 선택합니다.
 1. 워크플로우를 실행하여 비네트 효과를 적용합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **video**: 비네트를 추가할 비디오 콘텐츠입니다. (VideoArtifact 및 VideoUrlArtifact 지원)
 
@@ -65,7 +65,7 @@ AddVignette 노드는 비디오에 비네트(Vignette) 효과를 추가하여 �
     - **balanced**: 속도와 품질의 균형 잡힌 설정 (medium 프리셋, CRF 23)
     - **quality**: 최고 품질, 느린 처리 속도 (slow 프리셋, CRF 18)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **video**: 비네트 효과가 적용된 비디오이며, 다른 노드에 연결할 수 있는 출력으로 제공됩니다.
 

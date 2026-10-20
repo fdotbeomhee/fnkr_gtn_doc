@@ -20,7 +20,7 @@ Agent 노드를 사용하면 도구(Tools) 및 규칙 세트(Rulesets)와 같은
 1. 워크플로에 Agent 노드를 추가합니다.
 1. 에이전트의 기능(도구 및 규칙 세트)을 구성합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **agent**: 기존 Agent 구성(선택 사항). 지정된 경우 프롬프팅 시 기존 Agent를 사용합니다.
 - **provider**: 사용할 AI 제공업체(예: Griptape Cloud, Ollama, LM Studio 또는 커스텀 엔드포인트). 설정 방법은 [AI Providers](../../guides/agent/providers/index.md)를 참조하세요.
@@ -31,7 +31,7 @@ Agent 노드를 사용하면 도구(Tools) 및 규칙 세트(Rulesets)와 같은
 - **rulesets**: 에이전트가 수행할 수 있는 작업과 수행할 수 없는 작업을 지정하는 규칙.
 - **output_schema**: 에이전트의 응답이 따라야 할 정확한 형식을 정의하는 JSON Schema 템플릿(선택 사항).
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 에이전트의 텍스트 응답 (프롬프트가 제공된 경우)
 - **agent**: 다른 노드에 연결할 수 있는 구성된 에이전트 객체

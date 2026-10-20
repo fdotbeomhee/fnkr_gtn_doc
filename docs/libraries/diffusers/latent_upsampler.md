@@ -20,19 +20,19 @@ Generate Media Latents (저해상도) → [Latent Upsampler] → Generate Media 
 
 <img src="../assets/nodes/latent-upsampler.png" alt="Latent Upsampler" width="480">
 
-### 입력 (Inputs)
+### 입력 (Inputs) {: #inputs }
 
 | 이름 | 유형 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
 | `input_latent` | `LatentArtifact` | 예 | 업샘플할 잠재 텐서입니다. 파이프라인의 표준 잠재 공간에 있어야 합니다(모든 Generate / Encode 출력이 적합함). |
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |
 | `output_latent` | `LatentArtifact` | 공간적으로 업스케일된 잠재 텐서입니다. |
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |

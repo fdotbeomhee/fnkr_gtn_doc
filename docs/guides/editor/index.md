@@ -1,12 +1,12 @@
-# 에디터 (The Editor)
+# 에디터 (The Editor) {: #the-editor }
 
 에디터는 Griptape Nodes 워크플로우를 생성, 실행 및 점검할 수 있는 시각적 작업 공간입니다. 캔버스 기반으로 작동하며, 노드를 캔버스로 드래그하고 서로 연결한 다음 결과를 실행할 수 있습니다. 헤더, 메뉴 모음, 두 개의 사이드바 등 창 내의 다른 모든 요소는 워크플로우 이름 지정 및 실행, 추가할 노드 탐색, 노드 실행 시 동작 점검 등 캔버스를 지원하기 위해 존재합니다.
 
-이 문서는 에디터의 각 영역에 대해 안내합니다. 특정 작업에 대한 안내가 필요한 경우 [다음 단계](#다음-단계) 섹션에서 노드, 그룹, 워크플로우 실행, 미디어 에디터 및 라이브러리 관리에 대한 전용 가이드 링크를 참조하세요.
+이 문서는 에디터의 각 영역에 대해 안내합니다. 특정 작업에 대한 안내가 필요한 경우 [다음 단계](#where-to-go-next) 섹션에서 노드, 그룹, 워크플로우 실행, 미디어 에디터 및 라이브러리 관리에 대한 전용 가이드 링크를 참조하세요.
 
 <!-- screenshot (#5166): full editor window with the canvas, header, left sidebar, and right sidebar all visible and labeled -->
 
-## 캔버스 (The canvas)
+## 캔버스 (The canvas) {: #the-canvas }
 
 캔버스는 워크플로우가 구성되는 공간입니다. 노드는 입력과 출력을 가진 상자 형태이며, 노드 간 연결은 한 노드의 출력에서 다른 노드의 입력으로 그리는 연결선입니다. 사용자가 구축하는 모든 것이 여기에 배치됩니다.
 
@@ -18,15 +18,15 @@
 
 모서리에 위치한 **미니맵(minimap)**(숨겨져 있는 경우 에디터 설정에서 전환 가능)은 전체 그래프를 한눈에 보여주며, 내부를 클릭하거나 드래그하여 원하는 위치로 빠르게 이동할 수 있습니다. 왼쪽 하단의 컨트롤 클러스터에는 확대/축소/화면 맞춤 버튼과 장식용 Griptape 로고 워터마크를 숨길 수 있는 **Clean Mode 전환(Toggle Clean Mode)** 버튼이 제공되며, 이는 워크플로우 스크린샷을 찍을 때 유용합니다.
 
-빈 캔버스를 더블클릭하면 커서 위치에 **Add Node**(노드 추가) 메뉴가 열립니다. 노드가 배치된 후 수행할 수 있는 모든 작업은 [노드 작업 가이드](working_with_nodes.md)를 참조하고, 전체 캔버스 단축키 목록은 [키보드 단축키](keyboard_shortcuts.md)를 참조하세요.
+캔버스 위에 커서를 둔 상태에서 `Tab`을 누르면 커서 위치에 **Add Node**(노드 추가) 메뉴가 열립니다. 노드가 배치된 후 수행할 수 있는 모든 작업은 [노드 작업 가이드](working_with_nodes.md)를 참조하고, 전체 캔버스 단축키 목록은 [키보드 단축키](keyboard_shortcuts.md)를 참조하세요.
 
 <!-- screenshot (#5166): canvas with a few connected nodes, the minimap visible in a corner, and the bottom-left controls cluster -->
 
-## 헤더 (The header)
+## 헤더 (The header) {: #the-header }
 
 헤더는 창 상단 전체에 걸쳐 있으며 세 개의 클러스터로 나뉩니다.
 
-**왼쪽**에는 사이드바 토글 버튼이 [메뉴 모음](#메뉴-모음-the-menu-bar) 옆에 위치하며, 그 뒤에 워크플로우 이름이 표시됩니다. 저장되지 않은 변경 사항이 있을 때마다 이름 뒤에 `*`가 표시되며, 워크플로우가 한 번 이상 저장되면 파일 이름(`<workflow>.py`)이 아래에 나타납니다. 한 번도 저장되지 않은 워크플로우는 파일 이름 줄 없이 진행 중인 이름만 표시됩니다.
+**왼쪽**에는 사이드바 토글 버튼이 [메뉴 모음](#the-menu-bar) 옆에 위치하며, 그 뒤에 워크플로우 이름이 표시됩니다. 저장되지 않은 변경 사항이 있을 때마다 이름 뒤에 `*`가 표시되며, 워크플로우가 한 번 이상 저장되면 파일 이름(`<workflow>.py`)이 아래에 나타납니다. 한 번도 저장되지 않은 워크플로우는 파일 이름 줄 없이 진행 중인 이름만 표시됩니다.
 
 **중앙**에는 실행 컨트롤이 위치합니다:
 
@@ -43,11 +43,11 @@
 
 <!-- screenshot (#5166): header close-up showing the workflow name with unsaved indicator, the run button cluster, and the right-side engine picker -->
 
-## 메뉴 모음 (The menu bar)
+## 메뉴 모음 (The menu bar) {: #the-menu-bar }
 
 메뉴 모음은 사이드바 토글 옆의 헤더 왼쪽 클러스터에 위치하며 세 개의 메뉴로 구성됩니다.
 
-### File (파일)
+### File (파일) {: #file }
 
 현재 워크플로우 파일을 생성, 열기, 저장 및 관리합니다:
 
@@ -60,7 +60,7 @@
 - **Exit** — 에디터를 종료합니다.
 - **Delete `<workflow name>`** — 현재 워크플로우 파일을 영구적으로 삭제합니다.
 
-### Manage (관리)
+### Manage (관리) {: #manage }
 
 워크플로우가 의존하는 리소스의 관리 화면으로 이동합니다:
 
@@ -69,15 +69,15 @@
 - **Engine Management** — 에디터가 연결할 수 있는 엔진을 관리합니다.
 - **Project Management** — 전환 가능한 프로젝트를 관리합니다. [GUI에서 프로젝트 관리](../projects/gui_guide.md)를 참조하세요.
 
-### Settings (설정)
+### Settings (설정) {: #settings }
 
-구성 가능한 모든 항목이 **Settings** 하위 메뉴(All Settings, Agent Settings, Editor Settings, Theme Settings, Engine Settings, File System, Libraries, Library Settings, MCP Servers, API Keys & Secrets) 아래에 그룹화되어 있습니다. 그 아래에는 **Copy Path to Settings**(설정 파일 경로를 클립보드에 복사), **Show Settings Folder**(Finder/탐색기/파일 관리자에서 폴더 열기), **Reset Settings to Default**(설정을 기본값으로 초기화)의 세 가지 작업이 제공됩니다.
+구성 가능한 모든 항목이 **Settings** 하위 메뉴(All Settings, Agent Settings, Editor Settings, Theme Settings, Engine Settings, File System, Libraries, Library Settings, MCP Servers, API Keys & Secrets, [Beta Features](beta_features.md)) 아래에 그룹화되어 있습니다. 그 아래에는 **Copy Path to Settings**(설정 파일 경로를 클립보드에 복사), **Show Settings Folder**(Finder/탐색기/파일 관리자에서 폴더 열기), **Reset Settings to Default**(설정을 기본값으로 초기화)의 세 가지 작업이 제공됩니다.
 
 이 설정들은 엔진과 에디터를 구성합니다. Griptape Nodes Desktop을 실행 중인 경우, 테마, 라이선스, 로그 파일, 업데이트 채널과 같은 애플리케이션 자체 설정은 창 오른쪽 상단 모서리의 계정 메뉴에서 접근하는 [App Settings](../desktop/app_settings.md)에 위치합니다.
 
 <!-- screenshot (#5166): the menu bar with the File menu open, showing its items and shortcuts -->
 
-## 왼쪽 사이드바 (The left sidebar)
+## 왼쪽 사이드바 (The left sidebar) {: #the-left-sidebar }
 
 왼쪽 사이드바는 워크플로우에 추가할 노드와 라이브러리를 찾는 공간입니다. 탭 상단에는 **Favorites**(즐겨찾기) 섹션이 있어 매번 검색할 필요 없이 노드에 별표를 표시하여 고정할 수 있으며, 그 아래에는 활성 탭을 필터링하는 검색 상자가 있습니다.
 
@@ -90,7 +90,7 @@
 
 <!-- screenshot (#5166): left sidebar expanded, showing the Favorites section, search box, and the Nodes tab's category tree -->
 
-## 오른쪽 사이드바 (The right sidebar)
+## 오른쪽 사이드바 (The right sidebar) {: #the-right-sidebar }
 
 오른쪽 사이드바에는 **Sidebar Panels**(사이드바 패널)이라는 탭 패널 세트가 포함되어 있습니다. 닫기 버튼 옆의 드롭다운(점 세 개 아이콘)을 사용하여 패널을 표시하거나 숨길 수 있습니다. 각 항목에는 눈 아이콘이 표시되어 현재 표시되는 패널을 확인할 수 있습니다. 여기서 패널을 숨겨도 내용이 삭제되지 않으며, 다음에 다시 활성화하면 탭이 다시 나타납니다.
 
@@ -105,7 +105,7 @@
 
 <!-- screenshot (#5166): right sidebar showing the panel tabs (Chat, Code, Logs, Properties) with the panel-visibility dropdown open -->
 
-## 다음 단계
+## 다음 단계 {: #where-to-go-next }
 
 - [키보드 단축키](keyboard_shortcuts.md) — 작업 목적별로 정리된 에디터의 모든 단축키 목록입니다.
 - [노드 작업 가이드](working_with_nodes.md) — 노드 추가, 연결, 이름 변경, 잠금 및 복제에 대한 설명입니다.

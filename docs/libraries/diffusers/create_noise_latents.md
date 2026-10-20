@@ -21,19 +21,19 @@ Pipeline Builder → [Create Noise Latents] → Generate Media Latents → Decod
 
 <img src="../assets/nodes/create-noise-latents.png" alt="Create Noise Latents" width="480">
 
-### 입력 (Inputs)
+### 입력 (Inputs) {: #inputs }
 
 | 이름 | 유형 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
 | `pipeline` | `Pipeline Config` | 예 | Pipeline Builder에서 전달받습니다. 형태(shape), VAE 스케일 팩터 및 `num_frames` 표시 여부를 결정합니다. |
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |
 | `output_latent` | `LatentArtifact` | 언팩 및 정규화(~N(0,1))된 노이즈 텐서입니다. Generate Media Latents 노드로 전달합니다. |
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 | 이름 | 유형 | 기본값 | 설명 |
 | --- | --- | --- | --- |

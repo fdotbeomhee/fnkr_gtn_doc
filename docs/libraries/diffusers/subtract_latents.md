@@ -22,14 +22,14 @@ Latent B ─┘
 
 <img src="../assets/nodes/subtract-latents.png" alt="Subtract Latents" width="480">
 
-### 입력 (Inputs)
+### 입력 (Inputs) {: #inputs }
 
 | 이름 | 유형 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
 | `left_latent` | `LatentArtifact` | 예 | 감수(Minuend, 빼지는 수)입니다. |
 | `right_latent` | `LatentArtifact` | 예 | 감수(Subtrahend, 빼는 수)입니다. `left_latent`와 형태(shape)가 일치해야 합니다. |
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |

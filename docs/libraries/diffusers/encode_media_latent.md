@@ -23,7 +23,7 @@ Load Image → [Encode Media Latent] → Generate Media Latents → Decode Media
 
 <img src="../assets/nodes/encode-media.png" alt="Encode Media Latent" width="480">
 
-### 입력 (Inputs)
+### 입력 (Inputs) {: #inputs }
 
 | 이름 | 유형 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
@@ -31,7 +31,7 @@ Load Image → [Encode Media Latent] → Generate Media Latents → Decode Media
 | `image` | `ImageArtifact` / `ImageUrlArtifact` | 이미지 파이프라인일 때 필수 | 소스 이미지입니다. |
 | `input_video` | `VideoArtifact` / `VideoUrlArtifact` | 비디오 파이프라인일 때 필수 | 소스 비디오입니다. |
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |

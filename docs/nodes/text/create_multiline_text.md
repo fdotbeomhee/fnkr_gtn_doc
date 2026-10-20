@@ -21,11 +21,11 @@ TextInput 노드는 워크플로우에서 사용할 텍스트를 손쉽게 입�
 1. "text" 파라미터에 원하는 여러 줄(multiline) 콘텐츠를 입력합니다.
 1. 출력을 텍스트 입력을 받는 다른 노드에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **text**: 여러 줄 텍스트 콘텐츠 (문자열, 기본값은 빈 문자열)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **text**: 여러 줄 텍스트 콘텐츠 (문자열)
 

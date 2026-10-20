@@ -2,7 +2,7 @@
 
 Evaluate Text Result 노드는 Griptape의 Eval Engine을 사용하여 특정 기준에 따라 텍스트 출력을 평가할 수 있게 해줍니다. 이 노드는 AI가 생성한 콘텐츠를 검증하거나, 사실적 정확성을 확인하거나, 텍스트 출력의 품질을 평가할 때 유용합니다.
 
-## 입력 (Inputs)
+## 입력 (Inputs) {: #inputs }
 
 - **Examples** (속성): 사전 설정된 예시 중에서 선택하거나 자체 평가를 생성합니다.
 
@@ -30,7 +30,7 @@ Evaluate Text Result 노드는 Griptape의 Eval Engine을 사용하여 특정 �
     - 여러 줄 텍스트 입력 지원
     - 예시: "Does the output accurately paraphrase the input without losing meaning?"
 
-## 출력 (Outputs)
+## 출력 (Outputs) {: #outputs }
 
 - **Score** (출력): 평가 점수를 나타내는 0에서 1 사이의 부동 소수점(float) 값
 

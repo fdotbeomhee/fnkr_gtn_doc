@@ -24,14 +24,14 @@ Askulator는 일반 자연어로 표현된 수학 문제를 이해하고 해결�
     - 문제를 해결한 방법에 대한 상세한 추론 과정
     - "result" 출력에 최종 답변 제공
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **instruction**: 해결할 수학 질문 또는 문제 (자연어 지원)
 - **model**: 처리에 사용할 AI 모델 (기본값: gpt-4.1-mini)
 - **result**: 계산된 최종 답변
 - **output**: 문제를 해결하기 위해 거친 상세한 추론 과정 및 단계
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **result**: 계산된 최종 답변
 - **output**: 문제를 해결하기 위해 거친 상세한 추론 과정 및 단계
@@ -49,7 +49,7 @@ Askulator는 일반 자연어로 표현된 수학 문제를 이해하고 해결�
     - "output"에 추론 과정 제공
     - "result"에 최종 답변(24) 제공
 
-## 구현 세부사항 (Implementation Details)
+## 구현 세부사항 (Implementation Details) {: #implementation-details }
 
 Askulator는 다음을 사용합니다:
 

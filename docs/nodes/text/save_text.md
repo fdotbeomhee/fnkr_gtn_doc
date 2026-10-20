@@ -23,12 +23,12 @@ SaveText는 텍스트 콘텐츠를 로컬 시스템의 파일에 저장할 수 �
 1. 출력 경로를 지정하거나 기본값을 사용합니다.
 1. 워크플로우를 실행하여 지정된 파일에 텍스트를 저장합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **text**: 파일로 저장할 텍스트 콘텐츠 (여러 줄 텍스트 지원)
 - **output_path**: 텍스트가 저장될 파일 경로 (기본값: "griptape_output.txt")
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output_path**: 저장된 파일의 경로 (저장 작업 성공 확인용)
 

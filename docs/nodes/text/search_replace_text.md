@@ -25,7 +25,7 @@ SearchReplaceText 노드는 여러 줄 텍스트 콘텐츠에서 찾기 및 바�
 1. 필요한 추가 옵션을 구성합니다.
 1. 출력을 텍스트 입력을 받는 노드에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **input_text**: 찾기 및 바꾸기를 수행할 여러 줄 텍스트 (문자열)
 - **search_pattern**: 검색할 텍스트 또는 패턴 (문자열)
@@ -34,7 +34,7 @@ SearchReplaceText 노드는 여러 줄 텍스트 콘텐츠에서 찾기 및 바�
 - **use_regex**: 검색 패턴을 정규 표현식으로 처리할지 여부 (부울, 기본값: false)
 - **replace_all**: 모든 일치 항목을 바꿀지, 첫 번째 항목만 바꿀지 여부 (부울, 기본값: true)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 찾기 및 바꾸기가 수행된 후의 여러 줄 텍스트 (문자열)
 

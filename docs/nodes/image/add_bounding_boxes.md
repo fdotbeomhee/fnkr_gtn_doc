@@ -25,9 +25,9 @@ AddBoundingBoxes 노드는 좌표 딕셔너리 데이터를 기반으로 이미�
 1. 필요에 따라 색상, 레이블, 선 두께를 사용자 정의합니다.
 1. 주석이 추가된 이미지가 "output" 파라미터를 통해 출력됩니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
-#### 입력 (Inputs)
+#### 입력 (Inputs) {: #inputs }
 
 - **input_image**: 바운딩 박스를 그릴 대상 이미지 (ImageUrlArtifact 또는 ImageArtifact)
 
@@ -64,7 +64,7 @@ AddBoundingBoxes 노드는 좌표 딕셔너리 데이터를 기반으로 이미�
     - 예시: `"{x}, {y} - Size: {width}x{height}"`
     - 딕셔너리에 없는 키는 출력 시 `{key}` 형태로 그대로 유지됩니다.
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 바운딩 박스와 레이블이 그려진 이미지
 

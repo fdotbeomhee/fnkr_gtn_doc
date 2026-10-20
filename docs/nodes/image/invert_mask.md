@@ -22,11 +22,11 @@ InvertMask 노드는 입력 마스크의 반전 버전을 만듭니다. 투명�
 1. 마스크 소스를 "input_mask" 입력에 연결합니다.
 1. 반전된 마스크는 "output_mask" 파라미터에서 확인할 수 있습니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **input_mask**: 반전할 마스크 (DisplayMask 또는 PaintMask와 같은 다른 마스크 노드에서 연결 가능)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output_mask**: 입력 마스크의 반전된 버전
 

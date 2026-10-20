@@ -1,4 +1,4 @@
-# 스레드 (Threads)
+# 스레드 (Threads) {: #threads }
 
 각 대화는 하나의 **스레드(Thread)**입니다. 스레드는 생성된 날짜와 시간으로 자동 명명됩니다.
 
@@ -14,7 +14,7 @@
 | 파일 | 내용 |
 | ----------------------- | -------------------------------------------- |
 | `thread_{id}.json` | 전체 메시지 기록 |
-| `thread_{id}.meta.json` | 제목, 타임스탬프, 메시지 수 |
+| `thread_{id}.meta.json` | 제목, 타임스탬프, 메시지 수 및 [대화에서 승인](./approvals.md) 선택 항목 |
 | `thread_{id}.runs.json` | 실행별 제공자, 모델 및 MCP 서버 정보 |
 
 `runs` 파일은 스레드의 각 응답에 사용된 AI 제공자, 모델 및 MCP 서버를 추적합니다.
@@ -25,6 +25,8 @@
 | ------------- | ---------------------------------------------------- |
 | macOS / Linux | `~/.local/share/griptape_nodes/threads/` |
 | Windows | `%USERPROFILE%\.local\share\griptape_nodes\threads\` |
+
+`GTN_ENGINE_DATA_DIR` 환경 변수가 설정된 경우 스레드는 해당 디렉터리 내부의 `threads` 폴더에 보관됩니다.
 
 Griptape Nodes Desktop의 경우 자체 애플리케이션 데이터 폴더 내의 `xdg_data_home/griptape_nodes/threads/` 폴더에 스레드를 보관합니다. 해당 폴더의 위치는 **App Settings → App Data Locations**에서 확인할 수 있습니다.
 

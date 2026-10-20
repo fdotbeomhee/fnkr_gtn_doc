@@ -35,6 +35,7 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - tables
   - md_in_html
+  - attr_list
   - toc:
       toc_depth: 3
 
@@ -43,6 +44,8 @@ extra_css:
 
 
 nav:
+  - AWS워크샵:
+      - Griptape 설치 및 기본설정: guides/aws_workshop/griptape_installation/index.md
   - 시작하기:                      # Get Started
       - 개요: index.md
       - 설치: installation.md
@@ -60,7 +63,7 @@ nav:
       - 용어집: glossary.md
   - 가이드:                        # Guides
       - 데스크톱 앱:
-          - 앱 설정: guides/desktop/app_settings.md
+          - 데스크톱 환경 변수: guides/desktop/environment_variables.md
       - 에디터:
           - 개요: guides/editor/index.md
           - 키보드 단축키: guides/editor/keyboard_shortcuts.md
@@ -69,9 +72,11 @@ nav:
           - 워크플로우 실행: guides/editor/running_workflows.md
           - 미디어 뷰어 및 에디터: guides/editor/media_editors.md
           - 모델 및 라이브러리 관리: guides/editor/managing_models_and_libraries.md
+          - 베타 기능: guides/editor/beta_features.md
       - 에이전트:
           - 개요: guides/agent/index.md
           - 스레드: guides/agent/threads.md
+          - 승인: guides/agent/approvals.md
           - 워크플로우에서 사용하기: guides/agent/using_in_workflows.md
           - 사용자 정의:
               - 개인화: guides/agent/personalization.md
@@ -86,6 +91,7 @@ nav:
                   - Custom (OpenAI 호환): guides/agent/providers/custom.md
       - 엔진:
           - 엔진 설정: guides/configuration.md
+          - 관리형 환경: guides/managed_environment.md
           - 라이브러리: guides/libraries.md
       - 프로젝트:
           - 개요: guides/projects/index.md
@@ -338,6 +344,7 @@ nav:
           - 커스텀 위젯: development/custom_nodes/custom_widgets.md
           - 패턴 및 예제: development/custom_nodes/examples.md
           - 워커를 통한 노드 격리: development/custom_nodes/node_isolation_with_workers.md
+          - 직렬화 불가능한 값 전달: development/custom_nodes/passing_unserializable_values.md
           - 엄격 모드 레퍼런스: development/custom_nodes/strict_mode.md
           - 예제 컨트롤 노드: development/custom_nodes/example_control_node.py
       - 에이전트 안내서: for_agents.md
@@ -350,3 +357,4 @@ nav:
       - 관리 서버: enterprise/admin_server.md
       - Admin Server 사용하기: enterprise/using_the_admin_server.md
       - 앱 자동 업데이트 비활성화: enterprise/disabling_app_updates.md
+      - Cedar 정책: enterprise/cedar_policies.md

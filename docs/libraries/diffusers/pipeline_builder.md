@@ -21,20 +21,20 @@
 
 <img src="../assets/nodes/pipeline-builder.png" alt="Modular Diffusion Pipeline Builder" width="480">
 
-### 입력 (Inputs)
+### 입력 (Inputs) {: #inputs }
 
 | 이름 | 유형 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
 | `loras` | `loras` | 아니오 | 하나 이상의 [Load LoRA](load_lora.md) 노드를 연결합니다. 연결 순서대로 중첩됩니다. |
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |
 | `pipeline` | `Pipeline Config` | 캐시된 파이프라인 아티팩트입니다. `pipeline` 입력을 받는 모든 노드에 전달하세요. |
 | `logs` | `str` | 확인된 구성 해시를 포함한 빌드 로그입니다. |
 
-## 파라미터 (Parameters)
+## 파라미터 (Parameters) {: #parameters }
 
 ### 파이프라인 선택 *(동적 — `provider` 변경 시 다시 생성됨)*
 
@@ -44,7 +44,7 @@
 | `pipeline_type` | choice | 제공업체별 파이프라인 클래스(예: `FluxPipeline`, `WanImageToVideoPipeline`). 파이프라인이 수행할 수 있는 작업을 결정합니다. |
 | `<model repo>` | HF repo picker | Hugging Face 리포지토리 ID입니다. Diffusers 형식만 지원되며, 단일 파일 `.safetensors` 체크포인트는 직접 로드되지 않습니다. |
 
-### 메모리 최적화 (Memory optimization)
+### 메모리 최적화 (Memory optimization) {: #memory-optimization }
 
 | 이름 | 유형 | 기본값 | 설명 |
 | --- | --- | --- | --- |

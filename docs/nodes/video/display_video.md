@@ -23,11 +23,11 @@ DisplayVideo 노드는 워크플로우 내에서 비디오 콘텐츠를 간편�
 1. 비디오 파라미터에 입력을 연결하거나 비디오를 직접 선택합니다.
 1. 비디오 입력이 필요한 다른 노드에 비디오 출력을 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **video**: 화면에 표시할 비디오 콘텐츠입니다. (VideoArtifact 및 VideoUrlArtifact 지원)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **video**: 동일한 비디오 콘텐츠이며, 다른 노드에 연결할 수 있는 출력으로 그대로 제공됩니다.
 

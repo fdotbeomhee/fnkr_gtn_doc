@@ -23,14 +23,14 @@ TranscribeAudio 노드는 OpenAI의 모델을 사용하여 오디오를 텍스�
 1. 음성 변환 모델을 선택하거나 에이전트를 연결합니다.
 1. 노드를 실행하여 텍스트 변환 결과를 생성합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **agent**: 텍스트 변환에 사용할 선택적 기존 에이전트 구성
 - **model**: 사용할 음성 변환 모델 (기본값: "gpt-4o-mini-transcribe")
 - **audio**: 텍스트로 변환할 오디오 파일 (필수)
 - **output**: 변환된 텍스트 출력
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 오디오에서 변환된 텍스트
 - **agent**: 텍스트 변환에 사용된 에이전트 객체 (다른 노드에 연결 가능)

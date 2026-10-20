@@ -1,4 +1,4 @@
-# 커스터마이징 가이드 (Customization Guide)
+# 커스터마이징 가이드 (Customization Guide) {: #customization-guide }
 
 모든 커스터마이징은 워크스페이스 디렉터리의 `griptape-nodes-project.yml`에서 수행됩니다. 변경하려는 항목만 포함하면 되며, 나머지는 모두 시스템 기본값에서 상속됩니다.
 

@@ -109,7 +109,7 @@ MCPTask 노드는 에이전트의 기능을 일시적으로 확장한 다음, �
 
 다양한 추가 기능을 통해 에이전트를 강화할 수 있습니다:
 
-#### 규칙 세트 (Rulesets)
+#### 규칙 세트 (Rulesets) {: #rulesets }
 
 규칙 세트를 추가하여 에이전트의 동작 방식을 제어할 수 있습니다:
 
@@ -117,14 +117,14 @@ MCPTask 노드는 에이전트의 기능을 일시적으로 확장한 다음, �
 - **Creative Agent**: "Think outside the box and suggest innovative solutions (틀에서 벗어나 혁신적인 해결책을 제안하세요)"
 - **Analytical Agent**: "Provide detailed analysis with pros and cons (장단점이 포함된 상세한 분석을 제공하세요)"
 
-#### 도구 (Tools)
+#### 도구 (Tools) {: #tools }
 
 MCP 기능을 보완할 추가 도구를 더할 수 있습니다:
 
 - 수학적 연산을 위한 **Calculator tools**
 - 날짜를 이해하기 위한 **Date Time**
 
-#### 프롬프트 모델 (Prompt Models)
+#### 프롬프트 모델 (Prompt Models) {: #prompt-models }
 
 작업에 따라 다양한 모델을 선택할 수 있습니다:
 
@@ -138,4 +138,4 @@ MCP 기능을 보완할 추가 도구를 더할 수 있습니다:
 
 - **[에이전트와 함께 로컬 모델 사용하기](./advanced_local_models.md)** - 민감한 데이터 처리를 위해 로컬 AI 모델 사용하기
 - **[예제 MCP 서버](./servers/index.md)** - 다양한 기능을 위한 추가 서버 설정하기
-- **[연결 유형](./index.md#연결-유형)** - 외부 시스템에 연결하는 다양한 방법 알아보기
+- **[연결 유형](./index.md#connection-types)** - 외부 시스템에 연결하는 다양한 방법 알아보기

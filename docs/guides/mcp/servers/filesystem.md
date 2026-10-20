@@ -28,6 +28,8 @@
     }
     ```
 
+    서버가 `[Errno 2] No such file or directory: 'npx'` 오류와 함께 시작되지 않으면 [서버가 시작되지 않음](../connection_types/stdio.md#server-wont-start)을 참조하세요.
+
 1. **Create Server를 클릭합니다.**
 
 ## 사용 가능한 도구

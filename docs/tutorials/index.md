@@ -1,4 +1,4 @@
-# 튜토리얼 개요 (Tutorial Overview)
+# 튜토리얼 개요 (Tutorial Overview) {: #tutorial-overview }
 
 Griptape Nodes와 함께하는 여정에 오신 것을 환영합니다! 이 학습 과정은 기본 설정부터 여러 에이전트를 활용한 복잡하고 조율된 워크플로우 제작에 이르기까지 모든 과정을 단계별로 안내합니다.
 

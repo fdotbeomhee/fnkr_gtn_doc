@@ -25,9 +25,9 @@ ExtendCanvas 노드를 사용하면 대상 종횡비(가로세로 비율)나 사
 1. 대상 종횡비 또는 사용자 지정 크기를 설정합니다.
 1. 확장된 이미지는 "output" 파라미터에서 확인할 수 있습니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
-#### 캔버스 설정 (Canvas Settings)
+#### 캔버스 설정 (Canvas Settings) {: #canvas-settings }
 
 - **target_aspect_ratio**: 출력할 원하는 종횡비
 
@@ -42,7 +42,7 @@ ExtendCanvas 노드를 사용하면 대상 종횡비(가로세로 비율)나 사
 
 - **custom_height** (픽셀): "Custom" 종횡비 사용 시 사용자 지정 높이
 
-#### 확장 설정 (Extension Settings)
+#### 확장 설정 (Extension Settings) {: #extension-settings }
 
 - **extension_method**: 캔버스를 확장하는 방법
 
@@ -56,7 +56,7 @@ ExtendCanvas 노드를 사용하면 대상 종횡비(가로세로 비율)나 사
 
 - **background_opacity** (0.0-1.0, 기본값: 1.0): 배경 색상의 불투명도
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 캔버스가 확장된 이미지
 

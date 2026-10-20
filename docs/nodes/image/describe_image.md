@@ -32,7 +32,7 @@ DescribeImage 노드는 인공지능(AI)을 사용하여 제공된 이미지에 
 
     프롬프트가 구체적일수록 원하는 형태의 결과를 얻을 가능성이 높아집니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **agent**: 이미지 설명에 사용할 기존 에이전트 구성 (선택 사항)
 - **model**: 비전 지원 프롬프트 모델 선택 (또는 Prompt Model Config 연결). **agent**가 연결된 경우 무시됩니다.
@@ -41,7 +41,7 @@ DescribeImage 노드는 인공지능(AI)을 사용하여 제공된 이미지에 
 - **description_only**: 활성화된 경우 대화 형식 없이 설명만 반환합니다.
 - **output_schema**: 구조화된 출력을 위한 선택적 JSON 스키마. JSON 스키마 객체 또는 JSON 문자열을 허용합니다. 연결 시 **output**이 JSON 형식으로 전환됩니다.
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 이미지 설명. 기본적으로 **text**를 반환하며, **output_schema**가 제공된 경우 **JSON**을 반환합니다.
 - **agent**: 설명 생성에 사용된 에이전트 객체 (다른 노드에 연결 가능)
@@ -56,7 +56,7 @@ DescribeImage 노드는 인공지능(AI)을 사용하여 제공된 이미지에 
 1. 노드를 실행합니다.
 1. "output"에 풍경 이미지에 대한 상세한 설명이 출력됩니다.
 
-### 구조화된 출력 예시 (JSON)
+### 구조화된 출력 예시 (JSON) {: #json }
 
 특정 JSON 구조로 출력을 받고자 하는 경우:
 

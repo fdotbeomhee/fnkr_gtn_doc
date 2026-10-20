@@ -18,7 +18,7 @@ GriptapeCloudPrompt 노드는 Griptape Cloud의 AI 서비스에 대한 연결을
 1. 워크플로에 GriptapeCloudPrompt 노드를 추가합니다.
 1. driver 출력을 AI 모델을 사용해야 하는 노드(예: Agent)에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **model**: 사용할 AI 모델 (기본값: "gpt-4o")
 - **stream**: 응답을 생성되는 즉시 실시간으로 수신할지(true), 한 번에 모두 수신할지(false) 여부
@@ -28,7 +28,7 @@ GriptapeCloudPrompt 노드는 Griptape Cloud의 AI 서비스에 대한 연결을
 - **max_tokens**: 응답의 최대 토큰 길이
 - **top_p**: 출력의 다양성을 제어 (내부적으로 top_p로 변환됨)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **prompt_model_config**: 다른 노드에서 사용할 수 있도록 구성된 Griptape Cloud 드라이버
 

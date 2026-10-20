@@ -1,12 +1,12 @@
-# Hugging Face를 사용하는 노드 설정 (Setup for Nodes that use Hugging Face)
+# Hugging Face를 사용하는 노드 설정 (Setup for Nodes that use Hugging Face) {: #setup-for-nodes-that-use-hugging-face }
 
-## 계정 및 토큰 생성 (Account and Token Creation)
+## 계정 및 토큰 생성 (Account and Token Creation) {: #account-and-token-creation }
 
 이 가이드에서는 Hugging Face 계정을 설정하고 액세스 토큰을 생성하며 Griptape Nodes와 함께 사용하는 데 필요한 모델을 설치하는 과정을 안내합니다.
 
 !!! info
 
-    이미 계정이 있는 경우 [2단계](#2-액세스-토큰-생성-create-an-access-token)로 바로 이동하세요.
+    이미 계정이 있는 경우 [2단계](#create-an-access-token)로 바로 이동하세요.
 
 ### 1. Hugging Face에서 새 계정 생성
 
@@ -22,7 +22,7 @@
     <img src="../assets/huggingface_01_signup.png" alt="Signup" width="300"/>
 </p>
 
-### 2. 액세스 토큰 생성 (Create an Access Token)
+### 2. 액세스 토큰 생성 (Create an Access Token) {: #create-an-access-token }
 
 1. 계정 설정에 접근합니다.
 
@@ -72,7 +72,7 @@
 
     신용카드 번호처럼 안전하게 취급하세요.
 
-## 필수 파일 설치 (Install Required Files)
+## 필수 파일 설치 (Install Required Files) {: #install-required-files }
 
 이제 계정에 연결된 토큰이 있으므로 명령줄에서 Hugging Face와 상호 작용할 수 있는 Hugging Face CLI(명령줄 인터페이스)를 설치할 수 있습니다.
 
@@ -96,7 +96,7 @@ huggingface-cli login
 
 토큰을 입력하라는 메시지가 표시됩니다.
 
-### 3. 필요에 따라 모델 설치 (Install Models as Required)
+### 3. 필요에 따라 모델 설치 (Install Models as Required) {: #install-models-as-required }
 
 각 Hugging Face 노드는 특정 모델과 함께 작동하도록 설계되었습니다. 일부 노드는 하나의 모델에서만 작동하지만 다른 노드는 여러 옵션과 호환됩니다. 아래 표는 각 노드에서 사용할 수 있는 모델을 보여줍니다:
 
@@ -106,7 +106,7 @@ huggingface-cli login
 | Flux | FLUX.1-dev, FLUX.1-schnell |
 | Flux Post Upscale | FLUX.1-dev, FLUX.1-schnell |
 
-## 모델 설치 고려 사항 (Model Installation Considerations)
+## 모델 설치 고려 사항 (Model Installation Considerations) {: #model-installation-considerations }
 
 모델 설치에는 두 가지 옵션이 있습니다. 선택은 특정 워크플로우 요구 사항, 사용 가능한 디스크 공간 및 인터넷 연결 속도에 따라 달라집니다.
 
@@ -176,7 +176,7 @@ huggingface-cli download black-forest-labs/FLUX.1-dev
       <img src="../assets/huggingface_06_gated_model.png" alt="Gated model" width="350"/>
     </p>
 
-## Griptape Nodes 설정에 토큰 추가 (Add Your Token to Griptape Nodes settings)
+## Griptape Nodes 설정에 토큰 추가 (Add Your Token to Griptape Nodes settings) {: #add-your-token-to-griptape-nodes-settings }
 
 !!! info "개요"
 
@@ -207,3 +207,44 @@ huggingface-cli download black-forest-labs/FLUX.1-dev
 !!! success "설정 완료"
 
     이 단계를 완료하면 Griptape Nodes에서 Hugging Face 노드를 사용할 준비가 완료됩니다!
+
+## 모델 다운로드 제어하기 (Controlling Model Downloads) {: #controlling-model-downloads }
+
+팀 단위로 Griptape Nodes를 관리한다면, 엔진과 모델 라이브러리가 Hugging Face에서 자동으로 다운로드하도록 두는 대신 사용할 수 있는 모델을 직접 정할 수 있습니다. Griptape Nodes는 Hugging Face 자체 패키지인 `huggingface_hub`로 모델을 다운로드하고 찾으며, 이 패키지의 설정은 바꾸지 않습니다. 따라서 표준 Hugging Face 환경 변수로 동작을 제어할 수 있습니다. 변수는 [Hugging Face 환경 변수 문서](https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables)에 설명되어 있습니다. 이 섹션은 이 변수를 설정했을 때 Griptape Nodes가 어떻게 동작하는지 설명합니다.
+
+### 변수를 설정하는 위치
+
+다음 두 위치 중 한 곳에 설정한 후 Griptape Nodes를 다시 시작하세요:
+
+- Griptape Nodes를 실행하는 환경(셸 프로필, 서비스 정의, 컨테이너 등). 여기서 설정한 값이 우선합니다.
+- Griptape Nodes 설정 디렉터리(보통 `~/.config/griptape_nodes/.env`)에 있는 `.env` 파일. [설정](../configuration.md)을 참조하세요.
+
+엔진, 워커 프로세스, 모델 다운로드 프로세스는 모두 같은 값을 사용합니다.
+
+### 다운로드 차단하기
+
+[`HF_HUB_OFFLINE=1`](https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfhuboffline)을 설정하면 Hugging Face에 대한 모든 요청이 중단됩니다. 캐시에 이미 있는 모델은 계속 작동합니다. 오프라인 모드가 켜지면 다음과 같이 동작합니다:
+
+- **Model Management**에서 캐시에 없는 모델을 다운로드하면 "Cannot find an appropriate cached snapshot folder for the specified revision on the local disk and outgoing traffic has been disabled."라는 메시지와 함께 실패합니다. 이미 캐시된 모델을 다운로드하면 온라인 연결 없이 성공합니다. 설정의 `models_to_download`에 나열된 모델도 같으며, 엔진은 시작할 때 이를 다운로드합니다.
+- **Model Management**에서 검색하면 실패합니다. 검색은 항상 Hugging Face에 요청하기 때문입니다.
+- 노드의 모델 드롭다운에는 캐시에 있는 모델이 나열됩니다. 노드가 지원하지만 캐시에 없는 모델은 "Not downloaded"로 표시되며 실행할 수 없습니다.
+- 대부분의 모델 노드는 캐시에서만 로드하지만, 일부 노드는 실행할 때 Hugging Face에서 추가 파일을 가져옵니다. 오프라인 모드는 이것도 차단하므로, 이러한 노드에 필요한 모든 파일이 캐시에 있는지 확인하세요.
+
+### 공유 또는 관리되는 캐시 사용하기
+
+[`HF_HOME`](https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfhome) 또는 [`HF_HUB_CACHE`](https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfhubcache)를 설정하면 네트워크 공유처럼 직접 관리하는 캐시를 Griptape Nodes가 사용하도록 지정할 수 있습니다. **Model Management**는 그 캐시의 모델을 나열하고 삭제하며, 모델 드롭다운도 그 캐시에서 읽습니다. 캐시 구조는 [캐시 관리](https://huggingface.co/docs/huggingface_hub/guides/manage-cache)에서 확인할 수 있습니다.
+
+### 모델 미리 다운로드하기
+
+`hf download`로 캐시를 미리 채울 수 있습니다. 방법은 [Hub에서 파일 다운로드](https://huggingface.co/docs/huggingface_hub/guides/download)와 [CLI 가이드](https://huggingface.co/docs/huggingface_hub/guides/cli)에 설명되어 있습니다. 다음 사항에 유의하세요:
+
+- Griptape Nodes가 사용하는 것과 같은 `HF_HOME` 또는 `HF_HUB_CACHE`로 실행하세요. 그렇지 않으면 모델이 다른 캐시에 저장됩니다.
+- 저장소 전체를 다운로드하세요. 노드는 캐시에 있는 파일만 로드하므로, 일부 파일만 다운로드하면 드롭다운에는 표시되지만 로드에 실패하는 모델이 생길 수 있습니다.
+
+### 내부 미러 사용하기
+
+`huggingface_hub`는 `HF_ENDPOINT`도 읽습니다. 이 값은 다운로드와 검색을 수행하는 주소입니다. 이를 내부 Hugging Face Hub 미러 주소로 설정하면 자체 서버에서 모델을 제공할 수 있습니다.
+
+### 로컬 모델 파일 사용하기
+
+Modular Diffusion 라이브러리의 **Load Pipeline Component** 노드는 단일 체크포인트 파일이나 로컬 diffusers 형식 폴더에서 컴포넌트를 로드합니다. 따라서 Hugging Face 캐시에 없는 모델 파일도 사용할 수 있습니다.

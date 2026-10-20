@@ -23,13 +23,13 @@ ExtractAudio 노드는 비디오에서 오디오 트랙을 추출하여 워크�
 1. 원하는 오디오 형식과 품질 설정을 선택합니다.
 1. `extracted_audio` 출력을 오디오 입력이 필요한 다른 노드에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
-#### 입력 (Input)
+#### 입력 (Input) {: #input }
 
 - **video**: 오디오를 추출할 비디오 콘텐츠 (VideoArtifact 및 VideoUrlArtifact 지원)
 
-#### 오디오 설정 (Audio Settings)
+#### 오디오 설정 (Audio Settings) {: #audio-settings }
 
 - **audio_format**: 출력 오디오 형식
 
@@ -47,7 +47,7 @@ ExtractAudio 노드는 비디오에서 오디오 트랙을 추출하여 워크�
     - `low` (64k) - 작은 파일 크기, 낮은 품질
     - `copy` - 재인코딩 없이 원본 오디오 복사 (가장 빠름, 원본 품질 완벽 유지)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **extracted_audio**: 비디오에서 추출된 오디오 (AudioUrlArtifact 형태)
 - **logs**: 오디오 추출 과정에 대한 상세 정보가 포함된 처리 로그

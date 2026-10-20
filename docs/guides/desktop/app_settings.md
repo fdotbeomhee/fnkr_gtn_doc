@@ -1,8 +1,10 @@
-# 앱 설정 (App Settings)
+# 앱 설정 (App Settings) {: #app-settings }
 
 Griptape Nodes Desktop에는 에디터의 **Settings** 메뉴에서 접근하는 엔진 및 에디터 설정과 별개로 자체 설정 화면이 있습니다. App Settings는 애플리케이션 자체가 제어하는 항목(종료 방법, 적용 테마, 엔진에 전달할 작업 공간, 라이선스, 로그 파일 및 앱 자체 업데이트 방식)을 다룹니다.
 
-## 앱 설정 열기 (Opening App Settings)
+시작 시 구성은 [데스크톱 환경 변수](environment_variables.md)를 참조하세요.
+
+## 앱 설정 열기 (Opening App Settings) {: #opening-app-settings }
 
 창 오른쪽 상단에서 사용자 이름을 클릭한 다음 **App Settings**를 선택합니다. Griptape 계정으로 로그인하는 대신 라이선스 키로 활성화한 경우 버튼에 사용자 이름 대신 **Interactive license**(또는 사용자의 라이선스 유형)가 표시됩니다.
 
@@ -12,15 +14,15 @@ Griptape Nodes Desktop에는 에디터의 **Settings** 메뉴에서 접근하는
 
 !!! note
 
-    App Settings는 에디터의 **Settings** 메뉴와 다릅니다. 해당 메뉴는 엔진과 에디터를 구성하며(캔버스 테마, 자동 저장, API 키 및 비밀 정보, MCP 서버, 라이브러리 설정) [에디터 개요](../editor/index.md#settings-설정)에 문서화되어 있습니다. Griptape Nodes Desktop에만 App Settings가 있으며, 엔진을 직접 실행하고 브라우저에서 에디터를 사용하는 경우 [설정](../configuration.md)을 참조하세요.
+    App Settings는 에디터의 **Settings** 메뉴와 다릅니다. 해당 메뉴는 엔진과 에디터를 구성하며(캔버스 테마, 자동 저장, API 키 및 비밀 정보, MCP 서버, 라이브러리 설정) [에디터 개요](../editor/index.md#settings)에 문서화되어 있습니다. Griptape Nodes Desktop에만 App Settings가 있으며, 엔진을 직접 실행하고 브라우저에서 에디터를 사용하는 경우 [설정](../configuration.md)을 참조하세요.
 
-## 일반 (General)
+## 일반 (General) {: #general }
 
 ![일반 섹션](../../assets/img/desktop/app_settings-general.png)
 
 **Confirm before closing**은 앱을 종료할 때 확인 대화 상자를 표시합니다. 종료하면 엔진이 중지되어 실행 중인 모든 작업이 취소되므로 긴 워크플로우를 실행하는 경우 이 설정을 켜두는 것이 좋습니다.
 
-## 모양 (Appearance)
+## 모양 (Appearance) {: #appearance }
 
 ![모양 섹션](../../assets/img/desktop/app_settings-appearance.png)
 
@@ -28,7 +30,7 @@ Griptape Nodes Desktop에는 에디터의 **Settings** 메뉴에서 접근하는
 
 **Show system monitor**는 메인 내비게이션 아래에 1초마다 업데이트되는 실시간 CPU, 메모리 및 GPU 사용량 스트립을 추가합니다. 로컬 모델을 실행 중이고 리소스 여유가 있는지 확인하려는 경우 유용합니다.
 
-## 작업 공간 및 라이브러리 (Workspace & Libraries)
+## 작업 공간 및 라이브러리 (Workspace & Libraries) {: #workspace-libraries }
 
 ![작업 공간 및 라이브러리 섹션](../../assets/img/desktop/app_settings-workspace_libraries.png)
 
@@ -45,7 +47,7 @@ Griptape Nodes Desktop에는 에디터의 **Settings** 메뉴에서 접근하는
 
 이 섹션의 항목은 **Apply Changes**를 클릭할 때까지 적용되지 않으며, 클릭 시 엔진이 중지되고 재구성된 후 다시 시작됩니다. 먼저 워크플로우를 저장하세요.
 
-## 엔진 (Engine)
+## 엔진 (Engine) {: #engine }
 
 ![엔진 섹션](../../assets/img/desktop/app_settings-engine.png)
 
@@ -55,19 +57,21 @@ Griptape Nodes Desktop에는 에디터의 **Settings** 메뉴에서 접근하는
 
 **Direct Engine WebSocket URL**은 로컬 엔진이 바인딩하고 앱이 엔진과 직접 통신할 때 접속하는 주소입니다. 기본값인 `ws://127.0.0.1:18125`는 로컬 머신에서만 접근할 수 있는 루프백 소켓입니다. 엔진이 다른 위치에서 수신 대기하는 경우에만 변경한 후 엔진을 재시작하여 적용하세요.
 
-## 라이선스 (License)
+## 라이선스 (License) {: #license }
 
 ![라이선스 섹션](../../assets/img/desktop/app_settings-license.png)
 
 조직에서 라이선스 키로 Griptape Nodes를 실행하는 경우 이 섹션에서 관리합니다. 활성화된 각 라이선스는 조직, 라이선스 ID, 유형, 만료 날짜가 표시된 카드로 나타나며 현재 사용 중인 라이선스에는 **Active** 배지가 표시됩니다. 연필 아이콘을 사용하여 더 알기 쉬운 이름을 지정하거나 **Remove**를 클릭하여 이 머신에서 비활성화할 수 있습니다. 다른 라이선스를 활성 라이선스로 변경하면 엔진이 재시작됩니다.
 
-**Griptape Server Endpoint**는 클라우드 및 라이선스 요청을 위해 기본값인 `https://cloud.griptape.ai` 대신 온프레미스 Griptape 서버를 가리키도록 설정합니다. 변경 후 엔진을 재시작하세요.
+**Griptape Server Endpoint**는 라이선스가 활성화되어 있을 때 나타납니다. 앱과 엔진이 클라우드 및 라이선스 요청에 대해 기본값인 `https://cloud.griptape.ai` 대신 온프레미스 Griptape 서버를 사용하도록 설정합니다. 편집한 후 **Save**를 클릭한 다음 엔진을 재시작하세요.
+
+**Route HTTPS traffic through this server**(이 서버를 통해 HTTPS 트래픽 라우팅)는 활성 라이선스가 있을 때 나타납니다. 기본적으로 꺼져 있으며, 기본값이 아닌 서버 엔드포인트를 통해 HTTPS를 라우팅합니다. 요구 사항 및 설정은 [Admin Server를 통해 HTTPS 트래픽 라우팅하기](../../enterprise/using_the_admin_server.md#route-https-traffic-through-the-admin-server)를 참조하세요.
 
 다른 키를 추가하려면 상자에 붙여넣고 **Add & Activate**를 클릭합니다.
 
 전체 활성화 단계는 [Admin Server 사용하기](../../enterprise/using_the_admin_server.md)를 참조하세요. 키를 발급하는 관리자는 [Admin Dashboard](../../enterprise/admin_dashboard.md)를 참조하세요.
 
-## 로깅 및 진단 (Logging and Diagnostics)
+## 로깅 및 진단 (Logging and Diagnostics) {: #logging-and-diagnostics }
 
 ![로깅 및 진단 섹션](../../assets/img/desktop/app_settings-logging.png)
 
@@ -79,7 +83,7 @@ Griptape Nodes Desktop에는 에디터의 **Settings** 메뉴에서 접근하는
 
 로그를 확보한 후 확인해야 할 사항은 [문제 해결](../../troubleshooting.md)을 참조하세요.
 
-## 업데이트 (Updates)
+## 업데이트 (Updates) {: #updates }
 
 ![업데이트 섹션](../../assets/img/desktop/app_settings-updates.png)
 
@@ -99,7 +103,7 @@ Griptape Nodes Desktop에는 에디터의 **Settings** 메뉴에서 접근하는
 
     이 메시지는 관리자가 [머신 레벨 정책 파일](../../enterprise/disabling_app_updates.md)을 사용하여 앱 업데이트를 비활성화했음을 의미합니다. **Check for Updates**, **Update Behavior**, **Release Channel**을 사용할 수 없습니다. **Show release notes after updates**는 계속 사용할 수 있습니다.
 
-### 릴리스 채널 (Release channels)
+### 릴리스 채널 (Release channels) {: #release-channels }
 
 **Release Channel**은 앱이 업데이트할 빌드를 선택합니다.
 
@@ -118,7 +122,7 @@ Nightly 빌드는 하루에 한 번 발행되며 가장 최근의 14개만 유�
 
 채널 전환은 다음 업데이트 확인 시 적용됩니다(앱을 다음에 실행할 때, 백그라운드에서 몇 시간마다 실행되는 확인 시, 또는 **Check for Updates**를 클릭하는 즉시). 다시 설치할 필요가 없으며 안정화 버전 번호가 사용 중이던 nightly 버전보다 낮더라도 **Stable**로 다시 전환할 수 있습니다. 작업 공간, 워크플로우 및 설정은 어느 쪽이든 영향을 받지 않습니다.
 
-앱을 사용하는 대신 엔진을 직접 설치한 경우 해당하는 방식은 [FAQ](../../faq.md#출시-전-기능unreleased-features을-미리-테스트해보려면-어떻게-해야-하나요)에 설명된 시험판 엔진 채널입니다.
+앱을 사용하는 대신 엔진을 직접 설치한 경우 해당하는 방식은 [FAQ](../../faq.md#how-can-i-test-out-unreleased-features)에 설명된 시험판 엔진 채널입니다.
 
 ## Griptape Cloud API Key
 
@@ -126,11 +130,11 @@ Nightly 빌드는 하루에 한 번 발행되며 가장 최근의 14개만 유�
 
 앱이 사용자를 위해 프로비저닝한 API 키로, 기본적으로 숨겨져 있습니다. **Show**를 클릭하면 표시되고 **Copy**를 클릭하면 클립보드에 복사됩니다. 수동으로 설치된 엔진이나 스크립트에서 동일한 키를 사용하려는 경우 유용합니다. 비밀번호처럼 안전하게 다루세요. 이 섹션은 앱에 키가 있는 경우에만 표시되므로 로그인하는 대신 라이선스 키로 활성화한 경우에는 표시되지 않습니다.
 
-## 앱 데이터 위치 (App Data Locations)
+## 앱 데이터 위치 (App Data Locations) {: #app-data-locations }
 
-작업 공간과 별도로 앱이 자체 데이터를 보관하는 디렉터리입니다. **Open**을 클릭하면 Finder, 탐색기 또는 파일 관리자에서 폴더가 열립니다. 로그 파일은 여기에 포함되지 않으므로 [로깅 및 진단](#로깅-및-진단-logging-and-diagnostics) 또는 엔진 로그의 경우 Engine 페이지에서 내보내세요.
+작업 공간과 별도로 앱이 자체 데이터를 보관하는 디렉터리입니다. **Open**을 클릭하면 Finder, 탐색기 또는 파일 관리자에서 폴더가 열립니다. 로그 파일은 여기에 포함되지 않으므로 [로깅 및 진단](#logging-and-diagnostics) 또는 엔진 로그의 경우 Engine 페이지에서 내보내세요.
 
-## 환경 정보 (Environment Information)
+## 환경 정보 (Environment Information) {: #environment-information }
 
 ![환경 정보 섹션](../../assets/img/desktop/app_settings-environment_info.png)
 

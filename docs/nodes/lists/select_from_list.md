@@ -2,25 +2,25 @@
 
 드롭다운 인터페이스를 사용하여 문자열 리스트에서 항목을 선택합니다.
 
-## 설명 (Description)
+## 설명 (Description) {: #description }
 
 Select From List 노드는 사용자가 드롭다운 인터페이스를 통해 문자열 리스트에서 단일 항목을 선택할 수 있도록 합니다. 입력 리스트가 변경되면 선택 옵션을 자동으로 업데이트하며, 가능한 경우 현재 선택 항목을 유지합니다.
 
-## 파라미터 (Parameters)
+## 파라미터 (Parameters) {: #parameters }
 
-### 입력 파라미터 (Input Parameters)
+### 입력 파라미터 (Input Parameters) {: #input-parameters }
 
 | 파라미터 | 타입 | 설명 | 기본값 |
 | --------- | ---- | ---------------------------- | ------- |
 | `list`    | list | 선택할 항목들의 리스트 | `[]`    |
 
-### 출력 파라미터 (Output Parameters)
+### 출력 파라미터 (Output Parameters) {: #output-parameters }
 
 | 파라미터 | 타입 | 설명 |
 | --------------- | ------ | --------------------------- |
 | `selected_item` | string | 현재 선택된 항목 |
 
-## 주요 기능 (Features)
+## 주요 기능 (Features) {: #features }
 
 - **동적 드롭다운**: 입력 리스트의 항목으로 드롭다운을 자동으로 채웁니다.
 - **선택 유지**: 리스트가 업데이트되더라도 항목이 새 리스트에 남아 있으면 현재 선택을 유지합니다.
@@ -58,7 +58,7 @@ Select From List 노드는 사용자가 드롭다운 인터페이스를 통해 �
 # 선택 초기화: "Option X" (새 리스트의 첫 번째 항목으로 재설정)
 ```
 
-## 사용 사례 (Use Cases)
+## 사용 사례 (Use Cases) {: #use-cases }
 
 - **상태 선택**: 사전 정의된 상태 값에서 선택 (예: "In Progress", "Completed")
 - **카테고리 선택**: 카테고리 또는 유형 목록에서 선택
@@ -66,7 +66,7 @@ Select From List 노드는 사용자가 드롭다운 인터페이스를 통해 �
 - **사용자 인터페이스**: 워크플로우에 드롭다운 선택 UI 제공
 - **데이터 필터링**: 생성된 리스트에서 특정 항목 선택
 
-## 워크플로우 예시 (Workflow Examples)
+## 워크플로우 예시 (Workflow Examples) {: #workflow-examples }
 
 ### 상태 관리 워크플로우
 
@@ -90,7 +90,7 @@ JSON 데이터 → ["Option 1",  → "Option 2"    → 선택된 항목 처리
               "Option 3"]
 ```
 
-## 동작 방식 (Behavior)
+## 동작 방식 (Behavior) {: #behavior }
 
 ### 선택 로직
 
@@ -109,7 +109,7 @@ JSON 데이터 → ["Option 1",  → "Option 2"    → 선택된 항목 처리
 - 불리언: `True` → `"True"`
 - 객체: `{"key": "value"}` → `"{'key': 'value'}"`
 
-## 관련 노드 (Related Nodes)
+## 관련 노드 (Related Nodes) {: #related-nodes }
 
 - [Create Text List](create_text_list.md) - 텍스트 항목 리스트 생성
 - [Create List](create_list.md) - 다양한 입력으로부터 리스트 생성

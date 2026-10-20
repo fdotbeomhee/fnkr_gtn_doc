@@ -1,4 +1,4 @@
-# GUI에서 프로젝트 관리하기 (Managing Projects in the GUI)
+# GUI에서 프로젝트 관리하기 (Managing Projects in the GUI) {: #managing-projects-in-the-gui }
 
 **프로젝트(Project)**는 파일이 저장되는 위치와 사용할 라이브러리 및 엔진 버전을 Griptape Nodes에 알려주는 저장된 설정입니다. 프로젝트를 전환하면 수행하는 모든 작업에 대한 컨텍스트가 변경됩니다. 즉, 렌더링된 이미지와 다운로드가 저장되는 위치, 표시되는 워크플로, 사용할 수 있는 노드 라이브러리가 변경됩니다.
 
@@ -8,7 +8,7 @@
 
 ![Project Management 항목을 보여주는 열려 있는 Manage 메뉴](../../assets/img/projects/projects-gui-manage-menu.png)
 
-## 프로젝트 관리 창 (The Project Management window)
+## 프로젝트 관리 창 (The Project Management window) {: #the-project-management-window }
 
 프로젝트 관리 창은 **프로젝트 목록**으로 열립니다. 프로젝트는 트리 형태로 표시됩니다. 하위 프로젝트는 상위 프로젝트 아래에 중첩되어 나타납니다. 현재 작업 중인 프로젝트에는 **Active** 배지가 표시됩니다.
 
@@ -21,7 +21,7 @@
 
 목록에서 프로젝트를 클릭하면 상세 보기가 열려 검토하고 편집할 수 있습니다.
 
-## 프로젝트 전환하기
+## 프로젝트 전환하기 {: #switching-projects }
 
 전환은 가장 자주 수행하는 작업입니다. 프로젝트 관리 창에서 전환할 수 있지만(프로젝트 클릭 후 **Activate** 선택), 가장 빠른 방법은 워크플로 선택기의 **프로젝트 선택기(project picker)**를 사용하는 것입니다.
 
@@ -59,13 +59,13 @@
 
 ![폴더 선택기로 저장 위치 찾아보기](../../assets/img/projects/projects-gui-create-browse.png)
 
-### 고급 설정 (Advanced Settings)
+### 고급 설정 (Advanced Settings) {: #advanced-settings }
 
 대부분의 아티스트는 이 항목을 열 필요가 없습니다. **Advanced Settings**를 확장하면 다음이 나타납니다:
 
 - **Project ID**: 프로젝트의 고유하고 영구적인 식별자입니다. 이름과 짧은 임의의 접미사로부터 자동 생성되며 그대로 둘 수 있습니다. 직접 입력하려면 클릭하세요(소문자, 숫자, 대시만 사용 가능하며 고유해야 함). 프로젝트가 생성된 후에는 ID를 변경할 수 없습니다.
-- **Inherits settings from**: 상위 프로젝트입니다. 하위 프로젝트는 상위 프로젝트의 설정에서 시작하여 변경한 항목만 저장합니다. 기본적으로 위치에 연결되어 있으므로 위치를 선택하면 상위 프로젝트도 설정됩니다. 상속을 원하지 않는 경우 여기서 **Default Project**를 선택하세요. 상속 작동 방식은 [프로젝트](projects.md#상위-프로젝트-parent-projects)를 참조하세요.
-- **Workspace directory**: 새 프로젝트가 워크플로와 생성된 파일을 유지하는 위치입니다. 새 프로젝트의 기본값은 `./`(자체 폴더)이므로 자체 포함됩니다. 다른 위치를 가리키도록 변경하거나 비워 두어 상위 프로젝트에서 작업 공간을 상속받도록 하세요. (현재 스키마 프로젝트에만 표시됨. [스키마 버전](projects.md#스키마-버전-schema-versions) 참조.)
+- **Inherits settings from**: 상위 프로젝트입니다. 하위 프로젝트는 상위 프로젝트의 설정에서 시작하여 변경한 항목만 저장합니다. 기본적으로 위치에 연결되어 있으므로 위치를 선택하면 상위 프로젝트도 설정됩니다. 상속을 원하지 않는 경우 여기서 **Default Project**를 선택하세요. 상속 작동 방식은 [프로젝트](projects.md#parent-projects)를 참조하세요.
+- **Workspace directory**: 새 프로젝트가 워크플로와 생성된 파일을 유지하는 위치입니다. 새 프로젝트의 기본값은 `./`(자체 폴더)이므로 자체 포함됩니다. 다른 위치를 가리키도록 변경하거나 비워 두어 상위 프로젝트에서 작업 공간을 상속받도록 하세요. (현재 스키마 프로젝트에만 표시됨. [스키마 버전](projects.md#schema-versions) 참조.)
 
 ![Project ID, Inherits-settings-from 및 Workspace directory 필드를 보여주는 확장된 Advanced Settings](../../assets/img/projects/projects-gui-create-advanced.png)
 
@@ -73,7 +73,7 @@
 
 ![저장, 등록 및 활성화를 단계별로 진행하는 생성 진행 패널](../../assets/img/projects/projects-gui-create-progress.png)
 
-> 위치 또는 상위 프로젝트가 특정 라이브러리 버전을 고정하는 경우, 전환할 때 표시되는 것과 동일한 [프로비저닝 미리보기](#프로젝트-전환하기)가 여기에 나타나 새 프로젝트가 활성화되기 전에 해당 라이브러리를 검토하고 승인할 수 있습니다.
+> 위치 또는 상위 프로젝트가 특정 라이브러리 버전을 고정하는 경우, 전환할 때 표시되는 것과 동일한 [프로비저닝 미리보기](#switching-projects)가 여기에 나타나 새 프로젝트가 활성화되기 전에 해당 라이브러리를 검토하고 승인할 수 있습니다.
 
 준비가 완료되면 **Project created** 확인 메시지가 나타납니다.
 
@@ -89,7 +89,7 @@
 
 **Inherits from** 드롭다운은 상위 프로젝트를 설정(또는 지움)합니다. 상세 보기에는 프로젝트의 편집 가능한 섹션도 표시됩니다:
 
-### 작업 공간 디렉터리 (Workspace directory)
+### 작업 공간 디렉터리 (Workspace directory) {: #workspace-directory }
 
 **Workspace dir** 필드는 이 프로젝트의 작업이 시작되는 위치를 설정합니다. 즉, 상대 경로, 출력 및 다운로드가 확인되는 기준 폴더입니다. 이는 작업 공간을 선택하는 최우선 방법으로 사용자별 설정 및 전역 설정을 오버라이드합니다.
 
@@ -97,9 +97,9 @@
 
 ![계산된 작업 공간을 회색 플레이스홀더 텍스트로 표시하는 Workspace dir 필드](../../assets/img/projects/projects-gui-workspace-dir.png)
 
-전체 레퍼런스는 [작업 공간 디렉터리](projects.md#작업-공간-디렉터리-workspace-directory) 및 [작업 공간](workspace.md)을 참조하세요.
+전체 레퍼런스는 [작업 공간 디렉터리](projects.md#workspace-directory) 및 [작업 공간](workspace.md)을 참조하세요.
 
-### 라이브러리 디렉터리 (Libraries directory)
+### 라이브러리 디렉터리 (Libraries directory) {: #libraries-directory }
 
 **Libraries dir** 필드는 이 프로젝트가 작업 공간과 별도로 라이브러리를 설치하고 확인하는 위치를 설정합니다. 관련 프로젝트가 각각 자체 복사본을 다시 다운로드하는 대신 하나의 라이브러리 설치 위치를 공유할 수 있도록 설정하세요.
 
@@ -107,9 +107,9 @@
 
 ![프로젝트 상세 보기의 Libraries dir 필드](../../assets/img/projects/projects-gui-libraries-dir.png)
 
-전체 레퍼런스는 [라이브러리 디렉터리](projects.md#라이브러리-디렉터리-libraries-directory)를 참조하세요.
+전체 레퍼런스는 [라이브러리 디렉터리](projects.md#libraries-directory)를 참조하세요.
 
-### 디렉터리 (Directories)
+### 디렉터리 (Directories) {: #directories }
 
 **Directories**는 짧은 논리적 이름(예: `outputs`)을 실제 폴더 경로에 매핑합니다. 워크플로와 노드는 이름을 참조하고 프로젝트는 실제로 가리키는 위치를 결정합니다. **Add Directory**를 사용하여 디렉터리를 생성하고 행의 플랫폼별 토글을 사용하여 Linux, macOS, Windows에서 디렉터리에 서로 다른 경로를 지정할 수 있습니다.
 
@@ -119,7 +119,7 @@
 
 전체 레퍼런스는 [디렉터리](directories.md)를 참조하세요.
 
-### 파일 확장자 디렉터리 (File Extension Directories)
+### 파일 확장자 디렉터리 (File Extension Directories) {: #file-extension-directories }
 
 **File Extension Directories**는 확장자를 기반으로 파일을 폴더로 라우팅합니다(예: `png → images`, `mp4 → videos`). 매핑을 추가하거나 편집하려면 섹션을 확장하세요.
 
@@ -127,7 +127,7 @@
 
 전체 레퍼런스는 [파일 확장자 디렉터리](file_extension_directories.md)를 참조하세요.
 
-### 환경 (Environment)
+### 환경 (Environment) {: #environment }
 
 **Environment**는 이 프로젝트가 제공하는 사용자 정의 키-값 변수 집합입니다. 프로젝트의 다른 곳에서 이를 참조할 수 있습니다. 변수를 추가하려면 **Add Variable**을 사용하세요.
 
@@ -135,7 +135,7 @@
 
 전체 레퍼런스는 [환경 및 내장 변수](environment.md)를 참조하세요.
 
-### 상황 (Situations)
+### 상황 (Situations) {: #situations }
 
 **Situations**는 명명된 파일 저장 시나리오입니다(예: 노드 출력 저장, URL 다운로드). 각 상황에는 경로 템플릿(매크로)과 파일이 이미 존재할 때 수행할 동작에 대한 정책이 있습니다. 상황을 정의하려면 **Add Situation**을 사용하세요.
 
@@ -150,7 +150,7 @@
 - **Validate**: 저장하지 않고 프로젝트에 문제가 있는지 확인합니다. 문제는 필드 및 설명과 함께 나열되며, 문제가 없으면 **Template is valid**로 보고됩니다.
 - **Reload from Disk**: 창 내부의 편집 내용을 취소하고 디스크에 저장된 상태로 파일을 다시 로드합니다.
 - **Save Changes**: 편집 내용을 프로젝트 파일에 다시 저장합니다. (저장되지 않은 변경 사항이 있는 경우에만 활성화됨.)
-- **Upgrade schema**: 프로젝트가 엔진의 현재 스키마 버전보다 이전 버전인 경우에만 나타납니다. 아래의 [프로젝트 스키마 업그레이드](#프로젝트-스키마-업그레이드-upgrading-a-projects-schema)를 참조하세요.
+- **Upgrade schema**: 프로젝트가 엔진의 현재 스키마 버전보다 이전 버전인 경우에만 나타납니다. 아래의 [프로젝트 스키마 업그레이드](#upgrading-a-projects-schema)를 참조하세요.
 - **Back to Projects**: 목록으로 돌아갑니다. 저장되지 않은 변경 사항이 있는 경우 취소하기 전에 확인을 요청합니다.
 
 ![Back to Projects, Validate, Reload from Disk, Save Changes가 있는 상세 보기 툴바](../../assets/img/projects/projects-gui-detail-toolbar.png)
@@ -159,7 +159,7 @@
 
 ![프로젝트의 고정된 라이브러리 버전을 나열하는 Library Pins 패널](../../assets/img/projects/projects-gui-library-pins.png)
 
-### 프로젝트 스키마 업그레이드 (Upgrading a project's schema)
+### 프로젝트 스키마 업그레이드 (Upgrading a project's schema) {: #upgrading-a-projects-schema }
 
 프로젝트가 엔진이 제공하는 버전보다 이전 메이저 스키마 버전으로 생성된 경우(예: 현재 스키마가 `1.x`인 엔진의 `0.x` 프로젝트), 툴바에 **Upgrade schema** 버튼이 나타납니다. 업그레이드하면 현재 기본값에 프로젝트를 다시 기반으로 설정합니다. 명시적으로 사용자 정의한 설정은 유지되고 이전 기본값으로 남겨둔 모든 항목은 새 기본값을 채택합니다.
 
@@ -206,7 +206,7 @@
 
 **Choose location & import**를 클릭하고 압축을 풀 폴더를 선택하면 프로젝트가 목록에 등록됩니다. 저장된 위치를 보여주는 확인 메시지가 나타납니다(설정할 시크릿도 다시 알려줌). 가져온 프로젝트가 목록에 추가되지만 자동으로 활성화되지는 **않습니다**. 준비가 되었을 때 전환하세요.
 
-## 기본 프로젝트 (The Default Project)
+## 기본 프로젝트 (The Default Project) {: #the-default-project }
 
 Griptape Nodes에는 항상 내장된 **Default Project**가 포함되어 있습니다. 읽기 전용으로 조회할 수는 있지만 편집하거나 저장할 수는 없습니다. 열면 배너에 이에 대한 설명이 표시되고 **Create a custom project** 바로가기가 제공되어 자체 디렉터리, 상황 및 변수를 정의할 수 있습니다.
 

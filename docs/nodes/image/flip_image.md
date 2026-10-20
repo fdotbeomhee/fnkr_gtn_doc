@@ -24,16 +24,16 @@ FlipImage 노드는 이미지를 가로(수평), 세로(수직) 또는 양방향
 1. 뒤집을 방향을 선택합니다.
 1. 뒤집힌 이미지는 "output" 파라미터에서 확인할 수 있습니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
-#### 뒤집기 설정 (Flip Settings)
+#### 뒤집기 설정 (Flip Settings) {: #flip-settings }
 
 - **direction**: 이미지를 뒤집을 방향
     - **horizontal**: 좌우로 뒤집기 (거울 효과)
     - **vertical**: 상하로 뒤집기 (상하 반전)
     - **both**: 가로 및 세로 모두 뒤집기 (180° 회전)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 뒤집힌 이미지
 - **was_successful**: 뒤집기 작업의 성공 여부를 나타냅니다.

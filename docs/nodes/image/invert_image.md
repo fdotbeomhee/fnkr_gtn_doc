@@ -22,11 +22,11 @@ InvertImage 노드는 모든 색상 값을 반전하여 입력 이미지의 네�
 1. 이미지 소스를 "input_image" 입력에 연결합니다.
 1. 반전된 이미지는 "output" 파라미터에서 확인할 수 있습니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **input_image**: 반전할 원본 이미지 (다른 이미지 노드에서 연결 가능)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 입력 이미지의 반전된(네거티브) 버전
 

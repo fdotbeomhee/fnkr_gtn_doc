@@ -21,14 +21,14 @@ RulesetList 노드는 여러 규칙 세트(Rulesets)를 하나의 목록으로 �
 1. 최대 4개의 개별 규칙 세트 노드를 입력 파라미터(ruleset_1, ruleset_2, ruleset_3, ruleset_4)에 연결합니다.
 1. 출력(rulesets)을 규칙 세트 목록을 입력으로 받는 노드에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **ruleset_1**: 결합 목록에 추가할 첫 번째 규칙 세트
 - **ruleset_2**: 결합 목록에 추가할 두 번째 규칙 세트
 - **ruleset_3**: 결합 목록에 추가할 세 번째 규칙 세트
 - **ruleset_4**: 결합 목록에 추가할 네 번째 규칙 세트
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **rulesets**: null이 아닌 모든 입력 규칙 세트를 포함하는 결합된 목록
 

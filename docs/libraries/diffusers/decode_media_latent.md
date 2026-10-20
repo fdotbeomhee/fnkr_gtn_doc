@@ -19,21 +19,21 @@ Generate Media Latents → [Decode Media Latent] → Save Image / Save Video
 
 <img src="../assets/nodes/decode-media-latent.png" alt="Decode Media Latent" width="480">
 
-### 입력 (Inputs)
+### 입력 (Inputs) {: #inputs }
 
 | 이름 | 유형 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
 | `pipeline` | `Pipeline Config` | 예 | 잠재 텐서를 생성한 파이프라인과 일치해야 합니다. |
 | `latent_tensor` | `LatentArtifact` | 예 | 디코딩할 잠재 텐서입니다. |
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |
 | `output_image` | `ImageArtifact` | 이미지 파이프라인용 출력입니다. |
 | `output_video` | `VideoUrlArtifact` | 비디오 파이프라인용 출력입니다. |
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 | 이름 | 유형 | 기본값 | 설명 |
 | --- | --- | --- | --- |

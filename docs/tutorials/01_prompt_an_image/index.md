@@ -1,4 +1,4 @@
-# Lesson 2: 이미지 프롬프트 생성 (Prompt an Image)
+# Lesson 2: 이미지 프롬프트 생성 (Prompt an Image) {: #prompt-an-image }
 
 Griptape Nodes 시리즈의 두 번째 튜토리얼에 오신 것을 환영합니다! 이 가이드에서는 GenerateImage 노드를 익히는 데 집중합니다.
 

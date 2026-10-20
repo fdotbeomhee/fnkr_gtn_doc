@@ -24,7 +24,7 @@ FlipVideo 노드는 비디오를 가로(수평), 세로(수직) 또는 양방향
 1. 반전 방향(horizontal, vertical, both)을 선택합니다.
 1. 워크플로우를 실행하여 비디오를 반전합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **video**: 반전할 비디오 콘텐츠 (VideoArtifact 및 VideoUrlArtifact 지원)
 
@@ -40,7 +40,7 @@ FlipVideo 노드는 비디오를 가로(수평), 세로(수직) 또는 양방향
     - **balanced**: 속도와 품질의 균형 (medium 프리셋, CRF 23)
     - **quality**: 최고 품질, 느린 처리 속도 (slow 프리셋, CRF 18)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **video**: 반전된 비디오 (다른 노드에 연결하여 사용 가능)
 

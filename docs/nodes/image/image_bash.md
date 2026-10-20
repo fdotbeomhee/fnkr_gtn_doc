@@ -25,9 +25,9 @@ ImageBash 노드를 사용하면 여러 이미지를 단일 캔버스에 결합�
 1. 캔버스 크기와 배경 색상을 설정합니다.
 1. 합성된 이미지는 "output_image" 파라미터에서 확인할 수 있습니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
-#### 캔버스 설정 (Canvas Settings)
+#### 캔버스 설정 (Canvas Settings) {: #canvas-settings }
 
 - **canvas_size**: 출력 캔버스의 크기
 
@@ -45,11 +45,11 @@ ImageBash 노드를 사용하면 여러 이미지를 단일 캔버스에 결합�
 
 - **background_color** (16진수 색상 코드, 기본값: #ffffff): 빈 영역의 배경 색상
 
-#### 이미지 입력 (Image Input)
+#### 이미지 입력 (Image Input) {: #image-input }
 
 - **input_images**: 결합할 이미지 목록 (여러 이미지 소스에서 연결 가능)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output_image**: 모든 입력 이미지가 결합된 합성 이미지
 

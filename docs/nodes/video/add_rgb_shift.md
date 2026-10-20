@@ -25,7 +25,7 @@ AddRGBShift 노드는 비디오에 RGB 시프트(색수차, Chromatic aberration
 1. 필요에 따라 티어(Tear) 효과를 활성화하고 위치 및 오프셋을 설정합니다.
 1. 워크플로우를 실행하여 RGB 시프트 효과를 적용합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 #### RGB 시프트 설정
 
@@ -51,7 +51,7 @@ AddRGBShift 노드는 비디오에 RGB 시프트(색수차, Chromatic aberration
     - **balanced**: 속도와 품질의 균형 잡힌 설정 (medium 프리셋, CRF 23)
     - **quality**: 최고 품질, 느린 처리 속도 (slow 프리셋, CRF 18)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **video**: RGB 시프트 효과가 적용된 비디오이며, 다른 노드에 연결할 수 있는 출력으로 제공됩니다.
 

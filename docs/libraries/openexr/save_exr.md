@@ -22,7 +22,7 @@ Load EXR (채널들) → [Save EXR]
 
 <!-- TODO: add ../assets/save-exr.png screenshot -->
 
-## 입력 (Inputs)
+## 입력 (Inputs) {: #inputs }
 
 | 이름 | 타입 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
@@ -32,14 +32,14 @@ Load EXR (채널들) → [Save EXR]
 | `channel_b` | `EXRChannelArtifact` | 아니요 | B로 작성할 채널입니다 (Mode B). |
 | `channel_a` | `EXRChannelArtifact` | 아니요 | A로 작성할 채널입니다 (Mode B). |
 
-## 출력 (Outputs)
+## 출력 (Outputs) {: #outputs }
 
 | 이름 | 타입 | 설명 |
 | --- | --- | --- |
 | `output_file` | `str` | 저장된 `.exr` 파일의 경로입니다. |
 | `output_part` | `EXRPartArtifact` | 저장된 파트의 디스크립터 — [Display EXR Part](display_exr_part.md) 또는 [Load EXR](load_exr.md) 사용 노드에 연결 가능합니다. |
 
-## 파라미터 (Parameters)
+## 파라미터 (Parameters) {: #parameters }
 
 | 이름 | 타입 | 기본값 | 설명 |
 | --- | --- | --- | --- |

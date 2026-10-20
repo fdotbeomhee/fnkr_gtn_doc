@@ -1,4 +1,4 @@
-# Lesson 5: 포토그래피 팀 구축하기 (Build a Photography Team)
+# Lesson 5: 포토그래피 팀 구축하기 (Build a Photography Team) {: #build-a-photography-team }
 
 Griptape Nodes 신규 사용자 시리즈의 다섯 번째이자 마지막 튜토리얼에 오신 것을 환영합니다! 이 가이드에서는 프롬프트 엔지니어링 개념을 확장하고 더 높은 정밀도와 제어력을 제공하는 추가 노드들을 소개합니다. 팀처럼 협력하여 멋진 이미지 프롬프트를 생성하는 정교한 조율 에이전트 시스템을 살펴보며 그 과정에서 몇 가지 중요한 새 노드들도 함께 배웁니다.
 
@@ -112,7 +112,7 @@ RuleSetList는 잠시 후에 이야기할 ToolList와 유사하게 수집기 또
  <img src="assets/tools_concept.png" alt="Tools concept">
 </p>
 
-## 에이전트를 도구로 변환하기 (Converting Agents to Tools)
+## 에이전트를 도구로 변환하기 (Converting Agents to Tools) {: #converting-agents-to-tools }
 
 Griptape Nodes에서는 전체 에이전트를 도구로 변환할 수 있습니다. 이를 통해 주 에이전트(오케스트레이터)가 특화된 하위 에이전트에게 특정 작업을 위임하여 전문 지식이 분산된 계층 구조를 구축할 수 있습니다. 여러 작업을 동시에 처리하기보다 한 가지 작업에 집중할 때 사람이 더 뛰어난 성과를 내듯, 에이전트도 "자신의 전문 영역"에 집중할 때 훨씬 안정적으로 작동합니다.
 
@@ -138,7 +138,7 @@ RuleSetList가 RuleSet을 정리하듯 ToolList는 여러 도구를 에이전트
   <img src="assets/tool_list.png" alt="Tool list">
 </p>
 
-## 오케스트레이터 (The Orchestrator)
+## 오케스트레이터 (The Orchestrator) {: #the-orchestrator }
 
 이 워크플로우의 중심 구성 요소는 오케스트레이터 에이전트입니다:
 

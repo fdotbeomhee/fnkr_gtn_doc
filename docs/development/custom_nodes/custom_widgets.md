@@ -1,4 +1,4 @@
-# 커스텀 위젯 (Custom Widgets)
+# 커스텀 위젯 (Custom Widgets) {: #custom-widgets }
 
 Griptape Nodes는 Vue/JavaScript 기반의 커스텀 프론트엔드 위젯을 지원하여 기본 제공 위젯 외에 독창적인 UI 컴포넌트를 노드에 통합할 수 있습니다.
 

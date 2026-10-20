@@ -1,4 +1,4 @@
-# Lesson 4: 프롬프트 비교하기 (Compare Prompts)
+# Lesson 4: 프롬프트 비교하기 (Compare Prompts) {: #compare-prompts }
 
 Griptape Nodes의 네 번째 튜토리얼에 오신 것을 환영합니다! 멀티 에이전트 시스템과 이미지 생성에 대해 이미 알고 있는 지식을 바탕으로 흥미로운 프롬프트 엔지니어링의 세계를 살펴봅니다. 기성 솔루션을 사용하는 방법과 지속적으로 더 나은 결과를 얻기 위해 자체 프롬프트 구축 워크플로우를 만드는 방법을 배웁니다. 또한 "Enhance Prompt" 기능이 배후에서 어떻게 마법을 부리는지도 함께 알아봅니다!
 
@@ -46,7 +46,7 @@ Griptape Nodes의 네 번째 튜토리얼에 오신 것을 환영합니다! 멀�
 
 ## 다양한 프롬프트 방식 비교하기
 
-### 방식 1: 기본 프롬프트 (Basic Prompt)
+### 방식 1: 기본 프롬프트 (Basic Prompt) {: #basic-prompt }
 
 가장 직관적인 접근 방식부터 시작해 보겠습니다:
 
@@ -83,7 +83,7 @@ Griptape Nodes의 네 번째 튜토리얼에 오신 것을 환영합니다! 멀�
   <img src="assets/enhanced_prompt_image.png" alt="Enhanced prompt image" width="450">
 </p>
 
-### 방식 3: 맞춤형 에이전트 향상 프롬프트 (Bespoke Agent-Enhanced Prompt)
+### 방식 3: 맞춤형 에이전트 향상 프롬프트 (Bespoke Agent-Enhanced Prompt) {: #bespoke-agent-enhanced-prompt }
 
 세 번째 방식은 우리만의 커스텀 프롬프트 향상 과정을 만드는 방법을 보여줍니다:
 

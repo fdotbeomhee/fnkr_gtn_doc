@@ -19,9 +19,9 @@ StartFlow는 워크플로의 시작을 나타내는 특별한 기본 구성 요�
 1. 워크플로에 StartFlow를 추가합니다.
 1. 흐름의 첫 번째 동작 노드에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **exec_out** - 흐름의 다음 노드로 제어를 전달하기 위해 이 핀을 사용합니다.
 

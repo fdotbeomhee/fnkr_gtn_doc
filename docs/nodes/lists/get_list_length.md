@@ -22,12 +22,12 @@ GetListLength 노드는 리스트의 항목 수를 계산하여 출력하는 유
 1. 아무 리스트나 "items" 입력에 연결합니다.
 1. 노드가 리스트의 길이를 자동으로 계산하여 출력합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **items**: 측정할 대상 리스트 (리스트 입력)
 - **length**: 리스트의 항목 수 (정수형 출력)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **length**: 입력 리스트의 항목 수를 나타내는 정수
 

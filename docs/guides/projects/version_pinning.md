@@ -1,9 +1,9 @@
-# 엔진 및 라이브러리 버전 고정 (Pinning engine and library versions)
+# 엔진 및 라이브러리 버전 고정 (Pinning engine and library versions) {: #pinning-engine-and-library-versions }
 
 이 가이드는 프로젝트를 배포하고 검증된 엔진 버전 및 검증된 라이브러리 버전 세트에서 프로젝트가 실행되도록 해야 하는 관리자를 위한 것입니다.
 버전 고정(Pinning)을 사용하면 프로젝트가 신뢰할 수 있는 단일 소스(Source of truth)가 됩니다. 사용자가 프로젝트를 활성화할 때 호환되지 않는 버전에서는 엔진 실행이 차단되고 고정된 각 라이브러리를 프로젝트가 선언한 버전으로 프로비저닝합니다.
 
-두 고정 설정은 모두 **프로젝트 인접 설정(project-adjacent config)**인 프로젝트의 `griptape-nodes-project.yml` 옆에 위치한 `griptape_nodes_config.json`에 저장됩니다. 프로젝트 YAML 자체에는 버전 데이터가 포함되지 않으며 인접 구성에 포함됩니다. 이 파일이 사용자 설정 위에 어떻게 계층화되는지에 대해서는 [워크스페이스](workspace.md#구성-파일-config-files)를 참조하세요.
+두 고정 설정은 모두 **프로젝트 인접 설정(project-adjacent config)**인 프로젝트의 `griptape-nodes-project.yml` 옆에 위치한 `griptape_nodes_config.json`에 저장됩니다. 프로젝트 YAML 자체에는 버전 데이터가 포함되지 않으며 인접 구성에 포함됩니다. 이 파일이 사용자 설정 위에 어떻게 계층화되는지에 대해서는 [워크스페이스](workspace.md#config-files)를 참조하세요.
 
 ```
 /MyProject/
@@ -70,7 +70,7 @@
 
 ### 다운로드 저장 위치
 
-`libraries_to_download`는 설치할 대상과 버전을 정의하며, [`libraries_dir`](projects.md#라이브러리-디렉터리-libraries-directory)(프로젝트 YAML의 필드)은 해당 라이브러리가 설치되고 확인되는 **위치**를 정의합니다. 두 설정이 조합되어 고정된 각 다운로드가 프로젝트의 확인된 라이브러리 디렉터리에 프로비저닝됩니다. 프로젝트가 `libraries_dir`을 선언하지 않은 경우(부모로부터 상속받지도 않은 경우) 다운로드는 워크스페이스 기준 `libraries` 디렉터리에 저장됩니다. 프로젝트 트리 전체에서 공유되는 `libraries_dir`을 사용하면 부모가 한 번 다운로드한 고정 라이브러리를 모든 자식이 다시 다운로드하지 않고 재사용할 수 있습니다.
+`libraries_to_download`는 설치할 대상과 버전을 정의하며, [`libraries_dir`](projects.md#libraries-directory)(프로젝트 YAML의 필드)은 해당 라이브러리가 설치되고 확인되는 **위치**를 정의합니다. 두 설정이 조합되어 고정된 각 다운로드가 프로젝트의 확인된 라이브러리 디렉터리에 프로비저닝됩니다. 프로젝트가 `libraries_dir`을 선언하지 않은 경우(부모로부터 상속받지도 않은 경우) 다운로드는 워크스페이스 기준 `libraries` 디렉터리에 저장됩니다. 프로젝트 트리 전체에서 공유되는 `libraries_dir`을 사용하면 부모가 한 번 다운로드한 고정 라이브러리를 모든 자식이 다시 다운로드하지 않고 재사용할 수 있습니다.
 
 ## 활성화 시 일어나는 일
 
@@ -125,5 +125,5 @@
 ## 참고 사항 및 주의점
 
 - **단순 문자열도 계속 작동합니다.** 기존의 `"libraries_to_download": ["user/repo"]` 목록은 버전 강제 없이 소스에서 계속 클론합니다. 객체 형태만 `version`을 강제합니다.
-- **사용자별 오버라이드가 우선합니다.** 사용자의 워크스페이스 설정은 프로젝트 인접 설정보다 상위에 위치합니다([워크스페이스](workspace.md#구성-확인-순서-config-resolution-order) 참조). 사용자는 로컬에서 고정 설정을 오버라이드할 수 있습니다. 고정 설정은 프로젝트와 함께 배포되는 기본값이며 강제 잠금이 아닙니다.
-- **CLI 대안.** 헤드리스 엔진을 자동화하는 관리자는 `griptape-nodes libraries download <git_url>`로 라이브러리를 클론하고 `griptape-nodes libraries sync`로 업데이트할 수 있습니다. [라이브러리](../libraries.md#cli-대안) 및 [명령줄 인터페이스](../../reference/command_line_interface.md) 참조를 확인하세요. 위의 선언적 구성은 프로젝트와 함께 동일한 고정 설정을 제공하는 이식 가능한 방법입니다.
+- **사용자별 오버라이드가 우선합니다.** 사용자의 워크스페이스 설정은 프로젝트 인접 설정보다 상위에 위치합니다([워크스페이스](workspace.md#config-resolution-order) 참조). 사용자는 로컬에서 고정 설정을 오버라이드할 수 있습니다. 고정 설정은 프로젝트와 함께 배포되는 기본값이며 강제 잠금이 아닙니다.
+- **CLI 대안.** 헤드리스 엔진을 자동화하는 관리자는 `griptape-nodes libraries download <git_url>`로 라이브러리를 클론하고 `griptape-nodes libraries sync`로 업데이트할 수 있습니다. [라이브러리](../libraries.md#cli-alternatives) 및 [명령줄 인터페이스](../../reference/command_line_interface.md) 참조를 확인하세요. 위의 선언적 구성은 프로젝트와 함께 동일한 고정 설정을 제공하는 이식 가능한 방법입니다.

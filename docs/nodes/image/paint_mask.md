@@ -24,11 +24,11 @@ PaintMask 노드는 입력 이미지로부터 편집 가능한 마스크를 생�
 1. "output_mask" 파라미터의 페인팅 인터페이스를 사용하여 마스크를 편집합니다.
 1. 마스크가 적용된 최종 이미지는 "output_image" 파라미터에서 확인할 수 있습니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **input_image**: 마스크를 생성할 원본 이미지 (다른 이미지 노드에서 연결 가능)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output_mask**: 투명도를 수정하기 위해 직접 칠할 수 있는 편집 가능한 마스크 이미지
 - **output_image**: 마스크가 적용된 최종 이미지 (마스크 기반의 투명도 적용)

@@ -21,7 +21,7 @@
 
 <!-- TODO: add ../assets/nuke-script.png screenshot -->
 
-## 빠른 시작 (Quick start)
+## 빠른 시작 (Quick start) {: #quick-start }
 
 1. 캔버스에 **Nuke Script** 노드를 추가합니다.
 1. **Script Path**를 `.nk` 파일 경로로 설정합니다.
@@ -30,14 +30,14 @@
 1. Griptape으로 돌아와 **Refresh UI**를 클릭합니다(또는 스크립트 경로를 다시 선택). 주석과 일치하는 타입화된 입력/출력 포트가 노드에 생성됩니다.
 1. 입력을 연결하고 **Frame Start** / **Frame End**를 설정한 후 노드를 실행합니다.
 
-## 입력 (Inputs)
+## 입력 (Inputs) {: #inputs }
 
 | 이름 | 타입 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
 | `script_path` | `str` | 예 | `.nk` 파일 경로입니다. |
 | `<annotated Read nodes>` | `str \| ImageArtifact \| ImageUrlArtifact \| VideoUrlArtifact \| BlobArtifact` | 아니요 | 입력으로 주석이 달린 Read 노드마다 하나의 포트가 생성됩니다. URL 기반 아티팩트는 렌더링 전에 임시 파일로 다운로드됩니다. |
 
-## 출력 (Outputs)
+## 출력 (Outputs) {: #outputs }
 
 출력으로 주석이 지정된 Write 노드는 노드 실행 후 **Outputs** 그룹에 표시됩니다. 아티팩트 타입은 주석에 따라 결정됩니다:
 
@@ -48,11 +48,11 @@
 | `ImageSequenceArtifact` | `ImageUrlArtifact`의 `ListArtifact` — 렌더링된 프레임당 하나 |
 | `ThreeDUrlArtifact` / `GLTFUrlArtifact` | `ThreeDUrlArtifact` (`.obj` 또는 `.glb`) |
 
-## 파라미터 (Parameters)
+## 파라미터 (Parameters) {: #parameters }
 
 | 이름 | 타입 | 기본값 | 설명 |
 | --- | --- | --- | --- |
-| `nuke_installation` | choice | 자동 감지 | 설치 검색을 통해 채워지는 **Nuke Version** 드롭다운입니다 ([라이브러리 개요](index.md#nuke-설치-환경-설정) 참조). |
+| `nuke_installation` | choice | 자동 감지 | 설치 검색을 통해 채워지는 **Nuke Version** 드롭다운입니다 ([라이브러리 개요](index.md#configuring-nuke-installations) 참조). |
 | `frame_start` | `int` | 스크립트 기본값 | 렌더링할 시작 프레임입니다. |
 | `frame_end` | `int` | 스크립트 기본값 | 렌더링할 마지막 프레임입니다. |
 | `<exposed knobs>` | 다양함 | 스크립트 값 | Annotator 패널의 **Expose** 탭을 통해 노출된 노브들이 해당 노드 이름 아래에 그룹화되어 표시됩니다. 스크립트의 기존 값을 사용하려면 비워두고, 렌더링 전에 재정의하려면 값을 설정하세요. |

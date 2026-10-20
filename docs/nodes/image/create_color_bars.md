@@ -25,7 +25,7 @@ CreateColorBars 노드는 비디오 캘리브레이션, 디스플레이 테스�
 1. 테스트 패턴의 너비(width)와 높이(height)를 설정합니다 (기본값: 1920x1080).
 1. 생성된 컬러 바 이미지가 "image" 출력을 통해 제공됩니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 #### 주요 설정
 
@@ -70,7 +70,7 @@ bar_type으로 "Pluge"를 선택했을 때만 표시되는 파라미터입니다
     - **vertical**: 세로 방향 배치 (기본값)
     - **horizontal**: 가로 방향 배치
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **image**: ImageUrlArtifact 형식의 생성된 컬러 바 이미지
 

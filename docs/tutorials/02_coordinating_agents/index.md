@@ -1,4 +1,4 @@
-# Lesson 3: 에이전트 조율하기 (Coordinating Agents)
+# Lesson 3: 에이전트 조율하기 (Coordinating Agents) {: #coordinating-agents }
 
 Griptape Nodes 시리즈의 세 번째 튜토리얼에 오신 것을 환영합니다! 이 가이드에서는 워크플로우 내에서 여러 에이전트를 조율하여 순차적인 작업(구체적으로 언어 간 이야기 번역 및 요약)을 수행하는 방법을 배웁니다.
 
@@ -122,7 +122,7 @@ MergeTexts 노드의 출력을 두 번째 Agent 노드의 **prompt**에 연결�
   <img src="assets/mandarin_display.png" alt="Display setup"  width="500">
 </p>
 
-## 실행 순서 이해하기 (Exec Chain)
+## 실행 순서 이해하기 (Exec Chain) {: #exec-chain }
 
 Griptape Nodes의 핵심 개념 중 하나는 실행 체인(execution chain)입니다. 워크플로우가 복잡해질수록 실행 순서를 제어하는 것이 중요해집니다. 이 개념을 살펴보겠습니다.
 

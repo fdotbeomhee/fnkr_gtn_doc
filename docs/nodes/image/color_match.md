@@ -27,7 +27,7 @@ ColorMatch 노드는 다양한 색상 일치(Color Matching) 알고리즘을 사
 1. 필요에 따라 강도(strength) 파라미터를 조정합니다.
 1. 색상이 일치된 이미지가 "output" 파라미터를 통해 출력됩니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 #### 이미지 입력
 
@@ -51,7 +51,7 @@ ColorMatch 노드는 다양한 색상 일치(Color Matching) 알고리즘을 사
     - 1.0 = 전체 색상 전송 적용
     - 1.0 초과 = 효과 과장/강화
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 색상 특성이 전송되어 일치된 결과 이미지
 
@@ -69,7 +69,7 @@ ColorMatch 노드는 다양한 색상 일치(Color Matching) 알고리즘을 사
 
 ### 활용 사례
 
-#### 사진 컬러 그레이딩 (Photo Color Grading)
+#### 사진 컬러 그레이딩 (Photo Color Grading) {: #photo-color-grading }
 
 전문적으로 보정된 사진의 색상 팔레트를 내 사진에 적용:
 
@@ -78,7 +78,7 @@ ColorMatch 노드는 다양한 색상 일치(Color Matching) 알고리즘을 사
 1. "reinhard" 또는 "mkl" 방식을 선택합니다.
 1. 취향에 맞게 강도를 조절합니다 (은은한 효과는 0.7-1.0, 극적인 효과는 1.0-1.5).
 
-#### 스톱모션 조명 보정 (Stop-Motion Correction)
+#### 스톱모션 조명 보정 (Stop-Motion Correction) {: #stop-motion-correction }
 
 스톱모션 프레임 간의 조명 불일치 보정:
 
@@ -87,7 +87,7 @@ ColorMatch 노드는 다양한 색상 일치(Color Matching) 알고리즘을 사
 1. 빠른 처리를 위해 "mkl" 방식을 사용합니다.
 1. 정확한 매칭을 위해 strength를 1.0으로 설정합니다.
 
-#### 일괄 스타일 전송 (Batch Style Transfer)
+#### 일괄 스타일 전송 (Batch Style Transfer) {: #batch-style-transfer }
 
 여러 이미지에 일관된 컬러 스타일 적용:
 

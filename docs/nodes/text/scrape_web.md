@@ -21,11 +21,11 @@ Scrape Web 도구는 웹 페이지에서 텍스트 콘텐츠를 추출할 수 �
 1. 스크래핑 파라미터를 구성합니다.
 1. 출력을 스크래핑된 콘텐츠가 필요한 노드에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **url**: 스크래핑할 웹 페이지의 URL
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 웹 페이지에서 추출된 텍스트 콘텐츠
 

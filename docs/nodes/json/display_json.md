@@ -6,15 +6,15 @@
 
 Display JSON 노드는 JSON 데이터를 받아 화면에 보기 좋게 서식을 지정하여 표시합니다. `json-repair`를 사용하여 형식이 잘못된 JSON 문자열을 자동으로 복구하며, 워크플로에서 JSON 데이터를 확인하고 디버깅할 수 있도록 깔끔하고 읽기 쉬운 출력을 제공합니다.
 
-## 파라미터 (Parameters)
+## 파라미터 (Parameters) {: #parameters }
 
-### 입력 (Inputs)
+### 입력 (Inputs) {: #inputs }
 
 | 파라미터 (Parameter) | 타입 (Type)     | 설명 (Description)       | 기본값 (Default) |
 | -------------------- | --------------- | ------------------------ | ---------------- |
 | `json`               | json, str, dict | 표시할 JSON 데이터       | `{}`             |
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 | 파라미터 (Parameter) | 타입 (Type) | 설명 (Description)      |
 | -------------------- | ----------- | ----------------------- |

@@ -23,7 +23,7 @@ ResizeVideo 노드는 FFmpeg을 사용하여 여러 배율 모드(너비, 높이
 1. 해당 모드에 맞는 크기 파라미터를 구성합니다.
 1. 워크플로우를 실행하여 비디오 크기를 조정합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **video**: 크기를 조정할 비디오 콘텐츠 (VideoArtifact 및 VideoUrlArtifact 지원)
 
@@ -58,7 +58,7 @@ ResizeVideo 노드는 FFmpeg을 사용하여 여러 배율 모드(너비, 높이
 
     `scaling_algorithm`이 "lanczos"로 설정된 경우에만 출력에 영향을 줍니다.
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **resized_video**: 크기가 조정된 비디오 콘텐츠 (다른 노드에 연결하여 사용 가능)
 

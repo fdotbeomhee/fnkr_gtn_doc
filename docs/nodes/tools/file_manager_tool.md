@@ -19,7 +19,7 @@ File Manager 도구는 에이전트가 작업 공간(Workspace) 디렉터리 내
 1. 워크플로에 File Manager 도구를 추가합니다.
 1. 출력을 파일 작업 기능이 필요한 노드(예: Agent)에 연결합니다.
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **tool**: 다른 노드에서 사용할 수 있도록 구성된 파일 관리자 도구
 

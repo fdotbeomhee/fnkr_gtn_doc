@@ -36,7 +36,7 @@ Image Grid Splitter 노드는 **규칙적인 격자(Grid)** 형태로 배열된 
     Auto 모드는 **규칙적인 그리드**(동일한 크기의 셀)를 가정하며, 인접한 셀이 시각적으로 유사한 경우 정확도가 떨어질 수 있습니다.
     미리보기 점선이 실제 격자와 일치하지 않으면 **manual** 모드로 전환하세요.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **Input Image**: 분할할 그리드 이미지. `ImageArtifact` 또는 `ImageUrlArtifact`를 허용합니다.
 - **Grid Detection**:
@@ -46,7 +46,7 @@ Image Grid Splitter 노드는 **규칙적인 격자(Grid)** 형태로 배열된 
 - **Preview** (출력): 노란색 점선 격자선이 표시된 원본 이미지.
 - **Detections (auto)** (출력 그룹): 감지된 Rows/Columns/Count (수동 모드 선택 시 숨겨짐).
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **Images**: 행 우선 순서(좌에서 우, 상에서 하)로 정렬된 `ImageUrlArtifact` 목록.
 - **Grid Cells**: 셀당 하나의 `ImageUrlArtifact` 출력이며 다음과 같이 명명됩니다:

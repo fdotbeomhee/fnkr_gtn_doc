@@ -1,4 +1,4 @@
-# 파라미터 UI 레퍼런스 (Parameter UI Reference)
+# 파라미터 UI 레퍼런스 (Parameter UI Reference) {: #parameter-ui-reference }
 
 파라미터의 타입과 `ui_options` 설정에 따라 에디터에서 렌더링되는 UI 위젯 매핑 레퍼런스입니다.
 
@@ -12,7 +12,7 @@
 | `float` | 부동소수점 숫자 입력창 | 소수점 값 입력 |
 | `bool` | 토글 스위치 / 체크박스 | True/False 선택 |
 | `options` (trait) | 드롭다운 선택 상자 (Select) | 사전 정의된 목록 중 선택 |
-| `slider` (trait) | 슬라이더 바 (Slider) | 범위 내 수치 조절 |
+| `slider` (trait) | 슬라이더 바 (Slider) | 범위 내 수치 조절. `soft_limits=True`를 지정하면 범위는 슬라이더 트랙 크기만 결정하며, 범위를 벗어난 값도 직접 입력할 수 있습니다. |
 | `color` | 색상 선택기 (Color Picker) | RGB/HEX 색상 선택 |
 | `file_path` | 파일 선택기 및 경로 입력창 | 파일 경로 지정 |
 

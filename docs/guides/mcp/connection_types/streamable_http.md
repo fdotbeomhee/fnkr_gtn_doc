@@ -206,7 +206,7 @@ async def mcp_stream(request: Request):
 
 ## 세션 관리
 
-### 닫을 때 종료 (Terminate on Close)
+### 닫을 때 종료 (Terminate on Close) {: #terminate-on-close }
 
 ```json
 {
@@ -218,7 +218,7 @@ async def mcp_stream(request: Request):
 - 상태를 유지하지 않는(stateless) 작업에 유용합니다
 - 기본 동작 방식입니다
 
-### 영구 세션 (Persistent Sessions)
+### 영구 세션 (Persistent Sessions) {: #persistent-sessions }
 
 ```json
 {
@@ -318,7 +318,7 @@ async def mcp_stream(request: Request):
 - **중간 타임아웃**: 표준 작업용 (60~120초)
 - **긴 타임아웃**: 복잡한 대용량 작업용 (120초 이상)
 
-### 커넥션 풀링(Connection Pooling)
+### 커넥션 풀링(Connection Pooling) {: #connection-pooling }
 
 - 가능한 경우 연결을 재사용합니다
 - 동시 연결 수 제한을 모니터링합니다

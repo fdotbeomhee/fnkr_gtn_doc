@@ -6,16 +6,16 @@
 
 JSON Extract Value 노드를 사용하면 JMESPath 표현식을 활용하여 JSON 데이터에서 특정 값을 추출할 수 있습니다. 중첩된 객체 접근, 배열 인덱싱, 강력한 와일드카드 연산을 지원하여 복잡한 JSON 구조에서 데이터를 쉽게 탐색하고 추출할 수 있습니다.
 
-## 파라미터 (Parameters)
+## 파라미터 (Parameters) {: #parameters }
 
-### 입력 (Inputs)
+### 입력 (Inputs) {: #inputs }
 
 | 파라미터 (Parameter) | 타입 (Type)     | 설명 (Description)                                                                        | 기본값 (Default) |
 | -------------------- | --------------- | ----------------------------------------------------------------------------------------- | ---------------- |
 | `json`               | json, str, dict | 추출 대상 JSON 데이터                                                                     | `{}`             |
 | `path`               | str             | 데이터를 추출할 JMESPath 표현식 (예: 'user.name', 'items[0].title', '[*].assignee')      | `""`             |
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 | 파라미터 (Parameter) | 타입 (Type) | 설명 (Description) |
 | -------------------- | ----------- | ------------------ |

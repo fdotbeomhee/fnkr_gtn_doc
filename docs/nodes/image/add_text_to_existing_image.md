@@ -24,9 +24,9 @@ AddTextToExistingImage 노드는 기존 이미지 위에 텍스트를 오버레�
 1. 정렬, 색상, 여백, 글꼴 크기를 조정합니다.
 1. 노드를 실행하여 **output**을 생성합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
-#### 입력 (Inputs)
+#### 입력 (Inputs) {: #inputs }
 
 - **input_image**: 텍스트를 렌더링할 대상 이미지 (ImageUrlArtifact / ImageArtifact / dict)
 
@@ -51,7 +51,7 @@ AddTextToExistingImage 노드는 기존 이미지 위에 텍스트를 오버레�
 - **margin** (정수, 기본값: 10): 텍스트 배치를 위한 이미지 가장자리로부터의 여백(inset)
 - **font_size** (정수, 기본값: 36): 렌더링에 사용할 글꼴 크기
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 업데이트된 이미지 (ImageUrlArtifact)
 - **text**: 원본 텍스트 템플릿 문자열 (확장된 렌더링 문자열이 아님)

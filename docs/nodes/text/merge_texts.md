@@ -22,13 +22,13 @@ MergeTexts 노드는 여러 텍스트 문자열을 하나의 통일된 텍스트
 1. 필요한 경우 구분자 문자열을 설정합니다.
 1. 출력을 결합된 텍스트가 필요한 노드에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **input_1 through input_4**: 결합할 고정된 수의 텍스트 입력들
 - **merge_string**: 텍스트 세그먼트 사이에 넣을 구분자 (trim_whitespace가 False일 때 기본값은 "\n\n")
 - **whitespace**: 각 입력 및 최종 결과에서 공백을 잘라낼지(trim) 여부를 설정하는 부울(Boolean) 옵션
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 단일 문자열로 결합된 텍스트 결과
 

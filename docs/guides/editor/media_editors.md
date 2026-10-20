@@ -1,4 +1,4 @@
-# 미디어 뷰어 및 에디터 (Media Viewers and Editors)
+# 미디어 뷰어 및 에디터 (Media Viewers and Editors) {: #media-viewers-and-editors }
 
 파라미터에 이미지, 비디오, 오디오 클립, 3D 모델 또는 가우시안 스플랫(Gaussian splat)이 포함되어 있으면 에디터는 일반 텍스트 필드 대신 해당 미디어 유형에 맞게 빌드된 뷰어로 전환합니다. 이러한 뷰어 중 일부는 에디터 기능도 겸비하고 있어 캔버스를 벗어나지 않고도 마스크를 그리거나 프레임을 자르거나 레이어를 합성할 수 있습니다. 이 페이지에서는 각 뷰어가 나타나는 위치, 여는 방법, 열린 상태에서 수행할 수 있는 작업에 대해 둘러봅니다.
 
@@ -6,17 +6,17 @@
 
 | 파라미터 유형 | 뷰어 |
 | -------------------------------------- | ------------------------------------------------------------- |
-| `ImageArtifact` / `ImageUrlArtifact` | [이미지 뷰어](#이미지-보기-및-우클릭-작업) |
-| `VideoArtifact` / `VideoUrlArtifact` | [비디오 플레이어](#비디오-재생-및-비교) |
-| `AudioArtifact` / `AudioUrlArtifact` | [오디오 플레이어](#오디오-재생) |
-| `ThreeDArtifact` / `ThreeDUrlArtifact` | [3D 모델 뷰어](#3d-모델-보기) |
-| `SplatArtifact` / `SplatUrlArtifact` | [가우시안 스플랫 뷰어](#가우시안-스플랫-보기) |
+| `ImageArtifact` / `ImageUrlArtifact` | [이미지 뷰어](#viewing-an-image-and-its-right-click-actions) |
+| `VideoArtifact` / `VideoUrlArtifact` | [비디오 플레이어](#playing-and-comparing-video) |
+| `AudioArtifact` / `AudioUrlArtifact` | [오디오 플레이어](#playing-audio) |
+| `ThreeDArtifact` / `ThreeDUrlArtifact` | [3D 모델 뷰어](#viewing-3d-models) |
+| `SplatArtifact` / `SplatUrlArtifact` | [가우시안 스플랫 뷰어](#viewing-gaussian-splats) |
 
 비교 슬라이더(이미지 및 비디오)는 별도의 유형이 아닙니다. 노드가 단일 파라미터를 통해 두 개의 미디어 값을 노출할 때 비교 표시 기능이 활성화됩니다. (노드 작성자를 위한 전체 유형-위젯 매핑은 [Parameter UI Reference](../../development/custom_nodes/parameter_ui_reference.md)에 나와 있습니다.)
 
 뷰어 상단에 나타나는 추가 버튼(크롭, 마스크, 캡처 등)은 노드 작성자가 해당 파라미터에 설정한 옵션에 따라 달라집니다. 사용자가 직접 구성하는 것이 아니라 노드 자체에 내장된 설정이므로, 동일한 이미지 파라미터라도 어떤 노드에서는 자르기 아이콘이 표시되고 다른 노드에서는 마스크 아이콘이 표시될 수 있습니다.
 
-## 이미지 보기 및 우클릭 작업
+## 이미지 보기 및 우클릭 작업 {: #viewing-an-image-and-its-right-click-actions }
 
 이미지 파라미터는 표준 이미지 뷰어로 표시됩니다. 썸네일 아래에 이미지 이름, 크기 및 파일 용량이 표시됩니다. 마우스를 올리면 라이트박스에서 이미지를 전체 화면으로 여는 확장 버튼이 나타납니다. **Escape**를 누르거나 바깥을 클릭하여 닫을 수 있습니다.
 
@@ -79,7 +79,7 @@ Image Bash는 에디터의 레이어 기반 합성 도구입니다. 일부 이�
 
 <!-- screenshot (#5166): Image Bash open with several image layers and a brush layer in the sidebar, transform handles visible on the selected layer -->
 
-## 비디오 재생 및 비교
+## 비디오 재생 및 비교 {: #playing-and-comparing-video }
 
 비디오 파라미터는 프레임 단위로 정확한 플레이어를 사용합니다. 한 번에 한 프레임씩 이동하고 앞뒤로 재생하며 표시된 프레임 간을 이동할 수 있습니다. 키보드 단축키는 화면 컨트롤과 동일하게 작동합니다. `←`/`→` 키는 한 프레임씩 이동하고, `j`/`k`/`l` 키는 뒤로 재생, 일시정지, 앞으로 재생을 수행합니다. 노드가 프레임 선택 파라미터도 노출하는 경우 타임라인에 마커를 추가(`.` 키로 현재 프레임 추가), 드래그 또는 지울 수 있으며 `n`/`m` 키로 이전/다음 마커로 이동할 수 있습니다.
 
@@ -91,7 +91,7 @@ Image Bash는 에디터의 레이어 기반 합성 도구입니다. 일부 이�
 
 <!-- screenshot (#5166): video player with the frame timeline and markers visible, one marker being dragged -->
 
-## 오디오 재생
+## 오디오 재생 {: #playing-audio }
 
 오디오 파라미터는 아래에 재생 컨트롤(재생/일시정지, 경과/전체 시간, 음소거, 볼륨 슬라이더)이 있는 파형(waveform)으로 렌더링됩니다. 파형의 아무 곳이나 클릭하고 드래그하여 해당 위치로 탐색할 수 있습니다.
 
@@ -103,7 +103,7 @@ Image Bash는 에디터의 레이어 기반 합성 도구입니다. 일부 이�
 
 두 기능 모두 브라우저 카메라 또는 마이크 권한을 허용해야 합니다. 접근이 거부되면 컴포넌트에 캡처 컨트롤 대신 오류 메시지가 표시됩니다.
 
-## 3D 모델 보기
+## 3D 모델 보기 {: #viewing-3d-models }
 
 3D 모델 파라미터는 인터랙티브 뷰어로 열립니다. 드래그하여 회전(orbit), 스크롤하여 확대/축소, 마우스 오른쪽 버튼 드래그로 이동(pan)할 수 있습니다. 지원되는 형식은 glTF/GLB(Draco 압축 메시 포함), OBJ, FBX, DAE, 3DS, STL, PLY입니다. USDZ 파일은 일반 텍스트 USDA 변형인 경우에만 로드되며, Rodin이나 Apple QuickLook 같은 도구에서 내보낸 바이너리 USDC 파일은 미리보기가 지원되지 않지만 파일 자체는 그대로 저장되고 다운로드할 수 있습니다. 자체 재질(material)을 포함하지 않는 형식(STL, PLY, 일반 OBJ)은 중립적인 기본 재질이 적용되어 입체 지오메트리로 확인할 수 있습니다.
 
@@ -111,7 +111,7 @@ Image Bash는 에디터의 레이어 기반 합성 도구입니다. 일부 이�
 
 <!-- screenshot (#5166): 3D model viewer with an orbited glTF model and the expand icon visible on hover -->
 
-## 가우시안 스플랫 보기
+## 가우시안 스플랫 보기 {: #viewing-gaussian-splats }
 
 스플랫 파라미터(`.splat` 및 `.ksplat` 파일)는 3D 모델 뷰어와 동일한 궤도 회전/줌 카메라 컨트롤을 사용하며, 삼각 메시 대신 가우시안 스플래팅 렌더러를 통해 렌더링됩니다. 확장 아이콘을 클릭하여 스플랫을 전체 화면으로 열 수 있으며 Escape 또는 닫기 버튼으로 종료합니다.
 
@@ -123,5 +123,7 @@ Griptape Nodes는 썸네일로 내보내는 PNG 파일 내에 워크플로우의
 - **Add Nodes from Workflow** — 이미지를 생성한 노드들을 현재 워크플로우에 추가하고 참조된 라이브러리, 정적 파일 및 의존하는 워크플로우를 가져옵니다. 최종 적용 전에 대화 상자에서 노드, 라이브러리 및 종속성 목록을 확장하여 추가될 항목을 미리 확인할 수 있습니다.
 
 여러 개의 PNG 파일을 한 번에 끌어다 놓으면 동일한 대화 상자의 배치(일괄) 버전이 표시됩니다. 드롭된 이미지 중 워크플로우 메타데이터를 포함하고 있는 이미지 수가 표시되며 선택한 옵션(이미지로 추가 또는 워크플로우 노드 추가)이 모든 파일에 한 번에 적용됩니다. 메타데이터가 포함되지 않은 이미지는 어떤 옵션을 선택하든 항상 일반 이미지 노드로 추가됩니다.
+
+Griptape Nodes 0.102.0 이하 버전에서 내보낸 PNG 파일도 여전히 로드되지만, 이후 릴리스에서는 이 파일을 읽지 않게 됩니다. 워크플로우를 계속 로드할 수 있도록 이러한 이미지를 다시 내보내세요. 0.103.0 이상 버전에서 내보낸 PNG는 0.102.0 이하 버전에서 워크플로우를 로드하지 않습니다.
 
 <!-- screenshot (#5166): the "Workflow found in image" dialog with "Add Nodes from Workflow" selected and the node/library lists expanded -->

@@ -1,4 +1,4 @@
-# 에셋 및 출력 (Assets and Outputs)
+# 에셋 및 출력 (Assets and Outputs) {: #assets-and-outputs }
 
 워크플로우의 노드가 이미지, 비디오, 오디오 클립 또는 기타 파일을 생성할 때, 해당 파일은 디스크의 특정 위치에 저장되고 에디터에서 접근할 수 있어야 미리보기 및 다운로드가 가능합니다. 이 페이지에서는 생성된 파일이 기본적으로 어디에 저장되는지, 이를 어떻게 변경하는지, 그리고 파일이 처음에 워크플로우로 어떻게 유입되는지(업로드, 드래그 앤 드롭)에 대해 설명합니다.
 
@@ -6,8 +6,8 @@
 
 노드는 하드코딩된 위치에 파일을 직접 쓰지 않습니다. 모든 저장은 **프로젝트(project)**를 거칩니다. 프로젝트는 이름이 지정된 디렉터리 세트(`inputs`, `outputs`, `temp` 등)와 특정 종류의 파일이 어느 디렉터리에 어떤 이름으로 저장될지를 결정하는 **시츄에이션(situations)**이라는 파일 저장 시나리오 세트를 정의합니다. 기본 프로젝트 설정에서는 다음과 같이 작동합니다:
 
-- 노드의 렌더링된 출력(이미지, 렌더링된 비디오, 생성된 오디오)은 [`save_node_output`](projects/situations.md#savenodeoutput) 시츄에이션을 통해 프로젝트의 `outputs` 디렉터리에 저장됩니다.
-- 에디터로 드래그하거나 프로젝트 외부에서 복사한 파일은 [`copy_external_file`](projects/situations.md#copyexternalfile) 시츄에이션을 통해 `inputs` 디렉터리에 저장됩니다.
+- 노드의 렌더링된 출력(이미지, 렌더링된 비디오, 생성된 오디오)은 [`save_node_output`](projects/situations.md#save_node_output) 시츄에이션을 통해 프로젝트의 `outputs` 디렉터리에 저장됩니다.
+- 에디터로 드래그하거나 프로젝트 외부에서 복사한 파일은 [`copy_external_file`](projects/situations.md#copy_external_file) 시츄에이션을 통해 `inputs` 디렉터리에 저장됩니다.
 - 노드가 처리 중에 작성하고 이후 정리하는 임시 스크래치 파일은 `temp`로 이동합니다.
 - 에디터가 사용자를 위해 생성하는 썸네일 및 미리보기 이미지는 숨겨진 `.griptape-nodes-previews` / `.griptape-nodes-thumbnails` 폴더로 이동합니다.
 
@@ -23,7 +23,7 @@
 
 ## 워크플로우로 파일 업로드하기
 
-외부 파일(참조 사진, 소스 비디오, 오디오 클립)을 워크플로우로 가져오는 것은 반대 방향으로 동일하게 작동합니다. 노드로 파일을 드래그하거나 노드의 파일 선택기를 사용하면 에디터가 해당 파일을 프로젝트로 업로드합니다. 파일이 저장되는 위치는 프로젝트의 [`copy_external_file`](projects/situations.md#copyexternalfile) 시츄에이션에 의해 결정됩니다. 기본 프로젝트에서는 `inputs` 디렉터리로 지정되며, 파일 확장자가 인식되면 파일 유형별 하위 폴더(`images`, `videos`, `audio`, `text`)로 그룹화됩니다. 동일한 이름의 파일이 이미 있는 경우 새 업로드 파일은 덮어쓰는 대신 번호가 붙은 접미사(`photo_001.png`)를 받습니다.
+외부 파일(참조 사진, 소스 비디오, 오디오 클립)을 워크플로우로 가져오는 것은 반대 방향으로 동일하게 작동합니다. 노드로 파일을 드래그하거나 노드의 파일 선택기를 사용하면 에디터가 해당 파일을 프로젝트로 업로드합니다. 파일이 저장되는 위치는 프로젝트의 [`copy_external_file`](projects/situations.md#copy_external_file) 시츄에이션에 의해 결정됩니다. 기본 프로젝트에서는 `inputs` 디렉터리로 지정되며, 파일 확장자가 인식되면 파일 유형별 하위 폴더(`images`, `videos`, `audio`, `text`)로 그룹화됩니다. 동일한 이름의 파일이 이미 있는 경우 새 업로드 파일은 덮어쓰는 대신 번호가 붙은 접미사(`photo_001.png`)를 받습니다.
 
 <!-- screenshot (#5166): dragging a file onto a node's file parameter, showing the drop target highlighted -->
 

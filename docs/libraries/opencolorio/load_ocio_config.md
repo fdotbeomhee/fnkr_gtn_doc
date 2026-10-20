@@ -21,14 +21,14 @@
 
 <!-- TODO: add ../assets/load-ocio-config.png screenshot -->
 
-## 입력 (Inputs)
+## 입력 (Inputs) {: #inputs }
 
 | 이름 | 타입 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
 | `context_vars` | `dict` | 아니요 | OCIO 컨텍스트 변수 (예: `{"SHOT": "sh010", "SEQ": "sq020"}`). 출력 아티팩트에 전달됩니다. |
 | `file_path` | `str` | 아니요 | `.ocio` 설정 파일의 경로입니다. **Override OCIO Config**가 활성화된 경우에만 사용됩니다. 파일 선택기를 제공합니다. |
 
-## 출력 (Outputs)
+## 출력 (Outputs) {: #outputs }
 
 | 이름 | 타입 | 설명 |
 | --- | --- | --- |
@@ -36,7 +36,7 @@
 | `was_successful` | `bool` | 설정을 성공적으로 로드했는지 여부입니다. |
 | `result_details` | `str` | 로드 결과 세부 정보입니다 (접힌 상태 그룹). |
 
-## 파라미터 (Parameters)
+## 파라미터 (Parameters) {: #parameters }
 
 ### 고급 설정 (Advanced) *(기본적으로 접혀 있음)*
 

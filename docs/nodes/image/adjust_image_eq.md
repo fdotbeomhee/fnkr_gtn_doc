@@ -24,7 +24,7 @@ AdjustImageEQ 노드는 밝기(Brightness), 대비(Contrast), 채도(Saturation)
 1. 슬라이더를 조절하여 이미지를 미세 조정합니다.
 1. 처리된 이미지가 "output" 파라미터를 통해 출력됩니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 #### 조정 설정
 
@@ -52,7 +52,7 @@ AdjustImageEQ 노드는 밝기(Brightness), 대비(Contrast), 채도(Saturation)
     - 1.0 초과: 중간 톤이 어두워짐
     - 1.0 = 변경 없음
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: EQ 설정이 적용되어 조정된 이미지
 

@@ -1,10 +1,10 @@
-# 프로젝트 (Projects)
+# 프로젝트 (Projects) {: #projects }
 
 프로젝트 템플릿(Project template)은 파일이 구성되고 저장되는 방식을 정의하는 환경 설정입니다. 이는 모든 노드가 파일을 저장해야 할 때 참조하는 [상황(situations)](situations.md), [디렉터리(directories)](directories.md), [환경 변수(environment variables)](environment.md)의 조합입니다.
 
-기본적으로 Griptape Nodes에는 일반적인 경우(이미지, 오디오 및 기타 출력을 작업 공간의 `outputs` 폴더에 저장)를 처리하는 기본 제공 프로젝트 템플릿이 포함되어 있습니다. 프로젝트 파일을 사용하면 이러한 설정을 원하는 대로 변경할 수 있습니다: 특정 종류의 파일이 저장되는 위치를 리디렉션하거나, 새로운 명명된 위치(예: `renders/4k`)를 추가하거나, 프로젝트에 특정한 환경 변수를 주입할 수 있습니다. 변경하려는 항목만 작성하면 되며, 다른 모든 항목은 [기본 상황](situations.md#기본-시츄에이션) 및 [기본 디렉터리](directories.md#기본-디렉터리)를 계속 사용합니다.
+기본적으로 Griptape Nodes에는 일반적인 경우(이미지, 오디오 및 기타 출력을 작업 공간의 `outputs` 폴더에 저장)를 처리하는 기본 제공 프로젝트 템플릿이 포함되어 있습니다. 프로젝트 파일을 사용하면 이러한 설정을 원하는 대로 변경할 수 있습니다: 특정 종류의 파일이 저장되는 위치를 리디렉션하거나, 새로운 명명된 위치(예: `renders/4k`)를 추가하거나, 프로젝트에 특정한 환경 변수를 주입할 수 있습니다. 변경하려는 항목만 작성하면 되며, 다른 모든 항목은 [기본 상황](situations.md#default-situations) 및 [기본 디렉터리](directories.md#default-directories)를 계속 사용합니다.
 
-## 프로젝트 파일
+## 프로젝트 파일 {: #the-project-file }
 
 작업 공간 수준의 사용자 정의 설정은 다음 이름의 파일에 저장됩니다:
 
@@ -12,9 +12,9 @@
 griptape-nodes-project.yml
 ```
 
-이 파일을 작업 공간 디렉터리에 배치하세요. 이 파일은 선택 사항이며, 없는 경우 [시스템 기본값](#시스템-기본값-the-system-defaults)이 적용됩니다.
+이 파일을 작업 공간 디렉터리에 배치하세요. 이 파일은 선택 사항이며, 없는 경우 [시스템 기본값](#the-system-defaults)이 적용됩니다.
 
-## 프로젝트 파일 구조
+## 프로젝트 파일 구조 {: #project-file-structure }
 
 ```yaml
 project_template_schema_version: "1.0.0"
@@ -44,22 +44,22 @@ file_extension_directories:
   mp4: "{outputs}/videos"
 ```
 
-### 필드 레퍼런스
+### 필드 레퍼런스 {: #fields-reference }
 
 | 필드 | 필수 여부 | 설명 |
 | --- | --- | --- |
-| `project_template_schema_version` | 예 | 프로젝트의 스키마 버전입니다. **메이저(major)** 버전이 기본값 기준선을 선택합니다([스키마 버전](#스키마-버전-schema-versions) 참조). 새 프로젝트는 최신 버전(`"1.0.0"`)으로 생성됩니다. 이전 메이저 버전(예: `"0.5.1"`)도 자체 기준선에 맞춰 로드됩니다. |
+| `project_template_schema_version` | 예 | 프로젝트의 스키마 버전입니다. **메이저(major)** 버전이 기본값 기준선을 선택합니다([스키마 버전](#schema-versions) 참조). 새 프로젝트는 최신 버전(`"1.0.0"`)으로 생성됩니다. 이전 메이저 버전(예: `"0.5.1"`)도 자체 기준선에 맞춰 로드됩니다. |
 | `name` | 예 | 이 프로젝트의 사람이 읽을 수 있는 이름입니다. |
 | `description` | 아니요 | 선택적 설명입니다. |
-| `parent_project_path` | 아니요 | 상위 프로젝트 YAML 경로입니다. 상위 프로젝트의 병합된 템플릿이 이 템플릿의 기반이 됩니다. [상위 프로젝트](#상위-프로젝트-parent-projects)를 참조하세요. |
-| `workspace_dir` | 아니요 | 이 프로젝트가 작업 공간으로 사용하는 디렉터리이며, 최우선 작업 공간 소스입니다. 문자열(절대 경로 또는 이 YAML에 대한 상대 경로) 또는 플랫폼별 매핑입니다. 상위 프로젝트에서 상속되지 않습니다. [작업 공간 디렉터리](#작업-공간-디렉터리-workspace-directory)를 참조하세요. |
-| `libraries_dir` | 아니요 | 이 프로젝트가 라이브러리를 설치하고 확인(resolve)하는 디렉터리입니다. 문자열(절대 경로 또는 이 YAML에 대한 상대 경로) 또는 플랫폼별 매핑입니다. (`workspace_dir`와 달리) 상위 체인을 따라 **상속**되므로 하위 프로젝트가 상위 프로젝트의 라이브러리를 공유할 수 있습니다. [라이브러리 디렉터리](#라이브러리-디렉터리-libraries-directory)를 참조하세요. |
+| `parent_project_path` | 아니요 | 상위 프로젝트 YAML 경로입니다. 상위 프로젝트의 병합된 템플릿이 이 템플릿의 기반이 됩니다. [상위 프로젝트](#parent-projects)를 참조하세요. |
+| `workspace_dir` | 아니요 | 이 프로젝트가 작업 공간으로 사용하는 디렉터리이며, 최우선 작업 공간 소스입니다. 문자열(절대 경로 또는 이 YAML에 대한 상대 경로) 또는 플랫폼별 매핑입니다. 상위 프로젝트에서 상속되지 않습니다. [작업 공간 디렉터리](#workspace-directory)를 참조하세요. |
+| `libraries_dir` | 아니요 | 이 프로젝트가 라이브러리를 설치하고 확인(resolve)하는 디렉터리입니다. 문자열(절대 경로 또는 이 YAML에 대한 상대 경로) 또는 플랫폼별 매핑입니다. (`workspace_dir`와 달리) 상위 체인을 따라 **상속**되므로 하위 프로젝트가 상위 프로젝트의 라이브러리를 공유할 수 있습니다. [라이브러리 디렉터리](#libraries-directory)를 참조하세요. |
 | `situations` | 아니요 | 상황 오버라이드 및 추가 딕셔너리입니다. |
 | `directories` | 아니요 | 디렉터리 오버라이드 및 추가 딕셔너리입니다. |
 | `environment` | 아니요 | 사용자 정의 키-값 변수 딕셔너리입니다. |
 | `file_extension_directories` | 아니요 | 확장자별 폴더 라우팅입니다. [파일 확장자 디렉터리](file_extension_directories.md)를 참조하세요. |
 
-### 상황 필드
+### 상황 필드 {: #situation-fields }
 
 `situations` 아래의 각 항목은 상황 이름을 키로 사용합니다. 다음 필드의 하위 집합을 제공할 수 있습니다:
 
@@ -74,21 +74,21 @@ file_extension_directories:
 
 기존 상황을 *수정*할 때는 변경하려는 필드만 제공하면 됩니다. 새 상황을 *추가*할 때는 `macro`와 `policy`가 필수입니다.
 
-### 디렉터리 필드
+### 디렉터리 필드 {: #directory-fields }
 
 `directories` 아래의 각 항목은 논리적 이름을 키로 사용합니다:
 
 | 필드 | 새 항목 시 필수 여부 | 설명 |
 | --- | --- | --- |
-| `path_macro` | 예 | 경로 문자열(매크로 또는 환경 변수 참조 포함 가능) 또는 플랫폼별 매핑입니다. [디렉터리](directories.md#플랫폼별-경로-per-platform-paths)를 참조하세요. |
+| `path_macro` | 예 | 경로 문자열(매크로 또는 환경 변수 참조 포함 가능) 또는 플랫폼별 매핑입니다. [디렉터리](directories.md#per-platform-paths)를 참조하세요. |
 
-## 병합 모델 (The merge model)
+## 병합 모델 (The merge model) {: #the-merge-model }
 
 프로젝트 시스템은 계층화된 모델을 사용합니다:
 
 1. **시스템 기본값 (System defaults)** — Griptape Nodes와 함께 제공되는 완전한 기본 내장 프로젝트 템플릿입니다. 모든 기본 상황과 디렉터리를 정의하며 항상 가장 먼저 로드됩니다.
 
-1. **상위 체인 (Parent chain, 선택 사항)** — 프로젝트가 `parent_project_path`를 선언하면 상위의 병합된 템플릿이 재귀적으로 로드되어 시스템 기본값을 대체하고 이 프로젝트의 기반이 됩니다. [상위 프로젝트](#상위-프로젝트-parent-projects)를 참조하세요.
+1. **상위 체인 (Parent chain, 선택 사항)** — 프로젝트가 `parent_project_path`를 선언하면 상위의 병합된 템플릿이 재귀적으로 로드되어 시스템 기본값을 대체하고 이 프로젝트의 기반이 됩니다. [상위 프로젝트](#parent-projects)를 참조하세요.
 
 1. **이 프로젝트의 오버레이 (This project's overlay)** — 이 `griptape-nodes-project.yml`의 내용입니다. 위에서 확인된 기반 *위에* 병합됩니다.
 
@@ -101,7 +101,7 @@ file_extension_directories:
 
 상속된 값을 반복해서 작성할 필요가 없습니다. 프로젝트 파일에는 변경하려는 내용만 포함하면 됩니다.
 
-## 상위 프로젝트 (Parent projects)
+## 상위 프로젝트 (Parent projects) {: #parent-projects }
 
 프로젝트는 다른 프로젝트를 상위(parent)로 선언할 수 있습니다. 상위 프로젝트의 완전히 병합된 템플릿(상위 프로젝트가 *자체의* 상위 체인을 확인한 후)이 기본 베이스가 되며, 이 프로젝트의 오버레이가 그 위에 적용됩니다. 이를 통해 팀 전체의 디렉터리 레이아웃, 고정된 환경 변수 집합, 사용자 정의 상황과 같은 공유 기본 구성을 한 곳에 유지하고, 파생된 프로젝트가 모든 필드를 다시 명시하지 않고 상속받도록 할 수 있습니다.
 
@@ -116,7 +116,7 @@ directories:
     path_macro: "renders/marketing"
 ```
 
-### 경로 형식
+### 경로 형식 {: #path-forms }
 
 `parent_project_path`는 두 가지 형식을 허용합니다:
 
@@ -125,9 +125,9 @@ directories:
 | 상대 경로 | `../team-base/griptape-nodes-project.yml` | 권장됨. *이* 프로젝트의 YAML 파일 디렉터리를 기준으로 확인되므로 머신 및 OS 간 이동 시에도 링크가 유지됩니다. |
 | 절대 경로 | `/Users/alice/projects/team-base/griptape-nodes-project.yml` | 특정 머신 경로가 고정됩니다. 로컬에서는 작동하지만 다른 머신으로 이동할 수 없습니다. |
 
-`parent_project_path` 내부에서는 매크로가 확장되지 않습니다. `{workspace_dir}`, `{project_dir}`, `{outputs}`와 같은 토큰은 여기서 치환되지 않습니다. 매크로는 `path_macro` 및 `situations.*.macro` 필드에 속합니다. `~` 및 환경 변수는 확장됩니다 — [경로 값](#workspace_dir-libraries_dir-parent_project_path의-경로-값)을 참조하세요.
+`parent_project_path` 내부에서는 매크로가 확장되지 않습니다. `{workspace_dir}`, `{project_dir}`, `{outputs}`와 같은 토큰은 여기서 치환되지 않습니다. 매크로는 `path_macro` 및 `situations.*.macro` 필드에 속합니다. `~` 및 환경 변수는 확장됩니다 — [경로 값](#path-values-in-workspace_dir-libraries_dir-and-parent_project_path)을 참조하세요.
 
-### 상속 및 툼스톤 (Inheritance and tombstones)
+### 상속 및 툼스톤 (Inheritance and tombstones) {: #inheritance-and-tombstones }
 
 상위 체인은 병합 전에 확인됩니다. 손자 → 자식 → 부모 → 기본값 체인은 작업 공간 오버레이가 기본값 위에 구성되는 것과 동일한 방식으로 구성됩니다. 각 수준의 필드는 그 아래 수준을 오버라이드하거나 확장합니다.
 
@@ -142,17 +142,25 @@ directories:
 
 기본 베이스가 시스템 기본값*인* 프로젝트는 `parent_project_path`를 완전히 생략해야 합니다. 생략 자체가 이미 "시스템 기본값이 베이스임"을 의미하므로 지정할 대상이 없습니다. 상위가 *다른* 프로젝트 파일인 경우에만 이 필드를 설정하세요. 이는 공유할 때 중요합니다. 공유 또는 동기화된 스토리지에 저장된 프로젝트에 상위 경로를 작성하면 다른 사용자의 머신에서 확인되지 않는 머신별 링크가 포함되므로 기본 파생 프로젝트에는 경로가 없어야 합니다.
 
-### 순환 및 누락된 상위 프로젝트
+### 상위 프로젝트는 하위 프로젝트와 함께 로드됩니다 (Parents load with their children) {: #parents-load-with-their-children }
+
+상위 프로젝트를 따로 등록할 필요는 없습니다. 하위 프로젝트를 로드하면 그 체인에 있는 모든 프로젝트가 함께 로드됩니다. 따라서 `parent_project_path`로만 지정된 상위 프로젝트도 엔진이 인식하는 프로젝트가 되어, 하위 프로젝트를 열었거나 `project_file`로 지정한 것이 그 하위 프로젝트뿐이더라도 하위 프로젝트와 함께 프로젝트 목록에 나타납니다.
+
+상위 프로젝트는 *추가*되지 않고 로드만 됩니다. 저장된 프로젝트 목록에 기록되지 않으므로, 하위 프로젝트를 열 때마다 상위 프로젝트가 계속 쌓이지는 않습니다. 이미 직접 등록해 둔 상위 프로젝트는 기존 항목을 그대로 유지합니다.
+
+이는 하위 프로젝트 자체가 로드될 때만 일어납니다. 하위 프로젝트를 사용할 수 없거나 열 권한이 없으면 체인의 어떤 항목도 프로젝트 목록에 남지 않습니다.
+
+### 순환 및 누락된 상위 프로젝트 {: #cycles-and-missing-parents }
 
 엔진은 상위 체인에 순환(cycle)이 포함된 프로젝트의 로드를 거부합니다. 직접적인 자체 참조(A → B → A) 및 더 긴 순환은 모두 감지되어 로드 중인 하위 프로젝트의 유효성 검사 오류로 보고됩니다.
 
 읽거나 파싱할 수 없는 상위 프로젝트도 하위 프로젝트의 유효성 검사 오류로 나타납니다. 하위 프로젝트가 자동으로 시스템 기본값으로 다운그레이드되지 않으며, 문제를 확인할 수 있도록 로드가 실패합니다.
 
-### 머신 간 공유
+### 머신 간 공유 {: #sharing-across-machines }
 
 한 머신에서 압축(zip)하여 다른 머신에서 압축을 푼 작업 공간은, 상위 프로젝트가 상대 경로로 참조되고 작업 공간 내에서 하위 프로젝트와 함께 이동하는 한 상위 링크가 온전하게 유지됩니다. 절대 경로는 머신 간(홈 디렉터리 차이, 드라이브 문자 차이)에 깨지기 쉬우므로 상대 경로 형식을 사용해야 상위 체인의 이식성이 보장됩니다.
 
-## `workspace_dir`, `libraries_dir`, `parent_project_path`의 경로 값
+## `workspace_dir`, `libraries_dir`, `parent_project_path`의 경로 값 {: #path-values-in-workspace_dir-libraries_dir-and-parent_project_path }
 
 이 세 필드는 모두 경로를 허용하며, 세 필드 모두 다음 순서로 동일한 방식으로 경로를 읽습니다:
 
@@ -177,7 +185,7 @@ workspace_dir: "~/Projects/marketing"                # 홈 디렉터리
 libraries_dir: "${GTN_DEFAULT_LIBRARIES_ROOT}/shared"
 ```
 
-이 변수는 프로젝트 자체의 `libraries_dir`를 따르지 않습니다. 이는 해당 필드가 이 변수를 읽는 주체이기 때문입니다. [엔진이 게시하는 변수](../configuration.md#엔진이-게시하는-변수-variables-the-engine-publishes)를 참조하세요.
+이 변수는 프로젝트 자체의 `libraries_dir`를 따르지 않습니다. 이는 해당 필드가 이 변수를 읽는 주체이기 때문입니다. [엔진이 게시하는 변수](../configuration.md#variables-the-engine-publishes)를 참조하세요.
 
 변수에 의존하기 전에 알아두어야 할 세 가지 사항:
 
@@ -185,9 +193,9 @@ libraries_dir: "${GTN_DEFAULT_LIBRARIES_ROOT}/shared"
 - 중괄호가 없는 일반 `$NAME`은 여기서 변수로 인식되지 **않습니다**. `$Recycle.Bin`과 같은 실제 폴더 이름과 구별할 수 없으므로 리터럴로 유지됩니다. 항상 `${NAME}` 형식을 사용하세요.
 - 변수는 모든 머신에서 정의되어 있는 경우에만 경로를 이식 가능하게 만듭니다. 상대 경로는 이러한 합의가 필요하지 않으므로 대상이 프로젝트와 함께 이동하는 경우 상대 경로를 선호하세요.
 
-### 확인할 수 없는 경로는 오류가 됨
+### 확인할 수 없는 경로는 오류가 됨 {: #a-path-that-cannot-be-resolved-is-an-error }
 
-이 필드 중 하나를 **생략**하는 것은 언제나 괜찮습니다. 프로젝트는 단순히 다음 소스(상위의 값, 구성, 전역 기본값)로 대체됩니다. 그러나 명시적으로 작성되었는데 경로를 생성할 수 없는 필드는 프로젝트가 이 머신에서 제공할 수 없는 것을 요구하고 있음을 의미하며, 엔진은 다른 위치로 조용히 대체하지 않습니다. **프로젝트 로드가 실패**하고 [`UNUSABLE`](#유효성-검사-상태-validation-status) 상태로 보고되며, 유효성 검사 문제 목록에 필드, 줄 번호, 이유가 표시됩니다. 해당 프로젝트를 상위로 나열하는 모든 프로젝트도 실패하며 `parent_project_path`를 가리키는 문제가 발생합니다.
+이 필드 중 하나를 **생략**하는 것은 언제나 괜찮습니다. 프로젝트는 단순히 다음 소스(상위의 값, 구성, 전역 기본값)로 대체됩니다. 그러나 명시적으로 작성되었는데 경로를 생성할 수 없는 필드는 프로젝트가 이 머신에서 제공할 수 없는 것을 요구하고 있음을 의미하며, 엔진은 다른 위치로 조용히 대체하지 않습니다. **프로젝트 로드가 실패**하고 [`UNUSABLE`](#validation-status) 상태로 보고되며, 유효성 검사 문제 목록에 필드, 줄 번호, 이유가 표시됩니다. 해당 프로젝트를 상위로 나열하는 모든 프로젝트도 실패하며 `parent_project_path`를 가리키는 문제가 발생합니다.
 
 세 가지 경우가 이에 해당합니다:
 
@@ -205,7 +213,7 @@ libraries_dir:
 
 이러한 실패는 의도적으로 명확하게 드러납니다. 그 대안이 더 나쁘기 때문입니다. `${STUDIO_LIBS}`를 고정하는 공유 프로젝트는 해당 변수를 설정하지 않은 모든 팀원에게 로드되어 자신이 선택하지 않은 위치에 모든 라이브러리의 두 번째 복사본을 자동으로 설치하게 됩니다. 변수를 설정하거나, `default`를 추가하거나, 필드를 제거하세요.
 
-## 작업 공간 디렉터리 (Workspace directory)
+## 작업 공간 디렉터리 (Workspace directory) {: #workspace-directory }
 
 선택 사항인 `workspace_dir` 필드는 이 프로젝트가 [작업 공간(workspace)](workspace.md)으로 사용하는 디렉터리를 지정합니다. 설정된 경우 **최우선** 작업 공간 소스가 됩니다. 즉, 사용자별 `project_workspaces` 매핑, `GTN_CONFIG_WORKSPACE_DIRECTORY` 환경 변수, 프로젝트 인접 구성, 상위 상속 및 전역 기본값을 오버라이드합니다.
 
@@ -224,13 +232,13 @@ workspace_dir:
   default: "./workspace"
 ```
 
-상대 경로는 `parent_project_path`가 사용하는 것과 동일한 규칙에 따라 *이* 프로젝트의 YAML 파일 디렉터리를 기준으로 확인되므로 상대 경로 값은 머신 및 운영체제 전반에서 프로젝트와 함께 이동합니다. `~` 및 환경 변수가 확장됩니다([경로 값](#workspace_dir-libraries_dir-parent_project_path의-경로-값) 참조). 원시 값은 그대로 저장되며 작업 공간 확인 시에만 절대 경로로 확인됩니다. 저장 시 절대 경로로 변환되지 않습니다. 대상 디렉터리에 `griptape_nodes_config.json`이 포함되어 있을 필요는 없으며 빈 디렉터리도 유효합니다.
+상대 경로는 `parent_project_path`가 사용하는 것과 동일한 규칙에 따라 *이* 프로젝트의 YAML 파일 디렉터리를 기준으로 확인되므로 상대 경로 값은 머신 및 운영체제 전반에서 프로젝트와 함께 이동합니다. `~` 및 환경 변수가 확장됩니다([경로 값](#path-values-in-workspace_dir-libraries_dir-and-parent_project_path) 참조). 원시 값은 그대로 저장되며 작업 공간 확인 시에만 절대 경로로 확인됩니다. 저장 시 절대 경로로 변환되지 않습니다. 대상 디렉터리에 `griptape_nodes_config.json`이 포함되어 있을 필요는 없으며 빈 디렉터리도 유효합니다.
 
-플랫폼별 형식의 경우 엔진은 현재 플랫폼과 일치하는 항목을 선택합니다. 해당 플랫폼의 키가 설정되지 않은 경우 `default`로 대체됩니다. 플랫폼 키와 `default`가 모두 설정되지 않은 경우 프로젝트는 해당 플랫폼에서 로드되지 않습니다([확인할 수 없는 경로는 오류가 됨](#확인할-수-없는-경로는-오류가-됨) 참조). 그렇지 않으면 확인된 값이 최우선 소스로서 [작업 공간 확인](workspace.md#작업-공간-확인-workspace-resolution)에 공급됩니다.
+플랫폼별 형식의 경우 엔진은 현재 플랫폼과 일치하는 항목을 선택합니다. 해당 플랫폼의 키가 설정되지 않은 경우 `default`로 대체됩니다. 플랫폼 키와 `default`가 모두 설정되지 않은 경우 프로젝트는 해당 플랫폼에서 로드되지 않습니다([확인할 수 없는 경로는 오류가 됨](#a-path-that-cannot-be-resolved-is-an-error) 참조). 그렇지 않으면 확인된 값이 최우선 소스로서 [작업 공간 확인](workspace.md#workspace-resolution)에 공급됩니다.
 
 대부분의 필드와 달리 `workspace_dir`는 상위 프로젝트로부터 **상속되지 않습니다**. 이는 이 프로젝트 자체의 작업 공간을 설명하며 이 프로젝트의 오버레이에서만 가져옵니다. 하위 프로젝트는 상위 프로젝트의 `workspace_dir`를 채택하지 않습니다. (프로젝트 간 작업 공간 상속은 병합 모델이 아니라 확인 사다리의 상위 체인 단계에 의해 별도로 처리됩니다.) `workspace_dir: null`을 설정하거나 필드를 생략하면 프로젝트에 선언된 작업 공간이 없는 상태로 유지됩니다.
 
-## 라이브러리 디렉터리 (Libraries directory)
+## 라이브러리 디렉터리 (Libraries directory) {: #libraries-directory }
 
 선택 사항인 `libraries_dir` 필드는 이 프로젝트가 작업 공간과 분리되어 라이브러리를 설치하고 확인하는 디렉터리를 지정합니다. 이를 사용하면 관련 프로젝트 그룹이 하나의 라이브러리 설치 위치를 공유할 수 있습니다. 라이브러리는 한 번만 다운로드되고 동일한 디렉터리를 가리키는 모든 프로젝트가 다시 다운로드하는 대신 재사용합니다.
 
@@ -247,27 +255,27 @@ libraries_dir:
   default: "./libraries"
 ```
 
-상대 경로는 `parent_project_path` 및 `workspace_dir`가 사용하는 것과 동일한 규칙에 따라 *이* 프로젝트의 YAML 파일 디렉터리를 기준으로 확인되므로 상대 경로 값은 머신 전반에서 프로젝트와 함께 이동합니다. `~` 및 환경 변수가 확장됩니다([경로 값](#workspace_dir-libraries_dir-parent_project_path의-경로-값) 참조). 원시 값은 그대로 저장되며 확인 시에만 절대 경로로 확인됩니다. 저장 시 절대 경로로 변환되지 않습니다. 플랫폼별 형식의 경우 엔진은 현재 플랫폼과 일치하는 항목을 선택하고 `default`로 대체됩니다. 둘 다 없으면 프로젝트는 해당 플랫폼에서 로드되지 않습니다([확인할 수 없는 경로는 오류가 됨](#확인할-수-없는-경로는-오류가-됨) 참조).
+상대 경로는 `parent_project_path` 및 `workspace_dir`가 사용하는 것과 동일한 규칙에 따라 *이* 프로젝트의 YAML 파일 디렉터리를 기준으로 확인되므로 상대 경로 값은 머신 전반에서 프로젝트와 함께 이동합니다. `~` 및 환경 변수가 확장됩니다([경로 값](#path-values-in-workspace_dir-libraries_dir-and-parent_project_path) 참조). 원시 값은 그대로 저장되며 확인 시에만 절대 경로로 확인됩니다. 저장 시 절대 경로로 변환되지 않습니다. 플랫폼별 형식의 경우 엔진은 현재 플랫폼과 일치하는 항목을 선택하고 `default`로 대체됩니다. 둘 다 없으면 프로젝트는 해당 플랫폼에서 로드되지 않습니다([확인할 수 없는 경로는 오류가 됨](#a-path-that-cannot-be-resolved-is-an-error) 참조).
 
-### 상속 및 확인
+### 상속 및 확인 {: #inheritance-and-resolution }
 
 `libraries_dir`는 **가장 높은 우선순위부터** 다음 순서로 확인됩니다:
 
 1. 프로젝트 **자체의** `libraries_dir` 필드.
-1. [상위 프로젝트 체인](#상위-프로젝트-parent-projects)을 탐색하여 `libraries_dir`를 선언한 가장 가까운 조상 — **해당 조상의** 디렉터리를 기준으로 확인됩니다. 이를 통해 하위 프로젝트가 상위 프로젝트의 라이브러리 트리를 채택할 수 있습니다.
-1. 체인의 어느 곳에서도 선언된 값이 없는 경우: 라이브러리는 작업 공간 상대 `libraries_directory` 구성 값(기본값 `libraries`, 즉 `<workspace>/libraries`)으로 대체됩니다. [설정](../configuration.md#작업-공간에서-라이브러리-분리하기)을 참조하세요.
+1. [상위 프로젝트 체인](#parent-projects)을 탐색하여 `libraries_dir`를 선언한 가장 가까운 조상 — **해당 조상의** 디렉터리를 기준으로 확인됩니다. 이를 통해 하위 프로젝트가 상위 프로젝트의 라이브러리 트리를 채택할 수 있습니다.
+1. 체인의 어느 곳에서도 선언된 값이 없는 경우: 라이브러리는 작업 공간 상대 `libraries_directory` 구성 값(기본값 `libraries`, 즉 `<workspace>/libraries`)으로 대체됩니다. [설정](../configuration.md#separating-libraries-from-the-workspace)을 참조하세요.
 
 이것이 **`workspace_dir`와의 주요 차이점**입니다. `workspace_dir`는 상위 프로젝트로부터 상속되지 않지만, `libraries_dir`는 **상속됩니다**. 자체 `libraries_dir`를 선언하지 않은 하위 프로젝트는 이를 선언한 가장 가까운 조상을 채택합니다(*명시적* 값만 상속 가능합니다. 필드를 설정하지 않은 상위는 아무것도 기여하지 않으며 탐색은 이를 지나 계속됩니다). 이것이 바로 생성 UI가 **최상위(top-level)** 프로젝트(상위가 시스템 기본값인 프로젝트)에는 `libraries_dir: "./libraries"`를 작성하지만 하위 프로젝트에는 비워 두는 이유입니다. 최상위 프로젝트는 명시적이고 상속 가능한 라이브러리 루트를 선언하며, 그 아래의 각 하위 프로젝트는 기본적으로 해당 루트를 공유합니다. 하위 프로젝트는 여전히 자체 `libraries_dir`를 선언하여 제외하거나 `libraries_dir: null`을 설정하여 상속된 값을 제거하고 작업 공간 상대 기본값으로 대체할 수 있습니다.
 
-`workspace_dir`와 마찬가지로 `libraries_dir`는 **병합 상속되지 않습니다**. 이 프로젝트의 오버레이에서만 가져오며 하위 프로젝트는 [병합 모델](#병합-모델-the-merge-model)을 통해 기반 값을 가져오지 않습니다. 프로젝트 간 상속은 병합이 아니라 위의 확인 순서(상위 체인 탐색)에 의해 처리됩니다.
+`workspace_dir`와 마찬가지로 `libraries_dir`는 **병합 상속되지 않습니다**. 이 프로젝트의 오버레이에서만 가져오며 하위 프로젝트는 [병합 모델](#the-merge-model)을 통해 기반 값을 가져오지 않습니다. 프로젝트 간 상속은 병합이 아니라 위의 확인 순서(상위 체인 탐색)에 의해 처리됩니다.
 
-### 최종 경로 확인하기
+### 최종 경로 확인하기 {: #seeing-where-the-paths-ended-up }
 
 답은 위의 세 위치 중 어디에서든 올 수 있으므로 직접 계산할 필요가 없습니다. `ListProjectTemplatesRequest`는 프로젝트를 활성화할 때 확인되는 것과 정확히 동일한 방식으로 확인된 각 프로젝트의 유효한 `workspace_dir` 및 `libraries_root`를 절대 경로로 보고합니다(상위로부터의 상속 포함, 따라서 상위와 하위는 동일한 라이브러리 루트를 표시함).
 
 둘 다 파일에서 로드된 모든 프로젝트에 대해 보고되며, 백업 프로젝트 파일이 없는 항목(시스템 기본값) 또는 로드에 실패한 항목에 대해서만 `null`입니다. 확인을 포기하여 `null`이 되는 경우는 없습니다. 선언된 경로를 확인할 수 없는 프로젝트는 전혀 로드되지 않습니다.
 
-## 유효성 검사 상태 (Validation status)
+## 유효성 검사 상태 (Validation status) {: #validation-status }
 
 프로젝트 파일이 로드되면 네 가지 상태 중 하나를 받습니다:
 
@@ -280,23 +288,23 @@ libraries_dir:
 
 프로젝트 파일의 상태가 `UNUSABLE` 또는 `MISSING`인 경우 Griptape Nodes는 시스템 기본값으로 대체됩니다. 유효성 검사 문제(필드 경로 및 줄 번호 포함)를 검사하여 문제를 진단할 수 있습니다.
 
-## 시스템 기본값 (The system defaults)
+## 시스템 기본값 (The system defaults) {: #the-system-defaults }
 
 시스템 기본값은 이러한 상황과 디렉터리를 기본 제공합니다. 자세한 내용은 [상황](situations.md) 및 [디렉터리](directories.md)를 참조하세요.
 
-## 스키마 버전 (Schema versions)
+## 스키마 버전 (Schema versions) {: #schema-versions }
 
 `project_template_schema_version`은 [시맨틱 버전(semantic version)](https://semver.org)으로 읽히며, **메이저(major)** 구성 요소가 프로젝트가 병합될 기본값 기준선을 선택합니다. 이를 통해 기존 프로젝트가 작성 당시의 동작을 유지하는 동안 새 메이저 버전에서 기본값을 주요 변경(breaking change)할 수 있습니다:
 
 - **v0 (`0.x`)** — 레거시 기준선입니다. 파일 대상은 작업 공간 루트 기준이며 파일은 기본적으로 유형별 하위 폴더로 라우팅되지 않습니다.
-- **v1 (`1.x`)** — 현재 기준선입니다. 파일 대상은 워크플로 상대적이며 출력 파일은 [파일 확장자 디렉터리](file_extension_directories.md)를 통해 라우팅되고 새 프로젝트는 **기본적으로 자체 포함**됩니다. 생성 UI는 새 v1 프로젝트에 [`workspace_dir`](#작업-공간-디렉터리-workspace-directory): `./`를 작성하여 작업 공간이 자체 폴더로 확인되도록 합니다(이 필드는 기본 템플릿에 고정된 것이 아니라 일반적이고 제거 가능한 오버라이드임). 새로운 **최상위** v1 프로젝트는 하위 프로젝트가 라이브러리 트리를 상속하고 공유할 수 있도록 [`libraries_dir`](#라이브러리-디렉터리-libraries-directory): `./libraries`도 가져옵니다. 새 프로젝트는 `1.0.0`으로 생성됩니다.
+- **v1 (`1.x`)** — 현재 기준선입니다. 파일 대상은 워크플로 상대적이며 출력 파일은 [파일 확장자 디렉터리](file_extension_directories.md)를 통해 라우팅되고 새 프로젝트는 **기본적으로 자체 포함**됩니다. 생성 UI는 새 v1 프로젝트에 [`workspace_dir`](#workspace-directory): `./`를 작성하여 작업 공간이 자체 폴더로 확인되도록 합니다(이 필드는 기본 템플릿에 고정된 것이 아니라 일반적이고 제거 가능한 오버라이드임). 새로운 **최상위** v1 프로젝트는 하위 프로젝트가 라이브러리 트리를 상속하고 공유할 수 있도록 [`libraries_dir`](#libraries-directory): `./libraries`도 가져옵니다. 새 프로젝트는 `1.0.0`으로 생성됩니다.
 
 프로젝트는 항상 **자체** 메이저 버전의 기준선에 병합되므로 이전 메이저 프로젝트를 열어도 레이아웃이 자동으로 바뀌지 않습니다.
 
-### 저장 및 버전 롤포워드 (Saving and version roll-forward)
+### 저장 및 버전 롤포워드 (Saving and version roll-forward) {: #saving-and-version-roll-forward }
 
 프로젝트를 저장하면 버전이 **자체 메이저 내에서** 최신 버전으로 롤포워드됩니다(추가적인 변경 — 예: `0.4.0` 프로젝트는 저장 시 `0.5.2`가 됨). 저장은 메이저를 절대 넘지 않습니다. v0 프로젝트가 자동으로 v1으로 변환되지 않으며, 파일이 저장되는 위치가 변경되는 것을 방지합니다. 메이저의 최신 버전보다 뒤처진 프로젝트는 `FLAWED` 경고와 함께 로드됩니다(여전히 완전하게 사용 가능).
 
-### 메이저 버전 간 업그레이드
+### 메이저 버전 간 업그레이드 {: #upgrading-across-a-major }
 
 프로젝트를 새 메이저 버전으로 이동하는 것은 **명시적이며 선택 사항**입니다(GUI의 [프로젝트 관리](gui_guide.md)에 있는 "Upgrade schema" 작업). 업그레이드하면 새 메이저의 기본값에 프로젝트를 다시 기반으로 설정합니다. 명시적으로 재정의한 값만 유지되고 다른 모든 값은 새 기본값을 채택합니다. 이는 **주요 변경 사항(breaking change)**으로, 프로젝트의 유효 작업 공간, 라이브러리 및 파일 위치가 이동할 수 있으므로 절대 자동으로 발생하지 않습니다.\n

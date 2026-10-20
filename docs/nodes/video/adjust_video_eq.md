@@ -24,7 +24,7 @@ AdjustVideoEQ 노드를 사용하면 비디오의 밝기(Brightness), 대비(Con
 1. 밝기, 대비, 채도, 감마 파라미터를 조절합니다.
 1. 워크플로우를 실행하여 EQ 조정을 적용합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **video**: 조정할 비디오 콘텐츠입니다. (VideoArtifact 및 VideoUrlArtifact 지원)
 
@@ -58,7 +58,7 @@ AdjustVideoEQ 노드를 사용하면 비디오의 밝기(Brightness), 대비(Con
     - **balanced**: 속도와 품질의 균형 잡힌 설정 (medium 프리셋, CRF 23)
     - **quality**: 최고 품질, 느린 처리 속도 (slow 프리셋, CRF 18)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **video**: EQ 조정이 적용된 비디오이며, 다른 노드에 연결할 수 있는 출력으로 제공됩니다.
 

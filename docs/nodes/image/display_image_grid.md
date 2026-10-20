@@ -27,7 +27,7 @@ DisplayImageGrid 노드는 사용자 정의 스타일 옵션, 사전 설정된 �
 1. 출력 크기 모드(사용자 지정 또는 사전 설정)를 선택합니다.
 1. 모든 이미지가 포함된 그리드가 화면에 표시됩니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 #### 이미지 입력
 
@@ -82,7 +82,7 @@ DisplayImageGrid 노드는 사용자 정의 스타일 옵션, 사전 설정된 �
     - **jpeg**: 작은 파일 크기, 투명도 미지원
     - **webp**: 우수한 압축률을 가진 최신 포맷
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: ImageUrlArtifact 형식의 서식화된 이미지 그리드
 

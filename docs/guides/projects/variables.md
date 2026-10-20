@@ -1,4 +1,4 @@
-# 프로젝트 변수 (Project Variables)
+# 프로젝트 변수 (Project Variables) {: #project-variables }
 
 프로젝트 파일의 `variables` 섹션은 프로젝트에 속하는 명명된 값을 선언합니다. 이 변수들은 워크플로 변수와 동일한 `{VAR}` 치환 시스템에 참여하며, 노드 파라미터 값과 매크로에서 사용할 수 있습니다.
 
@@ -59,9 +59,9 @@ variables:
 1. 프로젝트 환경 변수
 1. 셸 환경 변수
 
-전체 우선순위에 대한 자세한 설명은 [환경 및 내장 변수](environment.md#변수-우선순위-variable-priority)를 참조하세요.
+전체 우선순위에 대한 자세한 설명은 [환경 및 내장 변수](environment.md#variable-priority)를 참조하세요.
 
-## 상속 (Inheritance)
+## 상속 (Inheritance) {: #inheritance }
 
 프로젝트가 부모 프로젝트를 선언하는 경우(`parent_project_path` / `parent_project_id`), 변수는 항목별로 병합됩니다:
 

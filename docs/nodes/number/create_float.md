@@ -20,11 +20,11 @@ FloatInput 노드는 부동 소수점(실수) 숫자 값을 간편하게 입력�
 1. 워크플로우에 FloatInput 노드를 추가합니다.
 1. 원하는 부동 소수점(float) 값을 설정합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **float**: 부동 소수점 숫자 값 (기본값은 0.0)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **float**: 다른 노드에서 사용할 수 있는 부동 소수점 값
 

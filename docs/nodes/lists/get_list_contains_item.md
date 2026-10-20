@@ -23,13 +23,13 @@ GetListContainsItem 노드는 특정 항목이 리스트에 존재하는지 여�
 1. 확인하려는 항목을 "item" 입력에 연결합니다.
 1. 노드가 항목의 리스트 존재 여부를 자동으로 확인하여 출력합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **items**: 확인할 대상 리스트 (리스트 입력)
 - **item**: 리스트에서 찾을 항목 (모든 타입)
 - **contains_item**: 항목이 발견되었는지(true) 여부(false)를 나타내는 불리언
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **contains_item**: 불리언 값 (항목이 발견되면 true, 그렇지 않으면 false)
 

@@ -22,14 +22,14 @@ Pipeline Builder ──→ [LoRA Pipeline] ←── Load LoRA
 
 <img src="../assets/nodes/activate-lora-pipeline.png" alt="LoRA Pipeline" width="480">
 
-### 입력 (Inputs)
+### 입력 (Inputs) {: #inputs }
 
 | 이름 | 유형 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
 | `pipeline` | `Pipeline Config` | 예 | 기본 확산 파이프라인입니다. Pipeline Builder에서 연결합니다. 기본 파이프라인은 수정되지 않고 재사용되므로 다른 노드에 동시에 연결할 수 있습니다. |
 | `loras` | `loras` | 예 | Load LoRA 노드에서 전달되는 하나 이상의 LoRA 페이로드입니다. 목록(list)을 수락하며, 여러 Load LoRA 출력을 연결하여 어댑터를 중첩할 수 있습니다. |
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |

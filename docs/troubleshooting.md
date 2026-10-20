@@ -1,8 +1,8 @@
-# 문제 해결 (Troubleshooting)
+# 문제 해결 (Troubleshooting) {: #troubleshooting }
 
-이 페이지는 사용자가 가장 자주 겪는 문제와 현상, 그 원인 및 해결 방법을 정리한 문서입니다. 여기에 없는 문제가 발생한 경우 [FAQ](faq.md)를 확인하거나 [FAQ 하단](faq.md#피드백을-제공하거나-질문을-하려면-어디로-가야-하나요)의 소통 채널을 통해 문의해 주세요.
+이 페이지는 사용자가 가장 자주 겪는 문제와 현상, 그 원인 및 해결 방법을 정리한 문서입니다. 여기에 없는 문제가 발생한 경우 [FAQ](faq.md)를 확인하거나 [FAQ 하단](faq.md#where-can-i-provide-feedback-or-ask-questions)의 소통 채널을 통해 문의해 주세요.
 
-## 에디터에 이미지나 비디오가 표시되지 않음
+## 에디터에 이미지나 비디오가 표시되지 않음 {: #images-or-videos-arent-showing-in-the-editor }
 
 **증상**
 
@@ -55,7 +55,7 @@
 
 - 컴퓨터를 재부팅하세요. Griptape Nodes만 다시 시작하는 것으로는 해결되지 않습니다.
 
-## "Address already in use" / 엔진이 시작되지 않음
+## "Address already in use" / 엔진이 시작되지 않음 {: #address-already-in-use-engine-wont-start }
 
 **증상**
 
@@ -73,14 +73,14 @@ Stop the other engine (or change this driver's port) and try again.
 
 **해결 방법**
 
-1. 다른 엔진을 중지합니다. 다른 모든 Griptape Nodes 창을 닫고 [위의 미디어 섹션](#에디터에-이미지나-비디오가-표시되지-않음)의 단계에 따라 잔여 엔진 프로세스를 확인하여 종료합니다.
-1. 의도적으로 한 머신에서 여러 엔진을 실행하려는 경우 [한 머신에서 여러 엔진 실행하기](#한-머신에서-여러-엔진-실행하기)를 참조하세요.
+1. 다른 엔진을 중지합니다. 다른 모든 Griptape Nodes 창을 닫고 [위의 미디어 섹션](#images-or-videos-arent-showing-in-the-editor)의 단계에 따라 잔여 엔진 프로세스를 확인하여 종료합니다.
+1. 의도적으로 한 머신에서 여러 엔진을 실행하려는 경우 [한 머신에서 여러 엔진 실행하기](#running-multiple-engines-on-one-machine)를 참조하세요.
 
-## 한 머신에서 여러 엔진 실행하기
+## 한 머신에서 여러 엔진 실행하기 {: #running-multiple-engines-on-one-machine }
 
 **증상**
 
-동일한 머신에서 두 개 이상의 엔진이 실행 중일 때 이상하고 관련 없어 보이는 오류가 다수 발생합니다. 엉뚱한 엔진이 요청에 응답하거나(또는 두 번 응답), 에디터 세션 간에 워크플로우와 상태가 뒤섞이거나, 에디터에서 엔진들이 하나의 엔진처럼 보이거나, [주소 충돌 오류](#address-already-in-use-엔진이-시작되지-않음) 같은 포트 오류가 발생하거나, [미디어 로드 실패](#에디터에-이미지나-비디오가-표시되지-않음) 현상이 나타납니다.
+동일한 머신에서 두 개 이상의 엔진이 실행 중일 때 이상하고 관련 없어 보이는 오류가 다수 발생합니다. 엉뚱한 엔진이 요청에 응답하거나(또는 두 번 응답), 에디터 세션 간에 워크플로우와 상태가 뒤섞이거나, 에디터에서 엔진들이 하나의 엔진처럼 보이거나, [주소 충돌 오류](#address-already-in-use-engine-wont-start) 같은 포트 오류가 발생하거나, [미디어 로드 실패](#images-or-videos-arent-showing-in-the-editor) 현상이 나타납니다.
 
 **원인**
 
@@ -97,7 +97,7 @@ Stop the other engine (or change this driver's port) and try again.
 GTN_ENGINE_ID=second-engine STATIC_SERVER_PORT=9000 GTN_MCP_SERVER_PORT=9928 gtn engine
 ```
 
-여러 엔진을 실행할 의도가 없었다면 [미디어 섹션](#에디터에-이미지나-비디오가-표시되지-않음)의 단계에 따라 불필요한 엔진을 찾아 종료하세요.
+여러 엔진을 실행할 의도가 없었다면 [미디어 섹션](#images-or-videos-arent-showing-in-the-editor)의 단계에 따라 불필요한 엔진을 찾아 종료하세요.
 
 ## "No sessions available" — 라이선스 사용자의 엔진 시작 실패
 
@@ -111,8 +111,8 @@ Griptape Cloud 로그인 대신 라이선스로 활성화한 상태에서 실행
 
 **해결 방법**
 
-1. [미디어 섹션](#에디터에-이미지나-비디오가-표시되지-않음)의 단계를 참조하여 충돌이나 강제 종료 후 머신에 남아 있는 분리된 엔진이 있는지 확인하고 종료하여 좌석을 해제합니다.
-1. 좌석이 해제되지 않는 경우 조직 소유자가 해제할 수 있습니다: [Admin Dashboard](enterprise/admin_dashboard.md#세션-sessions)에서 **Sessions** 모달을 열고 비정상 세션을 **Release**하여 좌석을 확보합니다.
+1. [미디어 섹션](#images-or-videos-arent-showing-in-the-editor)의 단계를 참조하여 충돌이나 강제 종료 후 머신에 남아 있는 분리된 엔진이 있는지 확인하고 종료하여 좌석을 해제합니다.
+1. 좌석이 해제되지 않는 경우 조직 소유자가 해제할 수 있습니다: [Admin Dashboard](enterprise/admin_dashboard.md#sessions)에서 **Sessions** 모달을 열고 비정상 세션을 **Release**하여 좌석을 확보합니다.
 1. 만료될 때까지 기다릴 수도 있습니다. 갱신이 중단되면 세션이 타임아웃되어 자동으로 해제되므로 몇 분 후 다시 시도해도 해결됩니다.
 
 !!! note
@@ -146,11 +146,11 @@ Griptape Cloud 로그인 대신 라이선스로 활성화한 상태에서 실행
 
 **해결 방법**
 
-1. **로그를 먼저 확인하세요.** 시작 시 라이브러리가 로드되는 동안 발생한 오류를 찾습니다. 보고된 오류에는 대개 라이브러리 이름과 실패 원인이 명시됩니다. [엔진 로그 내보내기](#엔진-로그-내보내기)를 참조하세요.
+1. **로그를 먼저 확인하세요.** 시작 시 라이브러리가 로드되는 동안 발생한 오류를 찾습니다. 보고된 오류에는 대개 라이브러리 이름과 실패 원인이 명시됩니다. [엔진 로그 내보내기](#exporting-engine-logs)를 참조하세요.
 1. 에디터가 연결된 엔진을 확인합니다. 여러 머신에 엔진이 있는 경우 에디터가 잘못된 엔진에 연결되었을 수 있습니다.
 1. **Configuration Editor**를 열고 **Libraries** 뷰로 이동하여 **Library Registration → Libraries To Register**를 확인합니다. 원하는 라이브러리가 누락되었거나 꺼져 있거나 잘못된 경로를 가리키고 있다면 항목을 수정하거나 **Manage → Library Management → Add Library**를 통해 다시 추가하세요. [라이브러리 전환 및 제거](guides/libraries.md#toggling-and-removing-libraries) 및 [라이브러리 설치](guides/editor/managing_models_and_libraries.md#installing-a-library)를 참조하세요.
 1. 설치 또는 로드에 실패한 라이브러리가 있는지 필터를 **Errors**로 설정한 상태에서 **Libraries** 패널을 확인합니다. ["라이브러리를 설치했지만 노드가 보이지 않음"](guides/libraries.md#i-installed-the-library-but-i-dont-see-its-nodes)을 참조하세요.
-1. 라이브러리가 최신 상태인지 확인합니다. **Manage → Library Management**를 열고 라이브러리를 펼친 후 **Check for Updates**를 클릭하고 업데이트가 제공되면 **Update**를 클릭합니다. [라이브러리 업데이트](guides/editor/managing_models_and_libraries.md#updating-a-library)를 참조하세요. 엔진 자체를 업데이트하려면 [FAQ](faq.md#griptape-nodes를-업데이트하려면-어떻게-해야-하나요)를 참조하세요.
+1. 라이브러리가 최신 상태인지 확인합니다. **Manage → Library Management**를 열고 라이브러리를 펼친 후 **Check for Updates**를 클릭하고 업데이트가 제공되면 **Update**를 클릭합니다. [라이브러리 업데이트](guides/editor/managing_models_and_libraries.md#updating-a-library)를 참조하세요. 엔진 자체를 업데이트하려면 [FAQ](faq.md#how-do-i-update-griptape-nodes)를 참조하세요.
 
 ## "failed to locate pyvenv.cfg" / 엔진이 시작되지 않음
 
@@ -174,7 +174,7 @@ failed to locate pyvenv.cfg: The system cannot find the file specified.
     griptape-nodes self uninstall
     ```
 
-    `griptape-nodes` 명령어도 동일한 환경에서 실행되므로 손상된 가상 환경으로 인해 제거 명령어 실행 자체가 차단될 수도 있습니다. 제거 시도 시 동일한 오류가 발생하면 [Griptape Nodes 제거](uninstalling.md#수동-엔진-설치)의 단계를 따라 수동으로 설치 파일을 삭제하세요.
+    `griptape-nodes` 명령어도 동일한 환경에서 실행되므로 손상된 가상 환경으로 인해 제거 명령어 실행 자체가 차단될 수도 있습니다. 제거 시도 시 동일한 오류가 발생하면 [Griptape Nodes 제거](uninstalling.md#manual-engine-install)의 단계를 따라 수동으로 설치 파일을 삭제하세요.
 
 1. [설치](installation.md) 지침에 따라 다시 설치합니다.
 
@@ -218,9 +218,53 @@ ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verif
 1. 설치 마지막 단계에서 **Install Certificates**를 선택합니다.
     - 설치 프로그램에서 제공하지 않는 경우 `/Applications/Python\ 3.12/Install\ Certificates.command`를 실행합니다.
 
-## 엔진 로그 내보내기
+## 엔진 로그 내보내기 (Exporting engine logs) {: #exporting-engine-logs }
 
-이슈를 보고하거나 직접 디버깅할 때 엔진 로그는 가장 먼저 확인해야 하는 항목입니다. 로그를 가져오는 위치는 엔진 실행 방식에 따라 다릅니다.
+이슈를 보고하거나 직접 디버깅할 때 엔진 로그는 가장 먼저 확인해야 하는 항목입니다. 하지만 로그만으로는 무슨 일이 있었는지 설명하기 어려운 경우가 많습니다. 어떤 라이브러리가 로드되었는지, 어떤 설정이 적용되었는지, 어떤 API 키가 설정되어 있었는지도 중요합니다. 진단 번들을 사용하면 이 정보를 한 번에 수집할 수 있습니다.
+
+### 모두 한 번에 수집하기
+
+**진단 번들(diagnostics bundle)**은 다음 내용을 담은 zip 파일 하나입니다:
+
+| 번들 내용 | 읽는 사람이 알 수 있는 정보 |
+| --- | --- |
+| `logs/*.log` | 디스크에 보관된 로그 파일입니다. 최신 파일이 먼저 나옵니다. 맨 위 파일에는 번들을 만든 세션의 내용이 들어 있습니다. |
+| `logs/session.log` | 이번 세션에서 엔진이 기록한 모든 내용을 메모리에서 가져온 것입니다. 로그 파일에 기록되지 않은 경우에만 포함됩니다. |
+| `report.json` | 실행 중인 엔진 버전, 머신 정보, 적용된 설정, 그리고 각 라이브러리와 프로젝트가 로드될 때의 결과입니다. |
+| `doctor.json` | [`doctor`](reference/command_line_interface.md#doctor) 상태 점검 결과입니다. 무엇이 잘못되었고 각 항목을 어떻게 해결하는지 보여 줍니다. |
+| `workflow/` | 마지막으로 저장된 상태의 열려 있던 워크플로우입니다. 에디터에서 번들을 만든 경우에만 포함됩니다. |
+| `manifest.json` | 위의 모든 파일 목록과 안전을 위해 제거된 항목의 총 개수입니다. |
+| `README.md` | 위 내용을 쉬운 말로 설명하는 안내서입니다. |
+
+번들을 만들려면 다음을 실행합니다:
+
+```bash
+gtn diagnostics collect
+```
+
+이 방법으로 만든 번들에는 `workflow/` 폴더가 없습니다. 이 명령은 자체 엔진을 시작하며, 해당 엔진에는 열린 워크플로우가 없기 때문입니다. 현재 작업 중인 워크플로우를 포함하려면 에디터에서 번들을 만드세요.
+
+명령을 실행하면 현재 디렉토리에 `griptape-nodes-diagnostics-<version>-<timestamp>.zip` 파일이 생성됩니다. 더 찾기 쉬운 위치에 저장하려면 다음을 실행합니다:
+
+```bash
+gtn diagnostics collect --output ~/Desktop
+```
+
+이 파일을 버그 리포트에 첨부하세요. 파일은 어디에도 업로드되지 않습니다. 번들은 사용자의 머신에 저장되며, 공유 여부는 사용자가 결정합니다.
+
+!!! note "제거되는 항목과 공유 전에 확인할 사항"
+
+    번들은 엔진이 작성하며, 엔진은 자신의 API 키를 알고 있으므로 수집하는 모든 파일을 검색하여 API 키와 자격 증명처럼 보이는 다른 값을 제거합니다. 홈 디렉토리 경로는 `~`로, 사용자 이름은 `<user>`로 바뀝니다. 그대로 유지하려면 `--show-identity`를 전달하세요. 제거된 항목은 `<redacted>`로 표시되고 `manifest.json`에 개수가 기록되므로 비어 보이는 설정이 실제로 비어 있는지 숨겨진 것인지 구분할 수 있습니다.
+
+    엔진이 알지 못하고 자격 증명 형식도 아닌 비밀 정보는 제거되지 않습니다. 예를 들어 노드의 텍스트 필드에 입력한 비밀번호나 라이브러리가 자체 형식으로 자체 로그에 남긴 토큰이 여기에 해당합니다. 번들을 공개적으로 공유하기 전에 `logs/` 아래 파일과 워크플로우 파일을 훑어보세요. 남아 있는 정보는 머신에 있던 내용에 따라 달라집니다.
+
+필요한 것이 파일이 아니라 상태 점검 결과뿐이라면 다음을 실행하세요:
+
+```bash
+gtn doctor
+```
+
+발견한 내용을 표로 출력하며, 조치가 필요한 항목에는 해결 방법이 함께 표시됩니다.
 
 ### 데스크톱 애플리케이션에서 가져오기
 
@@ -242,8 +286,14 @@ ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verif
 
 수동으로 엔진을 실행하는 경우(`gtn` 또는 `gtn engine`) 로그가 해당 터미널에 직접 출력됩니다. 위로 스크롤하여 관련 부분을 복사하세요.
 
+엔진은 자체 로그 파일도 유지하므로 터미널이 열려 있는 동안 문제를 놓치지 않아도 됩니다. 각 엔진 프로세스는 엔진 상태 디렉토리(`<XDG_STATE_HOME>/griptape_nodes`, 또는 `GTN_ENGINE_STATE_DIR`이 설정된 경우 해당 경로)의 `logs` 폴더에 파일 하나를 기록합니다. 파일은 10 MB에 도달하면 교체되며, 일주일 동안 수정되지 않은 파일은 삭제됩니다. 이 동작은 `logging.log_to_file`, `logging.log_directory`, `logging.log_retention_days` 세 가지 설정으로 제어합니다([설정 레퍼런스(Configuration Reference)](reference/configuration_reference.md) 참조). `gtn diagnostics collect`는 이 파일들을 자동으로 수집합니다.
+
 로그에 충분한 세부 정보가 표시되지 않으면 엔진 로그 레벨을 높이세요: Configuration Editor(**Settings → All Settings**)를 열고 "log level"을 검색하여 `DEBUG`로 설정한 후 문제를 재현합니다([에디터에서 설정 편집](guides/configuration.md#editing-settings-in-the-editor) 참조). 에디터가 연결되지 않은 헤드리스 모드로 실행할 때는 환경 변수로 설정할 수 있습니다:
 
 ```bash
 GTN_CONFIG_LOG_LEVEL=DEBUG gtn
 ```
+
+!!! tip
+
+    엔진은 최근 5,000줄의 로그를 메모리에 보관합니다. 따라서 로그 파일을 끄더라도 문제가 발생한 직후 번들을 만들면 그 내용을 포함할 수 있으며, 이 내용은 `logs/session.log`로 저장됩니다. 엔진이 로그 파일을 작성했다면 그 파일에 같은 줄과 더 많은 내용이 이미 있으므로, 번들에는 파일을 넣고 `session.log`는 제외합니다. 어느 경우든 로그 줄에는 설정된 로그 레벨에서 기록된 내용만 포함됩니다. 디버그 세부 정보가 필요하면 문제를 재현하기 전에 로그 레벨을 `DEBUG`로 설정하세요. `logging.session_log_buffer_lines`는 보관할 줄 수를 제어합니다.

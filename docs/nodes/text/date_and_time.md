@@ -21,12 +21,12 @@ Date and Time 도구는 날짜 및 시간 정보를 텍스트로 서식 지정�
 1. 날짜/시간 파라미터를 구성합니다.
 1. 출력을 서식 지정된 날짜/시간 텍스트가 필요한 노드에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **prompt**: 날짜를 가져오려는 대상 (예: "Christmas, 2027", "Next friday")
 - **format**: 날짜/시간 형식 (예: "%Y-%m-%d %H:%M:%S", "Fri 25, March, 9pm")
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 서식 지정된 날짜/시간 텍스트
 

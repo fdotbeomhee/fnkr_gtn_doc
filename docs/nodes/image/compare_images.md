@@ -24,12 +24,12 @@ CompareImages 노드는 두 개의 이미지를 나란히(Side by side) 비교�
 1. 두 이미지 소스를 "image1"과 "image2" 입력에 각각 연결합니다.
 1. 두 이미지가 나란히 배치된 비교 뷰가 표시됩니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **image1**: 비교할 첫 번째 이미지 (좌측)
 - **image2**: 비교할 두 번째 이미지 (우측)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **comparison**: 두 이미지를 나란히 배치한 비교 이미지
 

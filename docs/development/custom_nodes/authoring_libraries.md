@@ -1,4 +1,4 @@
-# 라이브러리 작성 가이드 (Authoring Libraries)
+# 라이브러리 작성 가이드 (Authoring Libraries) {: #authoring-libraries }
 
 재사용 가능한 노드 모음을 독립된 패키지로 배포하기 위한 라이브러리 작성 표준 가이드입니다.
 

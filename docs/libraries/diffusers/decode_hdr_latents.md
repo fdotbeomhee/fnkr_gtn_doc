@@ -21,14 +21,14 @@ Generate Media Latents → [Decode HDR Latents] → Save Image / Save Video
 
 <img src="../assets/nodes/decode-hdr-latents.png" alt="Decode HDR Latents" width="480">
 
-### 입력 (Inputs)
+### 입력 (Inputs) {: #inputs }
 
 | 이름 | 유형 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
 | `pipeline` | `Pipeline Config` | 예 | 잠재 텐서를 생성한 파이프라인과 일치해야 합니다. 선형 프레임 출력을 얻으려면 HDR 지원 모델(예: LTX 2.3 HDR)을 사용하세요. |
 | `latent_tensor` | `LatentArtifact` | 예 | 디코딩할 잠재 텐서입니다. |
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |
@@ -36,7 +36,7 @@ Generate Media Latents → [Decode HDR Latents] → Save Image / Save Video
 | `output_video` | `VideoUrlArtifact` | 톤 매핑된 MP4 비디오. 비디오 파이프라인인 경우 표시됩니다. |
 | `logs` | str | 프레임별 EXR 작성 로그. `exr_output_folder`가 설정된 경우에만 출력됩니다. |
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 | 이름 | 유형 | 기본값 | 설명 |
 | --- | --- | --- | --- |

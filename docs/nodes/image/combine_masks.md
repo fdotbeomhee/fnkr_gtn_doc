@@ -22,11 +22,11 @@ CombineMasks 노드는 **픽셀당 최대값**(합집합 연산, Union)을 취�
 1. `masks` 입력에 하나 이상의 마스크를 리스트 형태로 제공합니다.
 1. `output_mask` 출력을 통합 마스크로 사용합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **masks**: 결합할 마스크 이미지들의 리스트
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output_mask**: 통합된 마스크 (PNG)
 

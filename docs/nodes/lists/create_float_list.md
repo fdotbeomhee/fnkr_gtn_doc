@@ -2,11 +2,11 @@
 
 Create Float List 노드를 사용하면 부동 소수점(float) 값들의 리스트를 생성할 수 있습니다.
 
-## 입력 (Inputs)
+## 입력 (Inputs) {: #inputs }
 
 - **Items** (float[]): 출력 리스트에 포함할 부동 소수점 값들의 리스트
 
-## 출력 (Outputs)
+## 출력 (Outputs) {: #outputs }
 
 - **Output** (list): 생성된 부동 소수점 값 리스트
 
@@ -20,7 +20,7 @@ Create Float List 노드를 사용하면 부동 소수점(float) 값들의 리�
 # Output: [-0.5, 0.0, 42.0]
 ```
 
-## 참고 사항 (Notes)
+## 참고 사항 (Notes) {: #notes }
 
 - 입력 리스트의 모든 항목은 부동 소수점 값이어야 합니다.
 - 출력 리스트에서 항목의 순서가 유지됩니다.

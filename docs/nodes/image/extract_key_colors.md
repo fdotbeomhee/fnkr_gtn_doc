@@ -26,16 +26,16 @@ ExtractKeyColors 노드는 KMeans 클러스터링 또는 Median Cut (MMCQ) 알�
 1. 추출할 색상 수를 설정합니다.
 1. 추출된 색상은 동적 색상 선택기 파라미터(color_1, color_2 등)로 제공됩니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
-#### 이미지 입력 (Image Input)
+#### 이미지 입력 (Image Input) {: #image-input }
 
 - **input_image**: 분석할 이미지 (다른 이미지 노드에서 연결 가능)
     - 일반적인 포맷 지원: JPG, PNG, GIF, BMP, TIFF, ICO, WEBP
     - ImageArtifact 또는 ImageUrlArtifact 허용
     - 간편한 이미지 선택을 위한 파일 브라우저 연동 지원
 
-#### 색상 설정 (Color Settings)
+#### 색상 설정 (Color Settings) {: #color-settings }
 
 - **num_colors** (2-12, 기본값: 3): 추출할 색상 수
 
@@ -49,7 +49,7 @@ ExtractKeyColors 노드는 KMeans 클러스터링 또는 Median Cut (MMCQ) 알�
     - **median_cut**: 균형 잡힌 색 공간 분할을 위해 Modified Median Cut Quantization (MMCQ) 사용
     - 손쉬운 선택을 위한 드롭다운 메뉴 제공
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 추출된 각 색상마다 동적 색상 선택기 파라미터가 생성됩니다:
 

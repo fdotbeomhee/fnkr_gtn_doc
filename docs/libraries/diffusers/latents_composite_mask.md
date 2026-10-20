@@ -23,7 +23,7 @@ Paint Mask (마스크) ──────┘
 
 <img src="../assets/nodes/latents-composite-mask.png" alt="Latents Composite Mask" width="480">
 
-### 입력 (Inputs)
+### 입력 (Inputs) {: #inputs }
 
 | 이름 | 유형 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
@@ -31,15 +31,15 @@ Paint Mask (마스크) ──────┘
 | `source_latent` | `LatentArtifact` | 예 | 붙여넣을 소스 잠재 텐서입니다. |
 | `mask_image` | `ImageArtifact` / `ImageUrlArtifact` | 아니오 | 블렌드 마스크입니다. 생략할 경우 소스가 배치 영역 내에서 대상을 전체적으로 대체합니다. |
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |
 | `output_latent` | `LatentArtifact` | 소스가 합성된 대상 잠재 텐서입니다. |
 
-## 파라미터 (Parameters)
+## 파라미터 (Parameters) {: #parameters }
 
-### 배치 (Placement)
+### 배치 (Placement) {: #placement }
 
 | 이름 | 유형 | 기본값 | 설명 |
 | --- | --- | --- | --- |

@@ -19,11 +19,11 @@ EndFlowNode는 워크플로의 끝을 나타내는 간단한 기본 구성 요�
 1. 워크플로에 EndFlowNode를 추가합니다.
 1. 흐름의 맨 끝에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **control**: 흐름을 위한 입력 연결점 (다른 노드를 여기에 연결합니다)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **None** - 이 노드는 아무것도 출력하지 않으며, 단지 흐름의 끝을 나타냅니다.
 

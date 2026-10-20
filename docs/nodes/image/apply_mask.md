@@ -25,7 +25,7 @@ ApplyMask 노드는 입력 이미지에 마스크를 적용하여 투명도 효�
 1. "channel" 파라미터에서 적절한 채널을 선택합니다.
 1. 마스크가 적용된 이미지가 "output" 파라미터를 통해 출력됩니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **input_image**: 마스크를 적용할 대상 이미지 (다른 이미지 노드에서 연결 가능)
 
@@ -38,7 +38,7 @@ ApplyMask 노드는 입력 이미지에 마스크를 적용하여 투명도 효�
     - **blue**: 파란색(Blue) 채널 사용
     - **alpha**: 알파(Alpha) 채널 사용 (사용 가능한 경우)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 마스크가 적용된 최종 이미지 (마스크 기반 투명도 적용)
 

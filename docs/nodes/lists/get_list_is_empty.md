@@ -22,12 +22,12 @@ GetListIsEmpty 노드는 리스트가 비어 있는지 여부를 확인하는 �
 1. 아무 리스트나 "items" 입력에 연결합니다.
 1. 노드가 리스트가 비어 있는지 자동으로 확인하여 출력합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **items**: 확인할 대상 리스트 (리스트 입력)
 - **is_empty**: 리스트가 비어 있는지(true) 아닌지(false)를 나타내는 불리언
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **is_empty**: 불리언 값 (리스트가 비어 있으면 true, 항목이 포함되어 있으면 false)
 

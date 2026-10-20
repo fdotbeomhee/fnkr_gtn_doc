@@ -19,7 +19,7 @@ OpenAiImage 노드는 OpenAI의 이미지 생성 서비스(DALL-E)에 대한 연
 1. 워크플로에 OpenAiImage 노드를 추가합니다.
 1. driver 출력을 이미지를 생성할 수 있는 노드(예: GenerateImage)에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **model**: 사용할 모델 (기본값: "dall-e-3")
 - **image_size**: 생성할 이미지 크기 (기본값: "1024x1024")
@@ -29,7 +29,7 @@ OpenAiImage 노드는 OpenAI의 이미지 생성 서비스(DALL-E)에 대한 연
 - **moderation**: 유해하거나 불쾌감을 주는 콘텐츠에 대한 필터링 강도(Standard 또는 strict).
 - **output_format**: png, jpeg
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **image_model_config**: 다른 노드에서 사용할 수 있도록 구성된 OpenAI 이미지 모델 설정
 

@@ -16,11 +16,11 @@
 [Nuke Start Flow] → (워크플로우 노드들) → Nuke End Flow
 ```
 
-## 입력 (Inputs)
+## 입력 (Inputs) {: #inputs }
 
 없음.
 
-## 출력 (Outputs)
+## 출력 (Outputs) {: #outputs }
 
 | 이름 | 타입 | 설명 |
 | --- | --- | --- |

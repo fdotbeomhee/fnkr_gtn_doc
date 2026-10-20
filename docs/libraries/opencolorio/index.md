@@ -1,4 +1,4 @@
-# OpenColorIO 라이브러리 (OpenColorIO Library)
+# OpenColorIO 라이브러리 (OpenColorIO Library) {: #opencolorio-library }
 
 영화, VFX 및 애니메이션 파이프라인 전반에서 사용되는 업계 표준 색상 관리 시스템인 [OpenColorIO](https://opencolorio.org/) (OCIO) 기반의 전문가급 색상 관리 노드 모음입니다.
 
@@ -48,7 +48,7 @@ environment:
 | [Load OCIO Config](load_ocio_config.md) | `$OCIO` 또는 명시적 경로에서 OCIO 설정을 로드하고 다운스트림 노드를 위해 `OCIOConfigArtifact`를 출력 |
 | [OCIO Color Parameters](ocio_color_parameters.md) | 소스 색공간, 디스플레이, 뷰를 재사용 가능한 단일 `OCIOColorParamsArtifact`로 묶으며 연결된 OCIO 설정에 따라 드롭다운이 채워짐 |
 
-## 빠른 시작 (Quick start)
+## 빠른 시작 (Quick start) {: #quick-start }
 
 1. 캔버스에 **Load OCIO Config** 노드를 추가합니다.
     - `$OCIO`가 설정되어 있으면 노드가 자동으로 경로를 감지하고 표시합니다.

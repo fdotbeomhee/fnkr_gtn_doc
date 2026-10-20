@@ -24,7 +24,7 @@ HoldVideoFrames 노드는 각 프레임을 지정된 프레임 수만큼 정지(
 1. "hold_frames" 파라미터를 설정하여 각 프레임을 몇 프레임 동안 유지할지 지정합니다.
 1. 워크플로우를 실행하여 프레임 홀딩 효과를 생성합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **video**: 프레임 홀딩 효과를 적용할 비디오 콘텐츠 (VideoArtifact 및 VideoUrlArtifact 지원)
 
@@ -41,7 +41,7 @@ HoldVideoFrames 노드는 각 프레임을 지정된 프레임 수만큼 정지(
     - **balanced**: 속도와 품질의 균형 (medium 프리셋, CRF 23)
     - **quality**: 최고 품질, 느린 처리 속도 (slow 프리셋, CRF 18)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **video**: 프레임 홀딩 효과가 적용된 비디오 (다른 노드에 연결하여 사용 가능)
 

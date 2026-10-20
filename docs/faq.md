@@ -1,10 +1,10 @@
-# 자주 묻는 질문 (FAQ)
+# 자주 묻는 질문 (FAQ) {: #frequently-asked-questions }
 
 !!! tip
 
     특정 문제나 오류를 해결하고 계신가요? 자주 발생하는 문제와 복구 방법은 [문제 해결](troubleshooting.md) 문서를 참조하세요.
 
-## 내 워크스페이스는 어디에 있나요 (내 파일은 어디에 저장되나요)?
+## 내 워크스페이스는 어디에 있나요 (내 파일은 어디에 저장되나요)? {: #where-is-my-workspace-where-do-my-files-save }
 
 저장된 워크플로우 등의 파일은 워크스페이스 디렉토리(Workspace Directory)에 저장됩니다.
 
@@ -23,11 +23,11 @@ Editor를 실행하고 있지 않은 경우, 다음 명령어를 실행하면 �
 gtn config show | grep workspace
 ```
 
-## Editor와 다른 머신에서 Engine을 실행할 수 있나요?
+## Editor와 다른 머신에서 Engine을 실행할 수 있나요? {: #can-i-run-the-engine-on-a-different-machine-than-the-editor }
 
 Engine과 Editor는 완전히 분리된 머신에서 실행할 수 있습니다. 사용자가 저장하는 모든 파일이나 등록하는 라이브러리는 Engine이 실행 중인 머신에 저장된다는 점에 유의하세요. 따라서 파일을 바로 찾을 수 없다면 Engine이 어느 머신에서 실행 중인지 다시 한 번 확인해 보세요.
 
-## Griptape Nodes는 어디에 설치되어 있나요?
+## Griptape Nodes는 어디에 설치되어 있나요? {: #where-is-griptape-nodes-installed }
 
 Griptape Nodes의 정확한 설치 위치를 확인하고 싶으신가요? 다음 명령어를 실행하면 정확한 설치 경로를 확인할 수 있습니다:
 
@@ -43,7 +43,7 @@ Griptape Nodes의 정확한 설치 위치를 확인하고 싶으신가요? 다�
     Split-Path (Split-Path (Get-Command griptape-nodes).Source)
     ```
 
-## 설정(config) 파일을 보거나 편집할 수 있나요?
+## 설정(config) 파일을 보거나 편집할 수 있나요? {: #can-i-see-or-edit-my-config-file }
 
 설정 파일의 경로를 확인하려면 Editor 상단 Settings 메뉴에서 **Copy Path to Settings**를 선택하세요. 그러면 설정 파일 경로가 클립보드에 복사됩니다.
 
@@ -53,7 +53,7 @@ Griptape Nodes의 정확한 설치 위치를 확인하고 싶으신가요? 다�
 gtn config show
 ```
 
-## 초기 설정 후 Advanced Media Library를 설치하려면 어떻게 해야 하나요?
+## 초기 설정 후 Advanced Media Library를 설치하려면 어떻게 해야 하나요? {: #how-do-i-install-the-advanced-media-library-after-initial-setup }
 
 라이브러리(Advanced-Media 외 라이브러리 포함)의 설치 및 관리에 대한 전반적인 내용은 [라이브러리](guides/libraries.md) 문서를 참조하세요.
 
@@ -77,7 +77,7 @@ Advanced Media Library를 설치하려면 **y**를, 설치를 건너뛰려면 **
 
     어떤 노드에 어떤 모델이 필요한지 확인하려면 각 노드의 문서를 참조하세요. 각 문서에 특정 요구사항에 대한 링크가 제공되어 있습니다.
 
-## Advanced Media Library에서 지원 중단(deprecated)된 노드는 어떻게 되었나요?
+## Advanced Media Library에서 지원 중단(deprecated)된 노드는 어떻게 되었나요? {: #what-happened-to-deprecated-nodes-from-the-advanced-media-library }
 
 버전 0.64.0에서는 Advanced Media Library에서 지원 중단되었던 노드들이 제거되었습니다. 이 노드들은 이전에 지원 중단 예정으로 표시되었으며, 더 유연한 대안 노드로 대체되었습니다.
 
@@ -90,11 +90,11 @@ Advanced Media Library를 설치하려면 **y**를, 설치를 건너뛰려면 **
 
 마이그레이션 가이드에는 지원 중단된 모든 이미지 처리, diffusion 파이프라인, 업스케일링 및 LoRA 노드에 대한 대체 방안이 포함되어 있습니다.
 
-## Griptape Nodes를 제거하려면 어떻게 해야 하나요?
+## Griptape Nodes를 제거하려면 어떻게 해야 하나요? {: #how-do-i-uninstall-griptape-nodes }
 
 [Griptape Nodes 제거](uninstalling.md) 문서를 참조하세요.
 
-## Griptape Nodes를 업데이트하려면 어떻게 해야 하나요?
+## Griptape Nodes를 업데이트하려면 어떻게 해야 하나요? {: #how-do-i-update-griptape-nodes }
 
 Griptape Nodes는 실행될 때마다 업데이트가 필요한지 자동으로 확인합니다. 업데이트가 필요한 경우 (y/n) 응답을 요청하는 메시지가 표시됩니다. y로 응답하면 자동으로 최신 버전의 Engine으로 업데이트됩니다.
 
@@ -112,7 +112,7 @@ gtn self update
 gtn libraries sync
 ```
 
-## 피드백을 제공하거나 질문을 하려면 어디로 가야 하나요?
+## 피드백을 제공하거나 질문을 하려면 어디로 가야 하나요? {: #where-can-i-provide-feedback-or-ask-questions }
 
 여러 채널을 통해 소통할 수 있습니다:
 
@@ -122,7 +122,7 @@ gtn libraries sync
 
 동일한 링크들이 모든 문서 페이지 하단 푸터(오른쪽 아래)의 세 가지 아이콘으로도 제공됩니다.
 
-## 출시 전 기능(unreleased features)을 미리 테스트해보려면 어떻게 해야 하나요?
+## 출시 전 기능(unreleased features)을 미리 테스트해보려면 어떻게 해야 하나요? {: #how-can-i-test-out-unreleased-features }
 
 출시 전 기능을 테스트하는 데 관심이 있으시다면, Griptape Nodes의 프리릴리즈(pre-release) 빌드를 설치할 수 있습니다.
 

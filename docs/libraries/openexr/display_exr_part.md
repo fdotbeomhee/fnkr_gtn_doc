@@ -9,7 +9,7 @@
 - [Load EXR](load_exr.md)에서 `EXRPartArtifact`를 전달받아 RGB 표시 채널을 자동 선택하고 캔버스에서 미리 볼 수 있는 `ImageUrlArtifact`를 출력합니다.
 - 두 가지 색상 모드 지원: `basic` (로컬 노출 + 필름/선형 톤 매핑) 및 `ocio` (연결된 `OCIOColorParamsArtifact`를 통한 OCIO 디스플레이-뷰 변환).
 - 파트에서 알파 채널(`A`)이 발견되면 알파가 자동으로 포함됩니다.
-- 노드 실행 후 **Open in external viewer** 버튼을 클릭하면 설정된 HDR 뷰어에서 원본 EXR이 열립니다 ([라이브러리 설정](index.md#라이브러리-설정-library-settings) 참조).
+- 노드 실행 후 **Open in external viewer** 버튼을 클릭하면 설정된 HDR 뷰어에서 원본 EXR이 열립니다 ([라이브러리 설정](index.md#library-settings) 참조).
 
 ## 일반적인 워크플로우 위치
 
@@ -21,7 +21,7 @@ Load EXR → [Display EXR Part] → (이미지 출력)
 
 <!-- TODO: add ../assets/display-exr-part.png screenshot -->
 
-## 입력 (Inputs)
+## 입력 (Inputs) {: #inputs }
 
 | 이름 | 타입 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
@@ -29,14 +29,14 @@ Load EXR → [Display EXR Part] → (이미지 출력)
 | `exposure` | `float` | 아니요 | 톤 매핑 또는 OCIO 변환 전에 적용되는 EV 스톱 단위의 노출입니다. 범위 -10 ~ +10, 기본값 `0.0`. |
 | `color_params` | `OCIOColorParamsArtifact` | 아니요 | [OCIO Color Parameters](../opencolorio/ocio_color_parameters.md)에서 전달받습니다. `color_mode`가 `ocio`일 때 필수입니다. |
 
-## 출력 (Outputs)
+## 출력 (Outputs) {: #outputs }
 
 | 이름 | 타입 | 설명 |
 | --- | --- | --- |
 | `image` | `ImageUrlArtifact` | 캔버스 내 표시를 위한 8비트 sRGB 또는 RGBA PNG입니다. |
 | `output_file` | `str` | 저장된 PNG 파일의 경로입니다. |
 
-## 파라미터 (Parameters)
+## 파라미터 (Parameters) {: #parameters }
 
 | 이름 | 타입 | 기본값 | 설명 |
 | --- | --- | --- | --- |

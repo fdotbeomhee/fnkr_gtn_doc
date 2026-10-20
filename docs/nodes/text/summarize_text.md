@@ -21,11 +21,11 @@ Summarize Text Task 도구는 텍스트를 요약해 주는 유틸리티입니�
 1. 요약 파라미터를 구성합니다.
 1. 출력을 요약 작업이 필요한 노드에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **text**: 요약할 텍스트 콘텐츠
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 텍스트의 요약본
 

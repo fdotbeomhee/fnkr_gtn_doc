@@ -18,7 +18,7 @@ CoherePrompt 노드는 Cohere의 AI 모델에 대한 연결을 설정합니다.
 1. 워크플로에 CoherePrompt 노드를 추가합니다.
 1. 이 노드의 출력을 프롬프트 드라이버를 사용할 수 있는 노드(예: Agent)에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **model**: 사용할 Cohere 모델 (기본값: "command-r-plus")
 - **max_attempts_on_fail**: 오류 발생 시 재시도 횟수
@@ -29,7 +29,7 @@ CoherePrompt 노드는 Cohere의 AI 모델에 대한 연결을 설정합니다.
 - **temperature**: 응답의 무작위성을 제어 (높을수록 창의적, 낮을수록 집중적)
 - **stream**: 응답을 생성되는 즉시 실시간으로 수신할지(true), 한 번에 모두 수신할지(false) 여부
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **prompt_model_config**: 다른 노드에서 사용할 수 있도록 구성된 Cohere 드라이버
 

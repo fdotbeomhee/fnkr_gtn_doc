@@ -21,7 +21,7 @@ Load EXR (채널들) → [Display EXR Channel] → (이미지 출력)
 
 <!-- TODO: add ../assets/display-exr-channel.png screenshot -->
 
-## 입력 (Inputs)
+## 입력 (Inputs) {: #inputs }
 
 | 이름 | 타입 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
@@ -33,14 +33,14 @@ Load EXR (채널들) → [Display EXR Channel] → (이미지 출력)
 | `color_params` | `OCIOColorParamsArtifact` | 아니요 | [OCIO Color Parameters](../opencolorio/ocio_color_parameters.md)에서 전달받습니다. `color_mode`가 `ocio`일 때 필수입니다. |
 | `background` | `ImageArtifact \| ImageUrlArtifact \| str` | 아니요 | A-over-B 합성을 위한 배경 이미지입니다. 알파 채널이 연결되지 않은 경우 무시됩니다. |
 
-## 출력 (Outputs)
+## 출력 (Outputs) {: #outputs }
 
 | 이름 | 타입 | 설명 |
 | --- | --- | --- |
 | `image` | `ImageUrlArtifact` | 캔버스 내 미리보기를 위한 8비트 sRGB 또는 RGBA PNG입니다. |
 | `output_file` | `str` | 저장된 PNG 파일의 경로입니다. |
 
-## 파라미터 (Parameters)
+## 파라미터 (Parameters) {: #parameters }
 
 | 이름 | 타입 | 기본값 | 설명 |
 | --- | --- | --- | --- |

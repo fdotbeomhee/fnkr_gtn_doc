@@ -24,6 +24,8 @@
 
 앱은 시작할 때 정책을 한 번 읽습니다. 파일 변경 사항은 앱을 다음 번에 시작할 때 적용됩니다.
 
+한 번의 앱 실행에 대해서만 업데이트를 비활성화하려면 [`GTN_DESKTOP_DISABLE_UPDATES`](../guides/desktop/environment_variables.md)를 사용합니다. 이 변수로 `policy.json`에 의해 비활성화된 업데이트를 다시 활성화할 수는 없습니다.
+
 ## 사용자가 보게 되는 화면
 
 ![업데이트 확인 버튼, 업데이트 동작 메뉴, 릴리즈 채널 메뉴 위에 "Updates are disabled by your organization" 메시지가 표시된 앱 설정의 업데이트 섹션](../assets/img/enterprise/disabling_app_updates-updates_disabled.png)

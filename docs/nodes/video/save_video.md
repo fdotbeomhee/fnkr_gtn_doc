@@ -22,12 +22,12 @@ SaveVideo 노드는 워크플로우의 비디오 콘텐츠를 컴퓨터의 파�
 1. 필요한 경우 출력 파일 이름과 경로를 지정합니다.
 1. 워크플로우를 실행하여 비디오 파일을 저장합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **video**: 저장할 비디오 콘텐츠 (VideoArtifact, VideoUrlArtifact 및 dict 지원)
 - **output_path**: 비디오가 저장될 파일 이름 및 경로 (기본값: "griptape_nodes.mp4")
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output_path**: 비디오가 저장된 경로
 

@@ -15,11 +15,11 @@ DisplayFloat 노드는 부동 소수점(float) 파라미터를 화면에 표시�
 1. 워크플로우에 DisplayFloat 노드를 추가합니다.
 1. 다른 노드의 float 출력을 이 노드의 입력에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **float**: 이 노드에 표시되는 단일 부동 소수점 숫자 (기본값은 0.0)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **없음 (None)**
 

@@ -1,4 +1,4 @@
-# 노드 개발 시작하기 (Getting Started)
+# 노드 개발 시작하기 (Getting Started) {: #getting-started }
 
 Griptape Nodes 노드 개발을 시작하는 단계별 안내서입니다.
 

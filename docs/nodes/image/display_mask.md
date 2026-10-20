@@ -24,12 +24,12 @@ DisplayMask 노드는 입력 이미지에서 특정 채널(Red, Green, Blue 또�
 1. "channel" 드롭다운에서 원하는 채널을 선택합니다.
 1. 생성된 마스크는 "output_mask" 파라미터에서 확인할 수 있습니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **input_image**: 마스크를 생성할 원본 이미지 (다른 이미지 노드에서 연결 가능)
 - **channel**: 마스크로 추출할 채널 (red, green, blue 또는 alpha)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output_mask**: 입력 이미지의 선택된 채널로부터 생성된 그레이스케일 마스크 이미지
 

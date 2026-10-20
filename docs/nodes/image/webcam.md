@@ -23,9 +23,9 @@ Webcam 노드를 사용하면 기기의 카메라에서 직접 이미지를 캡�
 1. 사진을 찍으려면 "Capture" 버튼을 클릭합니다.
 1. 캡처된 이미지는 "output" 파라미터에서 확인할 수 있습니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
-#### 카메라 설정 (Camera Settings)
+#### 카메라 설정 (Camera Settings) {: #camera-settings }
 
 - **camera_index** (0-10, 기본값: 0): 사용할 카메라 번호 (여러 대의 카메라를 사용할 수 있는 경우)
 
@@ -40,12 +40,12 @@ Webcam 노드를 사용하면 기기의 카메라에서 직접 이미지를 캡�
 
 - **custom_height** (픽셀): "Custom" 해상도 사용 시 사용자 지정 높이
 
-#### 캡처 설정 (Capture Settings)
+#### 캡처 설정 (Capture Settings) {: #capture-settings }
 
 - **auto_capture** (boolean, 기본값: false): 정해진 간격으로 이미지를 자동 캡처
 - **capture_interval** (초, 기본값: 1): 자동 캡처 간격
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 카메라에서 캡처된 이미지
 

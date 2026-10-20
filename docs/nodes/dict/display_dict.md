@@ -21,12 +21,12 @@
 1. 딕셔너리를 출력하는 노드를 이 노드의 "dictionary" 입력에 연결합니다.
 1. 딕셔너리 내용이 노드의 인터페이스에 표시됩니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **dictionary**: 표시할 딕셔너리 (입력/출력 파라미터)
 - **dictionary_display**: 딕셔너리 내용의 문자열 표현 (UI에 표시되는 속성 파라미터)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **dictionary**: 입력으로 제공된 것과 동일한 딕셔너리 (그대로 전달됨)
 

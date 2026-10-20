@@ -16,13 +16,13 @@
 Nuke Start Flow → (워크플로우 노드들) → [Nuke End Flow]
 ```
 
-## 입력 (Inputs)
+## 입력 (Inputs) {: #inputs }
 
 | 이름 | 타입 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
 | `exec_in` | control | 예 | 흐름의 마지막 노드로부터 전달되는 제어 연결입니다. |
 
-## 출력 (Outputs)
+## 출력 (Outputs) {: #outputs }
 
 | 이름 | 타입 | 설명 |
 | --- | --- | --- |

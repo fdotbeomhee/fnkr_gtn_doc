@@ -23,7 +23,7 @@ Load Image (마지막) ───┴─→ [Media Generation Conditioning] ──
 
 <img src="../assets/nodes/media-gen-conditioning.png" alt="Media Generation Conditioning" width="480">
 
-### 입력 (Inputs)
+### 입력 (Inputs) {: #inputs }
 
 | 이름 | 유형 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
@@ -31,15 +31,15 @@ Load Image (마지막) ───┴─→ [Media Generation Conditioning] ──
 | `image_{i}` | `ImageUrlArtifact` | 아니오 | 슬롯 `i`의 컨디셔닝 이미지입니다. 이미지 모드에서 표시되며 슬롯 수는 사용자 설정에 따라 달라집니다. |
 | `video` | `VideoUrlArtifact` | 아니오 | 컨디셔닝 비디오입니다. 비디오 모드에서만 표시됩니다. |
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |
 | `conditioning` | `media_gen_conditioning` | 이미지/비디오 + 항목별 프레임 위치 + 강도의 타입 지정된 페이로드입니다. Generate Media Latents의 일치하는 입력에 연결하세요. |
 
-## 파라미터 (Parameters)
+## 파라미터 (Parameters) {: #parameters }
 
-### 모드 및 프리셋 선택 (Mode and preset selection)
+### 모드 및 프리셋 선택 (Mode and preset selection) {: #mode-and-preset-selection }
 
 | 이름 | 유형 | 기본값 | 설명 |
 | --- | --- | --- | --- |
@@ -54,7 +54,7 @@ Load Image (마지막) ───┴─→ [Media Generation Conditioning] ──
 | `image_{i}_frame_index` | int | `0` | 이 이미지의 출력 프레임 위치입니다. 프리셋 모드(위치 고정) 및 해당되지 않는 파이프라인(예: Flux2 Klein)에서는 숨겨집니다. |
 | `image_{i}_strength` | float (0.0–1.0) | `1.0` | 이미지별 컨디셔닝 가중치입니다. 이미지별 강도를 사용하지 않는 파이프라인에서는 숨겨집니다. |
 
-### 비디오 모드 (Video mode)
+### 비디오 모드 (Video mode) {: #video-mode }
 
 | 이름 | 유형 | 기본값 | 설명 |
 | --- | --- | --- | --- |

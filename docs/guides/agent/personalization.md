@@ -1,4 +1,4 @@
-# 개인화 (Personalization)
+# 개인화 (Personalization) {: #personalization }
 
 에이전트가 사용자와 대화하는 방식과 보유할 컨텍스트를 맞춤 설정할 수 있습니다. **Settings → Agent Settings**를 열고 **Personalization** 섹션으로 스크롤하세요.
 

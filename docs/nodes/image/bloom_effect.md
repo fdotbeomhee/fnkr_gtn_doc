@@ -25,7 +25,7 @@ BloomEffect 노드는 이미지에 아름다운 블룸(Bloom) 또는 글로우(G
 1. 블룸 양(amount)과 반경(radius) 슬라이더를 조정합니다.
 1. 처리된 이미지가 "output" 파라미터를 통해 출력됩니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 #### 블룸 설정
 
@@ -41,7 +41,7 @@ BloomEffect 노드는 이미지에 아름다운 블룸(Bloom) 또는 글로우(G
     - 값이 높을수록 더 넓고 은은하게 퍼지는 빛 번짐 생성
     - 반경 값이 클수록 처리 시간이 더 오래 소요될 수 있습니다.
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 블룸 효과가 적용된 이미지
 

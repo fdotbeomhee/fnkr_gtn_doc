@@ -25,9 +25,9 @@ RescaleImage 노드를 사용하면 치수, 스케일링 방식 및 품질을 �
 1. 크기 조정 모드를 선택하고 대상 크기를 설정합니다.
 1. 크기가 조정된 이미지는 "output" 파라미터에서 확인할 수 있습니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
-#### 크기 조정 설정 (Resize Settings)
+#### 크기 조정 설정 (Resize Settings) {: #resize-settings }
 
 - **resize_mode**: 새 크기를 결정하는 방식
 
@@ -45,7 +45,7 @@ RescaleImage 노드를 사용하면 치수, 스케일링 방식 및 품질을 �
     - 100 = 원본 크기
     - 200 = 2배 크기
 
-#### 품질 설정 (Quality Settings)
+#### 품질 설정 (Quality Settings) {: #quality-settings }
 
 - **resample_filter**: 리샘플링에 사용할 알고리즘
     - **lanczos**: 고품질, 느림 (대부분의 경우 권장)
@@ -53,7 +53,7 @@ RescaleImage 노드를 사용하면 치수, 스케일링 방식 및 품질을 �
     - **bilinear**: 낮은 품질, 빠름
     - **nearest**: 픽셀화 효과, 가장 빠름
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 크기가 조정된 결과 이미지
 

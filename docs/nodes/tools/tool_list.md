@@ -20,11 +20,11 @@ ToolList 노드는 여러 도구를 단일 목록(List)으로 결합합니다. �
 1. 필요한 입력 파라미터(예: tools)를 제공하는 다른 노드에 연결합니다.
 1. 흐름을 실행하여 결합된 도구 목록을 확인합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **tools**: 단일 목록으로 결합할 도구들의 목록.
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **tool_list**: 결합된 도구 목록.
 

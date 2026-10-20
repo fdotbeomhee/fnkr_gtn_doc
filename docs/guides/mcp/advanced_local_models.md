@@ -87,8 +87,8 @@ Filesystem 서버의 기능과 구성 옵션에 대한 자세한 정보는 [File
   "args": [
     "-y",
     "@modelcontextprotocol/server-filesystem",
-    "/Users/jason/Desktop",
-    "/Users/jason/Downloads"
+    "/Users/<username>/Desktop",
+    "/Users/<username>/Downloads"
   ],
   "env": {},
   "cwd": null,
@@ -97,7 +97,7 @@ Filesystem 서버의 기능과 구성 옵션에 대한 자세한 정보는 [File
 }
 ```
 
-> **중요**: `/Users/jason/Desktop` 및 `/Users/jason/Downloads`를 실제 사용자의 바탕화면 및 다운로드 폴더 경로로 변경하세요. Filesystem 서버는 명시적으로 허용한 디렉터리에만 접근할 수 있습니다.
+> **중요**: `/Users/<username>/Desktop` 및 `/Users/<username>/Downloads`를 실제 사용자의 바탕화면 및 다운로드 폴더 경로로 변경하세요. Filesystem 서버는 명시적으로 허용한 디렉터리에만 접근할 수 있습니다.
 
 1. **Create Server를 클릭**합니다.
 
@@ -204,8 +204,8 @@ graph LR
   "args": [
     "-y",
     "@modelcontextprotocol/server-filesystem",
-    "/Users/jason/Documents/Work",
-    "/Users/jason/Documents/Projects"
+    "/Users/<username>/Documents/Work",
+    "/Users/<username>/Documents/Projects"
   ]
 }
 ```
@@ -253,4 +253,4 @@ ollama pull qwen3:1.7b
 로컬 모델과 MCP 서버 연동을 마스터했으므로 다음 항목들을 살펴보세요:
 
 - **[예제 MCP 서버](./servers/index.md)** - 다양한 기능을 위한 추가 서버 설정하기
-- **[연결 유형](./index.md#연결-유형)** - 외부 시스템에 연결하는 다양한 방법 살펴보기
+- **[연결 유형](./index.md#connection-types)** - 외부 시스템에 연결하는 다양한 방법 살펴보기

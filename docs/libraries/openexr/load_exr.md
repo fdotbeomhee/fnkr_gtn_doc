@@ -9,7 +9,7 @@
 - 기본적으로 헤더만 읽으므로 (`openexr.header_only` 설정) 대용량 멀티파트 렌더에서도 스캔 속도가 빠릅니다.
 - 동적 **Parts** 및 **Channels** 그룹을 채웁니다: 파트당 하나의 `EXRPartArtifact` 및 원시 채널당 하나의 `EXRChannelArtifact`.
 - 파트를 [Display EXR Part](display_exr_part.md)에 연결하고 채널을 [Display EXR Channel](display_exr_channel.md) 또는 [Save EXR](save_exr.md)에 연결하세요.
-- **Open in external viewer** 버튼을 클릭하면 설정된 HDR 뷰어에서 파일이 열립니다 ([라이브러리 설정](index.md#라이브러리-설정-library-settings) 참조).
+- **Open in external viewer** 버튼을 클릭하면 설정된 HDR 뷰어에서 파일이 열립니다 ([라이브러리 설정](index.md#library-settings) 참조).
 
 ## 일반적인 워크플로우 위치
 
@@ -22,13 +22,13 @@
 
 <!-- TODO: add ../assets/load-exr.png screenshot -->
 
-## 입력 (Inputs)
+## 입력 (Inputs) {: #inputs }
 
 | 이름 | 타입 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
 | `file_path` | `str` | 예 | `.exr` 파일의 경로입니다. |
 
-## 출력 (Outputs)
+## 출력 (Outputs) {: #outputs }
 
 | 이름 | 타입 | 설명 |
 | --- | --- | --- |

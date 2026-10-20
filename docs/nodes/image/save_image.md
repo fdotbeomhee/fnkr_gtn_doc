@@ -24,13 +24,13 @@ SaveImage 노드를 사용하면 이미지를 로컬 파일 시스템에 저장�
 1. 출력 파일 경로와 형식을 설정합니다.
 1. 이미지가 지정된 위치에 저장됩니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
-#### 이미지 입력 (Image Input)
+#### 이미지 입력 (Image Input) {: #image-input }
 
 - **input_image**: 저장할 이미지 (모든 이미지 처리 노드에서 연결 가능)
 
-#### 출력 설정 (Output Settings)
+#### 출력 설정 (Output Settings) {: #output-settings }
 
 - **output_path**: 이미지가 저장될 파일 경로
 
@@ -51,7 +51,7 @@ SaveImage 노드를 사용하면 이미지를 로컬 파일 시스템에 저장�
     - 높은 값 = 더 우수한 품질, 더 큰 파일 크기
     - 낮은 값 = 낮은 품질, 더 작은 파일 크기
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **saved_path**: 이미지가 저장된 파일 경로
 - **file_size**: 저장된 파일의 크기(바이트 단위)

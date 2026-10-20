@@ -12,11 +12,11 @@
 
     1. [Autodesk Maya](https://www.autodesk.com/products/maya) 2023 이상 설치
     1. Python 3.10 이상 설치
-    1. [저장소](https://github.com/PatrickPalmer/MayaMCP)에서 Maya MCP 서버 다운로드 및 설정. 자세한 정보는 [설치 가이드](#1-maya-mcp-서버-다운로드-및-설정)를 참조하세요.
+    1. [저장소](https://github.com/PatrickPalmer/MayaMCP)에서 Maya MCP 서버 다운로드 및 설정. 자세한 정보는 [설치 가이드](#1-download-and-setup-maya-mcp-server)를 참조하세요.
 
 ## 설치
 
-### 1. Maya MCP 서버 다운로드 및 설정
+### 1. Maya MCP 서버 다운로드 및 설정 {: #1-download-and-setup-maya-mcp-server }
 
 1. 터미널을 열고 머신에서 저장소를 다운로드할 위치로 이동합니다. 쉽게 찾을 수 있는 위치에 서버를 두는 것을 권장합니다. 예를 들어 Mac에서는 GitHub 저장소를 보관하는 위치인 `$HOME/Documents/GitHub`를 사용할 수 있습니다.
 

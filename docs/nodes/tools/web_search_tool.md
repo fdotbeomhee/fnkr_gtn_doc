@@ -20,7 +20,7 @@ Web Search 도구는 에이전트가 웹을 검색할 수 있도록 기능을 �
 1. 워크플로에 Web Search 도구를 추가합니다.
 1. 출력을 웹 검색 기능이 필요한 노드(예: Agent)에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **search_engine**: 사용할 검색 엔진 (기본값: "DuckDuckGo")
 
@@ -30,7 +30,7 @@ Web Search 도구는 에이전트가 웹을 검색할 수 있도록 기능을 �
         - Google: Google API 키 및 Search ID 필요
         - Exa: Exa API 키 필요
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **tool**: 다른 노드에서 사용할 수 있도록 구성된 웹 검색 도구
 

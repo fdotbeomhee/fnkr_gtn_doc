@@ -21,14 +21,14 @@ Latent B ─┘
 
 <img src="../assets/nodes/multiply-latents.png" alt="Multiply Latents" width="480">
 
-### 입력 (Inputs)
+### 입력 (Inputs) {: #inputs }
 
 | 이름 | 유형 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
 | `left_latent` | `LatentArtifact` | 예 | 좌측 잠재 텐서입니다. |
 | `right_latent` | `LatentArtifact` | 예 | 우측 잠재 텐서입니다. `left_latent`와 형태(shape)가 일치해야 합니다. |
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |

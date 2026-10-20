@@ -25,14 +25,14 @@ ImageBlendCompositor 노드는 사진 편집 소프트웨어의 레이어와 유
 1. 블렌드 모드를 선택하고 불투명도를 조정합니다.
 1. 합성된 이미지는 "output" 파라미터에서 확인할 수 있습니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
-#### 이미지 입력 (Image Inputs)
+#### 이미지 입력 (Image Inputs) {: #image-inputs }
 
 - **input_image**: 베이스 이미지 (배경 레이어)
 - **blend_image**: 위에 얹을 블렌드 이미지 (전경 레이어)
 
-#### 블렌드 설정 (Blend Settings)
+#### 블렌드 설정 (Blend Settings) {: #blend-settings }
 
 - **blend_mode**: 사용할 블렌딩 방식
 
@@ -54,18 +54,18 @@ ImageBlendCompositor 노드는 사진 편집 소프트웨어의 레이어와 유
     - 0.0 = 완전 투명 (블렌드 효과 없음)
     - 1.0 = 완전 불투명 (전체 블렌드 적용)
 
-#### 위치 지정 (Positioning)
+#### 위치 지정 (Positioning) {: #positioning }
 
 - **x_offset** (픽셀, 기본값: 0): 블렌드 이미지의 가로 위치
 - **y_offset** (픽셀, 기본값: 0): 블렌드 이미지의 세로 위치
 
-#### 고급 옵션 (Advanced Options)
+#### 고급 옵션 (Advanced Options) {: #advanced-options }
 
 - **resize_blend_to_fit** (boolean, 기본값: false): 베이스 이미지 크기에 맞게 블렌드 이미지 크기 조정
 - **preserve_alpha** (boolean, 기본값: true): 결과물에서 투명도 보존
 - **invert_blend** (boolean, 기본값: false): 블렌딩 전에 블렌드 이미지를 반전
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 두 이미지가 합성된 결과 이미지
 

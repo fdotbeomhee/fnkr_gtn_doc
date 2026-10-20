@@ -105,6 +105,8 @@ MCPTask 노드는 Griptape Nodes 워크플로우와 외부 MCP 서버 사이의 
 
     문서에 나온 내용과 일치하도록 **command**와 **args** 설정을 수정했습니다.
 
+    서버가 `[Errno 2] No such file or directory: 'uvx'` 오류와 함께 시작되지 않으면 [서버가 시작되지 않음](./connection_types/stdio.md#server-wont-start)을 참조하세요.
+
     **선택 사항: 커스텀 규칙 추가**
 
     **Rules** 텍스트 영역에 커스텀 규칙을 추가하여 AI 에이전트가 이 MCP 서버를 사용할 때 따를 지침을 제공할 수 있습니다. 이러한 규칙은 에이전트가 이 서버의 도구를 사용할 때 자동으로 적용됩니다.
@@ -181,4 +183,4 @@ Explain MCP: https://www.anthropic.com/news/model-context-protocol
 
 - **[에이전트와 함께 MCPTask 사용하기](./mcp_task_agents.md)** - 고급 통합 패턴
 - **[예제 MCP 서버](./servers/index.md)** - 유용한 다른 서버들의 설정 가이드
-- **[연결 유형](./index.md#연결-유형)** - 앱에 연결하는 다양한 방법 알아보기
+- **[연결 유형](./index.md#connection-types)** - 앱에 연결하는 다양한 방법 알아보기

@@ -21,7 +21,7 @@ Load OCIO Config → [OCIO Color Parameters] → (다운스트림 변환/표시 
 
 <!-- TODO: add ../assets/ocio-color-parameters.png screenshot -->
 
-## 입력 (Inputs)
+## 입력 (Inputs) {: #inputs }
 
 | 이름 | 타입 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
@@ -30,7 +30,7 @@ Load OCIO Config → [OCIO Color Parameters] → (다운스트림 변환/표시 
 | `display` | `str` (선택) | 아니요 | 연결된 설정의 디스플레이 장치 이름입니다. |
 | `view` | `str` (선택) | 아니요 | 선택한 디스플레이에 대한 뷰 이름입니다. `display`가 변경되면 선택 항목이 자동으로 업데이트됩니다. |
 
-## 출력 (Outputs)
+## 출력 (Outputs) {: #outputs }
 
 | 이름 | 타입 | 설명 |
 | --- | --- | --- |

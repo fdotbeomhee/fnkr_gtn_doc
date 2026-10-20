@@ -1,4 +1,4 @@
-# 에이전트 안내서 (For Agents)
+# 에이전트 안내서 (For Agents) {: #for-agents }
 
 이 페이지는 [docs.griptapenodes.com](https://docs.griptapenodes.com/)이 AI 코딩 에이전트, MCP 스킬, 그리고 엔진의 실제 API를 기반으로 작업하려는 모든 도구를 위해 제공하는 머신 판독 가능(machine-readable) 인터페이스를 설명합니다.
 

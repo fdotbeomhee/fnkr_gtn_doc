@@ -17,11 +17,11 @@ DisplayInteger 노드는 정수(integer) 파라미터를 화면에 표시해 주
 1. 워크플로우에 DisplayInteger 노드를 추가합니다.
 1. 다른 노드의 integer 출력을 이 노드의 입력에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **integer**: 이 노드에 표시되는 단일 정수 값 (기본값은 0)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **없음 (None)**
 

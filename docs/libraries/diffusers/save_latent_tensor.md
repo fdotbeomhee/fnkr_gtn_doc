@@ -20,19 +20,19 @@ Generate Media Latents → [Save Latent Tensor]
 
 <!-- TODO: docs/assets/nodes/save-latent-tensor.png 스크린샷 추가 예정 -->
 
-### 입력 (Inputs)
+### 입력 (Inputs) {: #inputs }
 
 | 이름 | 유형 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
 | `latent_tensor` | `LatentArtifact` | 예 | 저장할 잠재 텐서입니다. |
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |
 | `saved_path` | str | 텐서가 기록된 절대 경로입니다. |
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 | 이름 | 유형 | 기본값 | 설명 |
 | --- | --- | --- | --- |

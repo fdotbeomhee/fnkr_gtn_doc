@@ -1,4 +1,4 @@
-# 프로젝트 시스템 활용 (Working with the Project System)
+# 프로젝트 시스템 활용 (Working with the Project System) {: #working-with-the-project-system }
 
 Griptape Nodes의 프로젝트 시스템은 워크플로우 실행 중에 생성되는 파일과 에셋의 저장 위치, 경로 템플릿, 매크로 및 상황(Situations)을 체계적으로 관리합니다.
 

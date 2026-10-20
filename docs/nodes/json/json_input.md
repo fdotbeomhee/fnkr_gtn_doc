@@ -6,15 +6,15 @@
 
 JSON Input 노드는 다양한 입력 타입을 받아 올바른 형식의 JSON 데이터로 변환합니다. `json-repair`를 사용하여 손상되었거나 형식이 잘못된 JSON 문자열을 복구하며, 다양한 데이터 타입에 대해 견고한 변환 기능을 제공합니다.
 
-## 파라미터 (Parameters)
+## 파라미터 (Parameters) {: #parameters }
 
-### 입력 (Inputs)
+### 입력 (Inputs) {: #inputs }
 
 | 파라미터 (Parameter) | 타입 (Type)     | 설명 (Description)                | 기본값 (Default) |
 | -------------------- | --------------- | --------------------------------- | ---------------- |
 | `json`               | json, str, dict | JSON으로 변환할 입력 데이터       | `{}`             |
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 | 파라미터 (Parameter) | 타입 (Type) | 설명 (Description)      |
 | -------------------- | ----------- | ----------------------- |

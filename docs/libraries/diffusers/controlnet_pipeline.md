@@ -22,14 +22,14 @@ Configure ControlNet ─┘
 
 <img src="../assets/nodes/controlnet-pipeline.png" alt="ControlNet Pipeline" width="480">
 
-### 입력 (Inputs)
+### 입력 (Inputs) {: #inputs }
 
 | 이름 | 유형 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
 | `pipeline` | `Pipeline Config` | 예 | 기본 [Pipeline Builder](pipeline_builder.md)에서 생성된 파이프라인. 이미 ControlNet 파이프라인인 상태여서는 **안 됩니다**. |
 | `control_nets` | `list[control_net]` | 예 | [Configure ControlNet](configure_controlnet.md)에서 생성된 하나 이상의 항목. 모든 항목은 기본 파이프라인의 제공업체와 일치해야 합니다. |
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |

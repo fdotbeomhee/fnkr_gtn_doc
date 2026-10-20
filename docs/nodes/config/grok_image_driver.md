@@ -19,11 +19,11 @@ GrokImage 노드는 Grok의 이미지 생성 서비스(DALL-E)에 대한 연결�
 1. 워크플로에 GrokImage 노드를 추가합니다.
 1. driver 출력을 이미지를 생성할 수 있는 노드(예: GenerateImage)에 연결합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **model**: 사용할 모델 (기본값: "grok-2-image-1212")
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **image_model_config**: 다른 노드에서 사용할 수 있도록 구성된 Grok 이미지 모델 설정
 

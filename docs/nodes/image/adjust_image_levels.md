@@ -25,9 +25,9 @@ AdjustImageLevels 노드는 포토샵의 레벨(Levels) 도구와 유사한 전�
 1. 입력 및 출력 레벨 슬라이더를 조정합니다.
 1. 처리된 이미지가 "output" 파라미터를 통해 출력됩니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
-#### 입력 레벨 (Input Levels)
+#### 입력 레벨 (Input Levels) {: #input-levels }
 
 - **shadows** (0-255, 기본값: 0): 입력 섀도우 레벨
 
@@ -45,7 +45,7 @@ AdjustImageLevels 노드는 포토샵의 레벨(Levels) 도구와 유사한 전�
     - 이 값보다 높은 픽셀은 출력 하이라이트로 매핑됩니다.
     - 값이 낮을수록 밝은 영역의 디테일이 더 많이 잘려나갑니다.
 
-#### 출력 레벨 (Output Levels)
+#### 출력 레벨 (Output Levels) {: #output-levels }
 
 - **output_shadows** (0-255, 기본값: 0): 출력 섀도우 레벨
 
@@ -57,7 +57,7 @@ AdjustImageLevels 노드는 포토샵의 레벨(Levels) 도구와 유사한 전�
     - 입력 하이라이트가 이 값으로 매핑됩니다.
     - 값이 낮을수록 전체 이미지가 어두워집니다.
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **output**: 레벨 설정이 적용되어 조정된 이미지
 

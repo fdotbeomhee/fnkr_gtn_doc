@@ -1,10 +1,10 @@
-# 워크플로우 게시 (Publishing a workflow)
+# 워크플로우 게시 (Publishing a workflow) {: #publishing-a-workflow }
 
 게시(Publishing)는 저장된 워크플로우를 독립적인 번들(워크플로우와 이에 필요한 라이브러리, Python 의존성, 구성 및 파일)로 변환하여 디스크 폴더, Griptape Cloud의 Structure 또는 Foundry Nuke 내부의 gizmo 등 실행할 수 있는 위치로 전달합니다. 번들을 패키징하고 전달하는 컴포넌트를 *게시자(publisher)*라고 하며 각 대상마다 고유한 게시자가 있습니다.
 
-모든 게시자는 동일한 라이프사이클을 따르며 동일한 방식으로 의존성을 검색합니다. 이 페이지에서는 이러한 공유 동작을 다룬 다음 각 게시자의 차이점을 설명합니다. 게시된 워크플로우에서 로드하는 미디어 파일(이미지, 오디오 클립, 비디오 또는 텍스트 파일)이 누락된 경우 [정적 파일: 번들에 포함되도록 확인하기](#정적-파일-번들에-포함되도록-확인하기) 섹션으로 바로 이동하세요.
+모든 게시자는 동일한 라이프사이클을 따르며 동일한 방식으로 의존성을 검색합니다. 이 페이지에서는 이러한 공유 동작을 다룬 다음 각 게시자의 차이점을 설명합니다. 게시된 워크플로우에서 로드하는 미디어 파일(이미지, 오디오 클립, 비디오 또는 텍스트 파일)이 누락된 경우 [정적 파일: 번들에 포함되도록 확인하기](#static-files-making-sure-they-get-bundled) 섹션으로 바로 이동하세요.
 
-## 게시자 (Publishers)
+## 게시자 (Publishers) {: #publishers }
 
 게시 기능은 엔진에 내장되어 있지만 게시자는 노드 라이브러리에서 제공됩니다. 모든 라이브러리가 게시자를 등록할 수 있으므로 표시되는 목록은 설치된 라이브러리에 따라 다릅니다. Griptape는 다음과 같은 몇 가지 기본 게시자를 제공합니다:
 
@@ -77,7 +77,7 @@ flowchart TD
 
 마지막 지점은 게시 시 예상치 못한 문제가 발생할 수 있는 부분이며 모든 게시자에게 동일하게 적용됩니다.
 
-## 정적 파일: 번들에 포함되도록 확인하기
+## 정적 파일: 번들에 포함되도록 확인하기 {: #static-files-making-sure-they-get-bundled }
 
 !!! warning "참조된 파일이 번들에서 누락될 수 있습니다"
 
@@ -100,13 +100,13 @@ flowchart TD
 
     이는 렌더 팜이 이미 마운트하고 있는 공유 스토리지에 적합한 방식입니다. 번들과 함께 이동해야 하는 파일의 경우 프로젝트 폴더로 복사하고 해당 복사본을 참조하세요.
 
-    제외된 각 파일은 사유와 함께 엔진 로그에 `will not be bundled because ...`로 기록됩니다. 게시된 워크플로우에서 필요한 파일을 찾을 수 없는 경우 해당 로그 라인이 문제 해결의 시작점입니다. [엔진 로그 내보내기](../troubleshooting.md#엔진-로그-내보내기)를 참조하세요.
+    제외된 각 파일은 사유와 함께 엔진 로그에 `will not be bundled because ...`로 기록됩니다. 게시된 워크플로우에서 필요한 파일을 찾을 수 없는 경우 해당 로그 라인이 문제 해결의 시작점입니다. [엔진 로그 내보내기](../troubleshooting.md#exporting-engine-logs)를 참조하세요.
 
 **언제 이것이 필요한가요?** 노드가 읽지만 게시 후 누락되는 이미지, 오디오 클립, 비디오 또는 텍스트 파일과 같이 게시된 번들에 나타나지 않는 프로젝트 로드 파일에 `SelectFromProject`를 사용하세요.
 
-노드를 직접 작성하는 경우 사용자가 이 해결 방법을 사용할 필요가 없도록 노드가 사용하는 파일을 선언하도록 작성하는 것이 영구적인 해결책입니다. 아래 [라이브러리 작성자를 위한 안내](#라이브러리-작성자를-위한-안내)를 참조하세요.
+노드를 직접 작성하는 경우 사용자가 이 해결 방법을 사용할 필요가 없도록 노드가 사용하는 파일을 선언하도록 작성하는 것이 영구적인 해결책입니다. 아래 [라이브러리 작성자를 위한 안내](#for-library-authors)를 참조하세요.
 
-## 라이브러리 작성자를 위한 안내
+## 라이브러리 작성자를 위한 안내 {: #for-library-authors }
 
 게시 기능은 확장 가능합니다. 노드 라이브러리는 모든 대상을 대상으로 하는 자체 게시자를 제공할 수 있으며 해당 노드는 필요한 파일을 정확하게 선언할 수 있습니다.
 
@@ -117,6 +117,25 @@ flowchart TD
 - **Publish To Nuke** — [Foundry Nuke Library](https://github.com/griptape-ai/griptape-nodes-library-nuke)(`nuke_library_advanced.py`): `NukeStartFlow`/`NukeEndFlow` 노드 유형을 등록하고, 다중 필드 대화 상자(종속 및 버전 관리 필드 포함)를 제공하며, 공통 요소를 위한 공유 패키징 도구를 재사용하고 자체 Nuke 전용 설치를 수행합니다.
 
 게시자는 원하는 방식으로 번들을 전달할 수 있으며, 엔진은 `PublishWorkflowRequest`를 처리하고 결과를 반환하기만 하면 됩니다. 공통 구성 요소를 번들링해야 하는 게시자는 해당 로직을 다시 구현하는 대신 엔진의 `WorkflowPackager`(Folder 및 Nuke 게시자가 수행하는 방식)를 재사용할 수 있습니다.
+
+**번들 내부에서 워크플로우 찾기.** `package_to_folder`는 파일이 어디에 놓였는지 알려주는 `PackagedBundle`을 반환합니다. 그 안의 모든 경로는 패키징한 폴더를 기준으로 한 상대 경로입니다. 워크플로우 파일을 가리켜야 할 때(엔트리포인트 스크립트, 버전 폴더로의 복사, README 등)는 항상 `entrypoint_workflow_path`(게시자가 실행하는 워크플로우)를 사용하세요. 파일 이름에서 해당 위치를 다시 만들지 마세요. 번들의 구조는 패키저가 관리하며 변경될 수 있습니다:
+
+```python
+packaged = self._packager.package_to_folder(destination, workflow)
+workflow_in_bundle = destination / packaged.entrypoint_workflow_path
+```
+
+`packaged.library_paths`에는 복사된 각 라이브러리 정의 파일의 경로가 들어 있습니다.
+
+**게시자 고유 파일 이름 예약하기.** 게시자가 번들 자체에 파일을 쓴다면, 패키저에 해당 파일을 알려주어 엔진 자체 파일과 같은 충돌 보호를 받도록 하세요. 그렇지 않으면 번들된 워크플로우나 정적 파일이 게시자의 파일 위에 덮어쓰거나, 반대로 게시자 파일이 그것을 덮어쓸 수 있습니다. 번들 기준 상대 경로로 `package_to_folder`에 전달하세요:
+
+```python
+self._packager.package_to_folder(
+    destination,
+    workflow,
+    additional_reserved_paths=[Path("run.py"), Path("README.md")],
+)
+```
 
 **노드 의존성 선언.** 위의 정적 파일 누락 문제에 대한 영구적인 해결책은 각 노드가 사용하는 파일을 선언하는 것이며, 이는 *모든* 게시자에게 도움이 됩니다. `get_node_dependencies()`를 오버라이드하고 파일을 `NodeDependencies.static_files`에 추가하세요. 노드가 이를 수행하면 게시자가 해당 파일을 자동으로 번들링하므로 `SelectFromProject` 해결 방법이 필요하지 않습니다:
 

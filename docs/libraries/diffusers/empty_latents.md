@@ -20,19 +20,19 @@ Pipeline Builder → [Create Empty Latents] → Latents Composite Mask → Gener
 
 <img src="../assets/nodes/create-empty-latents.png" alt="Create Empty Latents" width="480">
 
-### 입력 (Inputs)
+### 입력 (Inputs) {: #inputs }
 
 | 이름 | 유형 | 필수 여부 | 설명 |
 | --- | --- | --- | --- |
 | `pipeline` | `Pipeline Config` | 예 | 잠재 텐서의 형태(shape) 및 `num_frames` 표시 여부를 결정합니다. |
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 | 이름 | 유형 | 설명 |
 | --- | --- | --- |
 | `output_latent` | `LatentArtifact` | 파이프라인의 표준 잠재 공간에 있는 0으로 채워진 잠재 텐서입니다. |
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 | 이름 | 유형 | 기본값 | 설명 |
 | --- | --- | --- | --- |

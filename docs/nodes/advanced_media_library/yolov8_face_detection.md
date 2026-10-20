@@ -47,9 +47,9 @@ YOLOv8 Face Detection은 🤗 Hugging Face의 YOLOv8(You Only Look Once version 
     - 노드를 실행하여 입력 이미지에서 얼굴을 탐지합니다.
     - `detected_faces` 출력에 얼굴 탐지 결과 목록이 포함됩니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
-#### 입력 파라미터 (Input Parameters)
+#### 입력 파라미터 (Input Parameters) {: #input-parameters }
 
 - **input_image** (필수)
 
@@ -72,7 +72,7 @@ YOLOv8 Face Detection은 🤗 Hugging Face의 YOLOv8(You Only Look Once version 
     - 탐지된 얼굴 주변의 배경 컨텍스트를 더 많이 포함할 때 유용함
     - 예시: `10.0`은 모든 방향으로 박스를 10% 확장함
 
-#### 출력 파라미터 (Output Parameters)
+#### 출력 파라미터 (Output Parameters) {: #output-parameters }
 
 - **detected_faces**
 
@@ -92,7 +92,7 @@ YOLOv8 Face Detection은 🤗 Hugging Face의 YOLOv8(You Only Look Once version 
         - 탐지 파라미터
         - 탐지된 얼굴 수
 
-### 출력 형식 (Output Format)
+### 출력 형식 (Output Format) {: #output-format }
 
 탐지된 각 얼굴은 딕셔너리 형태로 표현됩니다:
 
@@ -108,7 +108,7 @@ YOLOv8 Face Detection은 🤗 Hugging Face의 YOLOv8(You Only Look Once version 
 
 바운딩 박스 좌표는 입력 이미지 크기에 상대적인 픽셀 단위이며, 원점 (0,0)은 좌상단 모서리입니다.
 
-### 예시 워크플로 (Example Workflows)
+### 예시 워크플로 (Example Workflows) {: #example-workflows }
 
 #### 기본 얼굴 탐지
 
@@ -137,7 +137,7 @@ YOLOv8 Face Detection은 🤗 Hugging Face의 YOLOv8(You Only Look Once version 
 - **중심 기준 확장 (Centered Dilation)**: 박스 확장 시 원래 탐지 결과의 중심점이 유지됩니다.
 - **배치 호환 (Batch-Compatible)**: 루프 구조에 연결하여 여러 이미지를 일괄 처리할 수 있습니다.
 
-## 성능 고려 사항 (Performance Considerations)
+## 성능 고려 사항 (Performance Considerations) {: #performance-considerations }
 
 - **첫 실행**: 초기 실행 시 모델(~6MB)을 다운로드하므로 약간의 시간이 걸릴 수 있습니다.
 - **이후 실행**: 캐시된 모델은 거의 즉시 로드됩니다.
@@ -153,7 +153,7 @@ YOLOv8 Face Detection은 🤗 Hugging Face의 YOLOv8(You Only Look Once version 
 - **오탐(False Positive)이 너무 많음**: 신뢰도가 낮은 탐지 결과를 걸러내기 위해 `confidence_threshold`를 높이세요.
 - **바운딩 박스 크기 문제**: 박스가 너무 꽉 차 보이면 `dilation` 파라미터를 늘려 여백(패딩)을 추가하세요.
 
-## 기술 세부 정보 (Technical Details)
+## 기술 세부 정보 (Technical Details) {: #technical-details }
 
 - **모델**: Hugging Face의 YOLOv8 Face Detection (`arnabdhar/YOLOv8-Face-Detection`)
 - **아키텍처**: 얼굴 탐지에 특화된 YOLOv8 객체 탐지 프레임워크

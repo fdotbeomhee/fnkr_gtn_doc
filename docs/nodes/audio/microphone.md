@@ -22,11 +22,11 @@ Microphone 노드를 사용하면 컴퓨터의 마이크에서 직접 오디오�
 1. 음성을 말하거나 오디오 입력을 제공합니다.
 1. 완료되면 녹음을 중지합니다.
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 - **audio**: 캡처된 오디오 출력 (AudioUrlArtifact)
 
-### 출력 (Outputs)
+### 출력 (Outputs) {: #outputs }
 
 - **audio**: 워크플로의 다른 노드에서 사용할 수 있는 녹음된 오디오
 

@@ -12,7 +12,7 @@ Groq Prompt Driver를 사용하려면 Groq API 키가 필요합니다. API 키�
 
 Groq Prompt Driver는 다음 모델들을 지원합니다:
 
-#### 프로덕션 모델 (Production Models)
+#### 프로덕션 모델 (Production Models) {: #production-models }
 
 - [gemma2-9b-it](https://huggingface.co/google/gemma-2-9b-it) - Google의 Gemma 2 9B 모델
 - [meta-llama/llama-guard-4-12b](https://console.groq.com/docs/model/llama-guard-4-12b) - 콘텐츠 검열(Moderation)을 위한 Meta의 Llama Guard 모델
@@ -23,12 +23,12 @@ Groq Prompt Driver는 다음 모델들을 지원합니다:
 - [meta-llama/llama-4-scout-17b-16e-instruct](https://console.groq.com/docs/model/llama-4-scout-17b-16e-instruct) - 16K 컨텍스트를 지원하는 Meta의 비전 모델(Image Description 노드와 호환)
 - [meta-llama/llama-4-maverick-17b-128e-instruct](https://console.groq.com/docs/model/llama-4-maverick-17b-128e-instruct) - 128K 컨텍스트를 지원하는 Meta의 비전 모델(Image Description 노드와 호환)
 
-#### 프리뷰 모델 (Preview Models)
+#### 프리뷰 모델 (Preview Models) {: #preview-models }
 
 - [allam-2-7b](https://ai.azure.com/explore/models/ALLaM-2-7b-instruct/version/2/registry/azureml) - 사우디 데이터 및 인공지능청(SDAIA)의 7B 파라미터 모델
 - [deepseek-r1-distill-llama-70b](https://console.groq.com/docs/model/deepseek-r1-distill-llama-70b) - DeepSeek의 증류(Distilled) 70B 파라미터 모델
 
-### 파라미터 (Parameters)
+### 파라미터 (Parameters) {: #parameters }
 
 Groq Prompt Driver는 다음과 같은 구성 파라미터를 지원합니다:
 
