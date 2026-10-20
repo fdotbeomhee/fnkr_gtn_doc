@@ -170,9 +170,9 @@
 
 2.  우측 상단의 Log in을 클릭하여 Foundry 사용자 계정으로 로그인합니다.
 
-        <img src="images/media/image11.png" style="width:100%" />
+    <img src="images/media/image11.png" style="width:100%" />
 
-    2.  Foundry 계정은 앞서 생성한 Griptape 로그인 계정과 별개의 계정입니다.
+    1.  Foundry 계정은 앞서 생성한 Griptape 로그인 계정과 별개의 계정입니다.
 
 3.  Foundry 제품 다운로드 페이지로 이동합니다.
 
@@ -180,11 +180,11 @@
 
 4.  Nuke 최신 버전을 다운로드합니다.
 
-        <img src="images/media/image4.png" style="width:100%" />
+    <img src="images/media/image4.png" style="width:100%" />
 
-    2.  웹사이트 로그인이 완료되어 있어야 다운로드 링크가 정상 활성화됩니다.
+    1.  웹사이트 로그인이 완료되어 있어야 다운로드 링크가 정상 활성화됩니다.
 
-    3.  운영체제(Windows, macOS, Linux)에 맞는 Nuke 최신 버전의 인스톨러를 다운로드합니다.
+    2.  운영체제(Windows, macOS, Linux)에 맞는 Nuke 최신 버전의 인스톨러를 다운로드합니다.
 
 5.  Nuke 설치하기
 
