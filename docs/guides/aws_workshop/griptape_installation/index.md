@@ -118,13 +118,13 @@
 >
 > **Hugging Face는 환경 변수를 통해 캐시 저장 위치를 지정할 수 있습니다.\**
 
-1.  용량이 넉넉한 드라이브에 새 폴더를 생성합니다
+    1.  용량이 넉넉한 드라이브에 새 폴더를 생성합니다
 
-2.  환경 변수 설정법 ([https://support.foundry.com/hc/en-us/articles/205764002-Q100015-How-to-set-environment-variables](https://support.foundry.com/hc/en-us/articles/205764002-Q100015-How-to-set-environment-variables))
+    2.  환경 변수 설정법 ([https://support.foundry.com/hc/en-us/articles/205764002-Q100015-How-to-set-environment-variables](https://support.foundry.com/hc/en-us/articles/205764002-Q100015-How-to-set-environment-variables))
 
-3.  사용자 변수 또는 시스템 변수에서 (변수 이름:HF_HUB_CACHE, 변수 값:새로 만든 캐시 폴더 경로) 값을 입력한 후 저장합니다.
+    3.  사용자 변수 또는 시스템 변수에서 (변수 이름:HF_HUB_CACHE, 변수 값:새로 만든 캐시 폴더 경로) 값을 입력한 후 저장합니다.
 
-4.  이미 다운로드받은 모델 파일이 있다면, 해당 폴더 안의 파일들을 새로 지정한 폴더로 그대로 복사/이동해 주시면 모델을 다시 다운로드받지 않고 바로 사용할 수 있습니다.
+    4.  이미 다운로드받은 모델 파일이 있다면, 해당 폴더 안의 파일들을 새로 지정한 폴더로 그대로 복사/이동해 주시면 모델을 다시 다운로드받지 않고 바로 사용할 수 있습니다.
 
 <!-- -->
 
