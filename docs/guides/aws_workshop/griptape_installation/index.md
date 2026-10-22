@@ -96,6 +96,8 @@ Griptape Nodes Desktop은 엔진과 에디터를 모두 포함하는 단일 애�
         <img src="images/media/image15.jpg" style="width:100%" />
 
 
+<!-- -->
+
 2.  Griptape에 HF_Token 등록하기
 
     1.  다시 Griptpae Nodes의 Model Management 창으로 돌아옵니다.
@@ -110,7 +112,9 @@ Griptape Nodes Desktop은 엔진과 에디터를 모두 포함하는 단일 애�
 
     5.  입력이 완료되면 우측 하단의 Close Settings 버튼을 클릭하여 설정을 저장하고 창을 닫습니다.
 
-3. 허깅페이스 설정 관련 공식 가이드 문서[https://docs.griptapenodes.com/en/stable/guides/integrations/hugging_face/](https://docs.griptapenodes.com/en/stable/guides/integrations/hugging_face/)
+3. [허깅페이스 설정 관련 공식 가이드 문서(영문)](https://docs.griptapenodes.com/en/stable/guides/integrations/hugging_face/)
+
+<!-- -->
 
 
 4.  허깅페이스 캐쉬폴더 설정
@@ -126,6 +130,8 @@ Griptape Nodes Desktop은 엔진과 에디터를 모두 포함하는 단일 애�
     
     6.  이미 다운로드받은 모델 파일이 있다면, 해당 폴더 안의 파일들을 새로 지정한 폴더로 그대로 복사/이동해 주시면 모델을 다시 다운로드받지 않고 바로 사용할 수 있습니다.
     
+
+<!-- -->
 
 5.  SAM3.1 모델 다운로드
 
@@ -162,6 +168,8 @@ Griptape Nodes Desktop은 엔진과 에디터를 모두 포함하는 단일 애�
         2.  아직 다운로드 되지 않은 sam3 모델은 Not downloaded로 표시됩니다.
 
         3.  미설치 모델을 클릭하면 나타나는 open model manager to download버튼을 눌러, 필요한 다른 모델도 간편하게 추가 다운로드 할 수 있습니다.
+
+<!-- -->
 
 ### **(Optional)Install Nuke**
 
