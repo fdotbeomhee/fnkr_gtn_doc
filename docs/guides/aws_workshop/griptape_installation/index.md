@@ -69,7 +69,7 @@ Griptape Nodes Desktop은 엔진과 에디터를 모두 포함하는 단일 애�
 
         <img src="images/media/image19.jpg" style="width:100%" />
 
-### **(Optional)오픈소스 모델 설치하기Install Open source models**
+### **(Optional)오픈소스 모델 설치하기**
 
 로컬 환경에서 구동되는 오픈소스 모델을 사용하려면 Hugging Face의 모델 접근 권한과 토큰 설정이 필요합니다.
 
