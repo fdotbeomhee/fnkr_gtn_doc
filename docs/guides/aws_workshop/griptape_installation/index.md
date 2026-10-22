@@ -7,7 +7,7 @@
 
 ### **Griptape Nodes 설치**
 
-1.  Griptape Nodes Desktop은 엔진과 에디터를 모두 포함하는 단일 애플리케이션입니다. 엔진을 자동으로 설치 및 관리하고, 로그인을 처리하며, Griptape API 키를 자동으로 프로비저닝하므로 수동으로 설정할 것이 없습니다.
+Griptape Nodes Desktop은 엔진과 에디터를 모두 포함하는 단일 애플리케이션입니다. 엔진을 자동으로 설치 및 관리하고, 로그인을 처리하며, Griptape API 키를 자동으로 프로비저닝하므로 수동으로 설정할 것이 없습니다.
 
 <!-- -->
 
@@ -71,8 +71,7 @@
 
 ### **(Optional)오픈소스 모델 설치하기Install Open source models**
 
-2.  로컬 환경에서 구동되는 오픈소스 모델을 사용하려면 Hugging Face의 모델 접근 권한과 토큰 설정이\
-    필요합니다.
+로컬 환경에서 구동되는 오픈소스 모델을 사용하려면 Hugging Face의 모델 접근 권한과 토큰 설정이 필요합니다.
 
 <!-- -->
 
@@ -84,17 +83,18 @@
 
         <img src="images/media/image18.jpg" style="width:100%" />
 
-    4.  Create a Hugging Face token 버튼을 클릭하여 Hugging Face 웹사이트의 토큰 발급 페이지로 이동합니다.(Hugging Face 계정이 없는 경우 회원가입 및 로그인을 먼저 진행 해주세요.)
+    3.  Create a Hugging Face token 버튼을 클릭하여 Hugging Face 웹사이트의 토큰 발급 페이지로 이동합니다.(Hugging Face 계정이 없는 경우 회원가입 및 로그인을 먼저 진행 해주세요.)
 
-    5.  Hugging Face 토큰 관리 페이지에서 Create new token 버튼을 클릭합니다.
+    4.  Hugging Face 토큰 관리 페이지에서 Create new token 버튼을 클릭합니다.
 
-    6.  Token type을 기본 읽기 권한인 Read로, Token name은 gtn으로 입력합니다.(토큰 이름은 자유롭게 지정할 수 있습니다.)
+    5.  Token type을 기본 읽기 권한인 Read로, Token name은 gtn으로 입력합니다.(토큰 이름은 자유롭게 지정할 수 있습니다.)
 
         <img src="images/media/image6.jpg" style="width:100%" />
 
-    8.  생성이 완료되면 화면에 Access Token 키값이 표시됩니다. Copy 버튼을 눌러 토큰 값을 복사한 뒤 Done을 클릭합니다.
+    6.  생성이 완료되면 화면에 Access Token 키값이 표시됩니다. Copy 버튼을 눌러 토큰 값을 복사한 뒤 Done을 클릭합니다.
 
         <img src="images/media/image15.jpg" style="width:100%" />
+
 
 2.  Griptape에 HF_Token 등록하기
 
@@ -106,17 +106,16 @@
 
         <img src="images/media/image16.jpg" style="width:100%" />
 
-    5.  HF_TOKEN 항목의 입력란에 앞서 복사해 둔 Access Token 키값을 붙여넣습니다.
+    4.  HF_TOKEN 항목의 입력란에 앞서 복사해 둔 Access Token 키값을 붙여넣습니다.
 
-    6.  입력이 완료되면 우측 하단의 Close Settings 버튼을 클릭하여 설정을 저장하고 창을 닫습니다.
+    5.  입력이 완료되면 우측 하단의 Close Settings 버튼을 클릭하여 설정을 저장하고 창을 닫습니다.
 
-3.  [https://docs.griptapenodes.com/en/stable/guides/integrations/hugging_face/](https://docs.griptapenodes.com/en/stable/guides/integrations/hugging_face/)
+3. 허깅페이스 설정 관련 공식 가이드 문서[https://docs.griptapenodes.com/en/stable/guides/integrations/hugging_face/](https://docs.griptapenodes.com/en/stable/guides/integrations/hugging_face/)
+
 
 4.  허깅페이스 캐쉬폴더 설정
-
-> **오픈소스 모델(Diffusion, SAM 등)은 용량이 매우 크기 때문에, 기본 C 드라이브 용량이 부족할 경우 용량이 넉넉한 다른 드라이브로 다운로드 캐시 경로를 변경하는 것을 권장합니다.**
->
-> **Hugging Face는 환경 변수를 통해 캐시 저장 위치를 지정할 수 있습니다.\**
+**오픈소스 모델(Diffusion, SAM 등)은 용량이 매우 크기 때문에, 기본 C 드라이브 용량이 부족할 경우 용량이 넉넉한 다른 드라이브로 다운로드 캐시 경로를 변경하는 것을 권장합니다.**
+**Hugging Face는 환경 변수를 통해 캐시 저장 위치를 지정할 수 있습니다.\**
 
     1.  용량이 넉넉한 드라이브에 새 폴더를 생성합니다
 
@@ -125,8 +124,7 @@
     3.  사용자 변수 또는 시스템 변수에서 (변수 이름:HF_HUB_CACHE, 변수 값:새로 만든 캐시 폴더 경로) 값을 입력한 후 저장합니다.
 
     4.  이미 다운로드받은 모델 파일이 있다면, 해당 폴더 안의 파일들을 새로 지정한 폴더로 그대로 복사/이동해 주시면 모델을 다시 다운로드받지 않고 바로 사용할 수 있습니다.
-
-<!-- -->
+    
 
 5.  SAM3.1 모델 다운로드
 
