@@ -73,8 +73,6 @@ Griptape Nodes Desktop은 엔진과 에디터를 모두 포함하는 단일 애�
 
 로컬 환경에서 구동되는 오픈소스 모델을 사용하려면 Hugging Face의 모델 접근 권한과 토큰 설정이 필요합니다.
 
-<!-- -->
-
 1.  Hugging Face Access Token 발급하기
 
     1.  Griptape Nodes 상단 메뉴에서 Manage - Model Management를 클릭합니다.
@@ -95,9 +93,6 @@ Griptape Nodes Desktop은 엔진과 에디터를 모두 포함하는 단일 애�
 
         <img src="images/media/image15.jpg" style="width:100%" />
 
-
-<!-- -->
-
 2.  Griptape에 HF_Token 등록하기
 
     1.  다시 Griptpae Nodes의 Model Management 창으로 돌아옵니다.
@@ -112,26 +107,16 @@ Griptape Nodes Desktop은 엔진과 에디터를 모두 포함하는 단일 애�
 
     5.  입력이 완료되면 우측 하단의 Close Settings 버튼을 클릭하여 설정을 저장하고 창을 닫습니다.
 
-3. [허깅페이스 설정 관련 공식 가이드 문서(영문)](https://docs.griptapenodes.com/en/stable/guides/integrations/hugging_face/)
-
-<!-- -->
-
+3.  [허깅페이스 설정 관련 공식 가이드 문서(영문)](https://docs.griptapenodes.com/en/stable/guides/integrations/hugging_face/)
 
 4.  허깅페이스 캐쉬폴더 설정
 
     1.  **오픈소스 모델(Diffusion, SAM 등)은 용량이 매우 크기 때문에, 기본 C 드라이브 용량이 부족할 경우 용량이 넉넉한 다른 드라이브로 다운로드 캐시 경로를 변경하는 것을 권장합니다.**
-    2.  **Hugging Face는 환경 변수를 통해 캐시 저장 위치를 지정할 수 있습니다.\**
-  
+    2.  **Hugging Face는 환경 변수를 통해 캐시 저장 위치를 지정할 수 있습니다.**
     3.  용량이 넉넉한 드라이브에 새 폴더를 생성합니다.
-    
-    4.  [환경 변수 설정법]((https://support.foundry.com/hc/en-us/articles/205764002-Q100015-How-to-set-environment-variables))
-    
+    4.  [환경 변수 설정법](https://support.foundry.com/hc/en-us/articles/205764002-Q100015-How-to-set-environment-variables)
     5.  사용자 변수 또는 시스템 변수에서 (변수 이름:HF_HUB_CACHE, 변수 값:새로 만든 캐시 폴더 경로) 값을 입력한 후 저장합니다.
-    
     6.  이미 다운로드받은 모델 파일이 있다면, 해당 폴더 안의 파일들을 새로 지정한 폴더로 그대로 복사/이동해 주시면 모델을 다시 다운로드받지 않고 바로 사용할 수 있습니다.
-    
-
-<!-- -->
 
 5.  SAM3.1 모델 다운로드
 
@@ -143,23 +128,23 @@ Griptape Nodes Desktop은 엔진과 에디터를 모두 포함하는 단일 애�
 
         <img src="images/media/image14.jpg" style="width:100%" />
 
-    5.  처음 시도 시 다운로드가 실패했다는 메시지가 표시됩니다. (Meta/Facebook의 정책상 Hugging Face 페이지에서 모델 라이선스 및 접근 권한 승인 절차가 필요하기 때문입니다.)
+    4.  처음 시도 시 다운로드가 실패했다는 메시지가 표시됩니다. (Meta/Facebook의 정책상 Hugging Face 페이지에서 모델 라이선스 및 접근 권한 승인 절차가 필요하기 때문입니다.)
 
-    6.  메시지의 facebook/sam3.1 공식 모델 페이지로 이동합니다.
+    5.  메시지의 facebook/sam3.1 공식 모델 페이지로 이동합니다.
 
         <img src="images/media/image13.jpg" style="width:100%" />
 
-    8.  모델 접근 권한 요청 안내 화면에서 약관 확인 및 사용자 정보를 입력한 후 접근 요청을 완료합니다.
+    6.  모델 접근 권한 요청 안내 화면에서 약관 확인 및 사용자 정보를 입력한 후 접근 요청을 완료합니다.
 
-    9.  다시 Griptape Nodes의 Model Management 창에서 facebook/sam3.1 모델의 다운로드를 시도하면 정상적으로 다운로드가 진행됩니다.
+    7.  다시 Griptape Nodes의 Model Management 창에서 facebook/sam3.1 모델의 다운로드를 시도하면 정상적으로 다운로드가 진행됩니다.
 
         <img src="images/media/image17.jpg" style="width:100%" />
 
-    11. 다운로드가 완료되면 Griptape Nodes 좌측 Nodes 패널 검색 창에 **sam3** 를 검색합니다.
+    8.  다운로드가 완료되면 Griptape Nodes 좌측 Nodes 패널 검색 창에 **sam3** 를 검색합니다.
 
-    12. 검색된 SAM3 Segment Image 노드를 워크플로우 캔버스로 드래그하여 배치합니다.
+    9.  검색된 SAM3 Segment Image 노드를 워크플로우 캔버스로 드래그하여 배치합니다.
 
-    13. 노드 속성의 model 드롭다운 항목을 확인합니다.
+    10. 노드 속성의 model 드롭다운 항목을 확인합니다.
 
         <img src="images/media/image10.jpg" style="width:100%" />
 
