@@ -46,6 +46,9 @@ extra_css:
 nav:
   - AWS워크샵:
       - Griptape 설치 및 기본설정: guides/aws_workshop/griptape_installation/index.md
+      - 스타일 변경 워크플로우: guides/aws_workshop/style_change_workflow/index.md
+      - 웹 스크래퍼 외부 프롬프트: guides/aws_workshop/web_scraper_external_prompts/index.md
+      - 컨셉 이미지 및 R2V 워크플로우: guides/aws_workshop/concept_img_r2v_workflow/index.md
   - 시작하기:                      # Get Started
       - 개요: index.md
       - 설치: installation.md
