@@ -47,6 +47,7 @@ nav:
   - AWS워크샵:
       - Griptape 설치 및 기본설정: guides/aws_workshop/griptape_installation/index.md
       - GTN 101 기본 워크플로우: guides/aws_workshop/gtn_101_introduction/index.md
+      - GTN 102 유용한 팁: guides/aws_workshop/gtn_102_tips/index.md
       - 스타일 변경 워크플로우: guides/aws_workshop/style_change_workflow/index.md
       - 웹 스크래퍼 외부 프롬프트: guides/aws_workshop/web_scraper_external_prompts/index.md
       - 컨셉 이미지 및 R2V 워크플로우: guides/aws_workshop/concept_img_r2v_workflow/index.md
