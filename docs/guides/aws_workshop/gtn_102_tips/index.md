@@ -55,34 +55,6 @@ Float 데이터를 유지하는 예외 케이스:
 
 따라서 일반적인 워크플로우는 EXR → 톤 매핑된 SDR 참조 → 생성 → 필요 시 HDR로 다시 업컨버팅 과정으로 진행됩니다.
 
-**Single EXR → reference image**
-
-Load EXR → Display EXR Part → Seedance 2.5 **Reference Images**
-
-* Display EXR Part tone-maps the EXR down to an 8-bit sRGB PNG. Set exposure and tone_mapping (filmic/linear), or use OCIO color management.  
-* In the prompt, refer to it as @Image 1.
-
-**EXR sequence → reference video**
-
-Scan Sequence → EXR Sequence To Preview → Seedance 2.5 **Reference Videos**
-
-* EXR Sequence To Preview tone-maps each frame and encodes the sequence to MP4/MOV. Set frame_rate, part_index, exposure and color mode on that node.  
-* The clip has to be 2–30s, and all reference videos together can't be more than 30s.  
-* Seedance only accepts video by URL, so the node uploads the clip to Griptape Cloud for you.  
-* In the prompt, refer to it as @Video 1.
-
-**Both cases:** set **Task** to Reference to Video. The reference inputs only apply to that task and to Video Editing/Extension. Limits are 30 images, 10 videos and 10 audio clips.
-
-Seedance only ever sees the 8-bit tone-mapped version, so the HDR/float data is lost. Adjust exposure before converting so the image looks the way you want.
-
-None of the generation models we have nodes for (Seedance, Runway, the diffusers pipelines, etc.) take EXR or 16-bit float as a reference. They all use 8-bit images or video, so you still need the tone-map step.
-
-What does keep the float data:
-
-* **CorridorKey Video Inference** (keying, not generation) reads an EXR sequence directly via Scan Sequence and can write a float32 EXR sequence back out (output_format: exr_sequence).  
-* **To get HDR out of a generation:** **Decode HDR Latents** with LTX 2.3 HDR can save raw linear EXR frames (exr_output_folder). **RunwayML Video to HDR** turns an SDR clip into HDR10, HLG or ProRes. Runway's EXR-sequence output isn't supported in the node yet.
-
-So the usual path is EXR → tone-mapped SDR reference → generate → convert back up to HDR if you need it.
 
 2. Iterate workflow  
    1. Make various result easily: Style transfer  
@@ -101,13 +73,6 @@ So the usual path is EXR → tone-mapped SDR reference → generate → convert 
 * **Repo(저장소):** 전체 HF 저장소 (추가 단일 파일이나 fp16 사본이 포함된 경우가 많음)  
 * **DPB:** Diffusion Pipeline Builder (advanced-media 라이브러리)  
 * **MPB:** Modular Diffusion Pipeline Builder (diffusers 라이브러리)
-
-base models each builder offers, with sizes from Hugging Face in GB (10⁹ bytes). 
-
-* **Weights** = the safetensors a pipeline loads (all components)  
-* **Repo** = the whole HF repo, which often also holds extra single-file or fp16 copies  
-* DPB = Diffusion Pipeline Builder (advanced-media library)  
-* MPB = Modular Diffusion Pipeline Builder (diffusers library).
 
 
 | Model | Weights(GBs) | Repo(GBs) | DPB | MPB |
