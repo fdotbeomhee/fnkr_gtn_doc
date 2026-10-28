@@ -5,12 +5,16 @@
    1. SAM3  
       1. https://github.com/griptape-ai/griptape-nodes-library-sam3
 
-      2. Cinematic Director
+
+   2. Cinematic Director
+      1. https://github.com/Amaru-Zeas/gtn-cinematic-director
 
          
+   3. Annotate Image  
+      1. https://github.com/griptape-ai/griptape-nodes-library-annotate
 
-      3. Annotate Image  
-         1. https://github.com/griptape-ai/griptape-nodes-library-annotate
+
+
 ## 2. 반복 노드, 워크플로우 배포 및 로컬 파이프라인 {: #loops-publish-local-pipelines }  
    1. OCIO, EXR  
       1. 라이브러리 설치  
@@ -157,11 +161,23 @@ Float 데이터를 유지하는 예외 케이스:
 
 ### Nuke Gizmo / Publish Workflow {: #nuke-gizmo-publish-workflow }
 
-https://github.com/griptape-ai/griptape-nodes-library-nuke
 
-Nuke Start / Nuke End Flow
+1. Start / End Flow
+   Griptape를 Nuke의 노드로 사용할 수 있게 됩니다. 
+   https://downloads.foundry.com/nuke-beta-18
 
-Start / End Flow
+
+
+2. Nuke Start / Nuke End Flow
+   https://github.com/griptape-ai/griptape-nodes-library-nuke
+
+
+
+3. Publish to Folder
+
+
+4. Command Line
+
 
 
 ### 프로젝트 관리 (Managing Project) {: #managing-project }
